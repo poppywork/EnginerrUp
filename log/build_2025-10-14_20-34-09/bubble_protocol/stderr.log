@@ -1,5 +1,0 @@
-  File "/home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/hardware.py", line 197
-    print(current_packet[ID_POSE]"!"ID[key][IDX_BCPID])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
-

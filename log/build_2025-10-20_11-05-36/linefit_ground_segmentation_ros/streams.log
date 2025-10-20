@@ -1,0 +1,122 @@
+[0.008s] Invoking command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros': AMENT_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:/opt/ros/humble LD_LIBRARY_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros
+[0.056s] -- The C compiler identification is GNU 11.4.0
+[0.104s] -- The CXX compiler identification is GNU 11.4.0
+[0.111s] -- Detecting C compiler ABI info
+[0.175s] -- Detecting C compiler ABI info - done
+[0.180s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.180s] -- Detecting C compile features
+[0.180s] -- Detecting C compile features - done
+[0.182s] -- Detecting CXX compiler ABI info
+[0.253s] -- Detecting CXX compiler ABI info - done
+[0.260s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.260s] -- Detecting CXX compile features
+[0.260s] -- Detecting CXX compile features - done
+[0.262s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.385s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.553s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.557s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.564s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.573s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.585s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.617s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.619s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.704s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.733s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.772s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.779s] -- Looking for pthread.h
+[0.845s] -- Looking for pthread.h - found
+[0.845s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.913s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.914s] -- Found Threads: TRUE  
+[1.082s] -- Checking for module 'eigen3'
+[1.097s] --   Found eigen3, version 3.4.0
+[1.134s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.134s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.166s] -- Checking for module 'flann'
+[1.181s] --   Found flann, version 1.9.1
+[1.220s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.221s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.082s] -- Checking for module 'libusb-1.0'
+[2.097s] --   Found libusb-1.0, version 1.0.25
+[2.136s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.136s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.196s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.323s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.330s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.336s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.451s] -- Found Qhull version 8.0.2
+[2.574s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.689s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.690s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.690s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.691s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.691s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.692s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.692s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.693s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.693s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.694s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.694s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.695s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.696s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.696s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.697s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.698s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.698s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.699s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.700s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.700s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.701s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.701s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.701s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.702s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.703s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.722s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.722s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.723s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.740s] -- Configuring done
+[2.800s] -- Generating done
+[2.801s] [33mCMake Warning:
+[2.801s]   Manually-specified variables were not used by the project:
+[2.801s] 
+[2.801s]     HUMBLE_ROS
+[2.801s]     ROS_EDITION
+[2.801s] 
+[2.801s] [0m
+[2.815s] -- Build files have been written to: /home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros
+[2.831s] Invoked command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros' returned '0': AMENT_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:/opt/ros/humble LD_LIBRARY_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros
+[2.833s] Invoking command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros': AMENT_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:/opt/ros/humble LD_LIBRARY_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros -- -j16 -l16
+[2.879s] [ 25%] [32mBuilding CXX object CMakeFiles/ground_segmentation_test_node.dir/src/ground_segmentation_test_node.cc.o[0m
+[2.880s] [ 50%] [32mBuilding CXX object CMakeFiles/ground_segmentation_node.dir/src/ground_segmentation_node.cc.o[0m
+[10.857s] [ 75%] [32m[1mLinking CXX executable ground_segmentation_test_node[0m
+[11.386s] [ 75%] Built target ground_segmentation_test_node
+[17.909s] [100%] [32m[1mLinking CXX executable ground_segmentation_node[0m
+[18.411s] [100%] Built target ground_segmentation_node
+[18.423s] Invoked command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros' returned '0': AMENT_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:/opt/ros/humble LD_LIBRARY_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros -- -j16 -l16
+[18.424s] Invoking command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros': AMENT_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:/opt/ros/humble LD_LIBRARY_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros
+[18.431s] -- Install configuration: ""
+[18.431s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/lib/linefit_ground_segmentation_ros/ground_segmentation_node
+[18.432s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/lib/linefit_ground_segmentation_ros/ground_segmentation_node" to ""
+[18.432s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/lib/linefit_ground_segmentation_ros/ground_segmentation_test_node
+[18.432s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/lib/linefit_ground_segmentation_ros/ground_segmentation_test_node" to ""
+[18.432s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/launch
+[18.433s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/launch/segmentation.launch.py
+[18.433s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/launch/segmentation_params.yaml
+[18.433s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/launch/test.launch.py
+[18.433s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/ament_index/resource_index/package_run_dependencies/linefit_ground_segmentation_ros
+[18.433s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/ament_index/resource_index/parent_prefix_path/linefit_ground_segmentation_ros
+[18.433s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/environment/ament_prefix_path.sh
+[18.433s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/environment/ament_prefix_path.dsv
+[18.434s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/environment/path.sh
+[18.434s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/environment/path.dsv
+[18.434s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/local_setup.bash
+[18.434s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/local_setup.sh
+[18.434s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/local_setup.zsh
+[18.434s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/local_setup.dsv
+[18.434s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.dsv
+[18.434s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/ament_index/resource_index/packages/linefit_ground_segmentation_ros
+[18.435s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.435s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/cmake/linefit_ground_segmentation_rosConfig.cmake
+[18.435s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/cmake/linefit_ground_segmentation_rosConfig-version.cmake
+[18.435s] -- Installing: /home/zrk/engineer_up/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.xml
+[18.437s] Invoked command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros' returned '0': AMENT_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation:/opt/ros/humble LD_LIBRARY_PATH=/home/zrk/engineer_up/engineer/install/linefit_ground_segmentation/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/linefit_ground_segmentation_ros

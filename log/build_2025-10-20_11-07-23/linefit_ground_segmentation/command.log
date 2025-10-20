@@ -1,0 +1,4 @@
+Invoking command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/linefit_ground_segmentation -- -j16 -l16
+Invoked command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/linefit_ground_segmentation -- -j16 -l16
+Invoking command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/linefit_ground_segmentation
+Invoked command in '/home/zrk/engineer_up/engineer/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/linefit_ground_segmentation

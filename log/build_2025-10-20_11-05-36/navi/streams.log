@@ -1,0 +1,64 @@
+[0.200s] Invoking command in '/home/zrk/engineer_up/engineer/build/navi': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_navigation/navi -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/navi
+[0.252s] -- The C compiler identification is GNU 11.4.0
+[0.303s] -- The CXX compiler identification is GNU 11.4.0
+[0.310s] -- Detecting C compiler ABI info
+[0.370s] -- Detecting C compiler ABI info - done
+[0.376s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.376s] -- Detecting C compile features
+[0.376s] -- Detecting C compile features - done
+[0.379s] -- Detecting CXX compiler ABI info
+[0.452s] -- Detecting CXX compiler ABI info - done
+[0.457s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.457s] -- Detecting CXX compile features
+[0.458s] -- Detecting CXX compile features - done
+[0.460s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.603s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.834s] -- Configuring done
+[0.842s] -- Generating done
+[0.848s] [33mCMake Warning:
+[0.848s]   Manually-specified variables were not used by the project:
+[0.848s] 
+[0.848s]     HUMBLE_ROS
+[0.848s]     ROS_EDITION
+[0.848s] 
+[0.848s] [0m
+[0.849s] -- Build files have been written to: /home/zrk/engineer_up/engineer/build/navi
+[0.872s] Invoked command in '/home/zrk/engineer_up/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_navigation/navi -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/navi
+[0.873s] Invoking command in '/home/zrk/engineer_up/engineer/build/navi': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/navi -- -j16 -l16
+[0.988s] Invoked command in '/home/zrk/engineer_up/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/navi -- -j16 -l16
+[1.009s] Invoking command in '/home/zrk/engineer_up/engineer/build/navi': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/navi
+[1.033s] -- Install configuration: ""
+[1.033s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/params
+[1.037s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/params/nav2_params.yaml
+[1.037s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/params/mapper_params_online_async.yaml
+[1.037s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch
+[1.039s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/slam_launch.py
+[1.039s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/rviz_launch.py
+[1.039s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/localization_launch.py
+[1.039s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/navigation2acm.launch.py
+[1.039s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/navigation_launch.py
+[1.039s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/online_async_launch.py
+[1.039s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/bringup_launch.py
+[1.039s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps
+[1.040s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps/9-room.pgm
+[1.040s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps/9-room.yaml
+[1.040s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps/9-room-2.pgm
+[1.040s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps/9-room-2.yaml
+[1.040s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/rviz
+[1.040s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/rviz/nav2_default_view.rviz
+[1.040s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/ament_index/resource_index/package_run_dependencies/navi
+[1.044s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/ament_index/resource_index/parent_prefix_path/navi
+[1.044s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/environment/ament_prefix_path.sh
+[1.044s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/environment/ament_prefix_path.dsv
+[1.044s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/environment/path.sh
+[1.045s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/environment/path.dsv
+[1.045s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/local_setup.bash
+[1.045s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/local_setup.sh
+[1.045s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/local_setup.zsh
+[1.045s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/local_setup.dsv
+[1.046s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/package.dsv
+[1.046s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/ament_index/resource_index/packages/navi
+[1.046s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/cmake/naviConfig.cmake
+[1.046s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/cmake/naviConfig-version.cmake
+[1.046s] -- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/package.xml
+[1.055s] Invoked command in '/home/zrk/engineer_up/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/navi

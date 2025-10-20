@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nhs/engineer/src/rm_navigation/navi
+CMAKE_SOURCE_DIR = /home/zrk/engineer_up/engineer/src/rm_navigation/navi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nhs/engineer/build/navi
+CMAKE_BINARY_DIR = /home/zrk/engineer_up/engineer/build/navi
 
 # Utility rule file for navi_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/navi_uninstall.dir/compiler_depend.make
 include CMakeFiles/navi_uninstall.dir/progress.make
 
 CMakeFiles/navi_uninstall:
-	/usr/bin/cmake -P /home/nhs/engineer/build/navi/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/zrk/engineer_up/engineer/build/navi/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 navi_uninstall: CMakeFiles/navi_uninstall
 navi_uninstall: CMakeFiles/navi_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/navi_uninstall.dir/clean:
 .PHONY : CMakeFiles/navi_uninstall.dir/clean
 
 CMakeFiles/navi_uninstall.dir/depend:
-	cd /home/nhs/engineer/build/navi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nhs/engineer/src/rm_navigation/navi /home/nhs/engineer/src/rm_navigation/navi /home/nhs/engineer/build/navi /home/nhs/engineer/build/navi /home/nhs/engineer/build/navi/CMakeFiles/navi_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zrk/engineer_up/engineer/build/navi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zrk/engineer_up/engineer/src/rm_navigation/navi /home/zrk/engineer_up/engineer/src/rm_navigation/navi /home/zrk/engineer_up/engineer/build/navi /home/zrk/engineer_up/engineer/build/navi /home/zrk/engineer_up/engineer/build/navi/CMakeFiles/navi_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/navi_uninstall.dir/depend
 

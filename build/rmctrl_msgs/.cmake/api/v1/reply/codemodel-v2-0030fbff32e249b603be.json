@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b79c485235388b59d8be.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "rmctrl_msgs__py",
+					"jsonFile" : "directory-rmctrl_msgs__py-734d9946b4ca7109a324.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/zrk/engineer_up/engineer/build/rmctrl_msgs/rmctrl_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "rmctrl_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rmctrl_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rmctrl_msgs_egg-30ebf7930de79fd4c37e.json",
+					"name" : "ament_cmake_python_build_rmctrl_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rmctrl_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rmctrl_msgs-90739ed00575932342d8.json",
+					"name" : "ament_cmake_python_copy_rmctrl_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs-873a7f342ae24cd0c9ca.json",
+					"name" : "rmctrl_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__cpp-ea4b9da289e93a863c89.json",
+					"name" : "rmctrl_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rmctrl_msgs__py::@6b37658c8291a7ebe2a8",
+					"jsonFile" : "target-rmctrl_msgs__py-6083bc5104f8831063b9.json",
+					"name" : "rmctrl_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_generator_c-b91c5484e6505e74ed5c.json",
+					"name" : "rmctrl_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_generator_py-d978981f942776c9415c.json",
+					"name" : "rmctrl_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_typesupport_c-66ea841cf00e14b39dd0.json",
+					"name" : "rmctrl_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_typesupport_c__pyext-d1281f2fc9b46313e14c.json",
+					"name" : "rmctrl_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_typesupport_cpp-872e99626ebf06397620.json",
+					"name" : "rmctrl_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_typesupport_fastrtps_c-30999e83524677adc66a.json",
+					"name" : "rmctrl_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_typesupport_fastrtps_c__pyext-26494dfcd156b8dc7a64.json",
+					"name" : "rmctrl_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_typesupport_fastrtps_cpp-e89f4eb7aa914e898e8e.json",
+					"name" : "rmctrl_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_typesupport_introspection_c-ff8c125c0ced09a16b75.json",
+					"name" : "rmctrl_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_typesupport_introspection_c__pyext-170be108762932ea2346.json",
+					"name" : "rmctrl_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs__rosidl_typesupport_introspection_cpp-e346a6ac7c32391ba7c0.json",
+					"name" : "rmctrl_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rmctrl_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rmctrl_msgs_uninstall-753faca0561f0ec27e74.json",
+					"name" : "rmctrl_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-fe89e12e8d7dc1e46dca.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zrk/engineer_up/engineer/build/rmctrl_msgs",
+		"source" : "/home/zrk/engineer_up/engineer/src/rm_communication/bubble_interface/rmctrl_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

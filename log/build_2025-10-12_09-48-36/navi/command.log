@@ -1,4 +1,0 @@
-Invoking command in '/home/nhs/engineer/build/navi': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/navi -- -j8 -l8
-Invoked command in '/home/nhs/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/navi -- -j8 -l8
-Invoking command in '/home/nhs/engineer/build/navi': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/navi
-Invoked command in '/home/nhs/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/navi

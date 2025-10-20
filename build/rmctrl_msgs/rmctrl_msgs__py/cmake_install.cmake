@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhs/engineer/build/rmctrl_msgs/rmctrl_msgs__py
+# Install script for directory: /home/zrk/engineer_up/engineer/build/rmctrl_msgs/rmctrl_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhs/engineer/install/rmctrl_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/zrk/engineer_up/engineer/install/rmctrl_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -1,0 +1,293 @@
+[0.202s] Invoking command in '/home/zrk/engineer_up/engineer/build/rmctrl_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_communication/bubble_interface/rmctrl_msgs -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/rmctrl_msgs
+[0.250s] -- The C compiler identification is GNU 11.4.0
+[0.303s] -- The CXX compiler identification is GNU 11.4.0
+[0.309s] -- Detecting C compiler ABI info
+[0.369s] -- Detecting C compiler ABI info - done
+[0.375s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.375s] -- Detecting C compile features
+[0.376s] -- Detecting C compile features - done
+[0.378s] -- Detecting CXX compiler ABI info
+[0.453s] -- Detecting CXX compiler ABI info - done
+[0.459s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.459s] -- Detecting CXX compile features
+[0.460s] -- Detecting CXX compile features - done
+[0.462s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.645s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.822s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.910s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.929s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.949s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.965s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.992s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.013s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[1.029s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.718s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.604s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.868s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.935s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.937s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.004s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.005s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.005s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.005s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.069s] -- Found PythonExtra: .so  
+[3.242s] -- Configuring done
+[3.374s] -- Generating done
+[3.381s] [33mCMake Warning:
+[3.381s]   Manually-specified variables were not used by the project:
+[3.381s] 
+[3.382s]     HUMBLE_ROS
+[3.382s]     ROS_EDITION
+[3.382s] 
+[3.382s] [0m
+[3.412s] -- Build files have been written to: /home/zrk/engineer_up/engineer/build/rmctrl_msgs
+[3.445s] Invoked command in '/home/zrk/engineer_up/engineer/build/rmctrl_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_communication/bubble_interface/rmctrl_msgs -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/rmctrl_msgs
+[3.445s] Invoking command in '/home/zrk/engineer_up/engineer/build/rmctrl_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/rmctrl_msgs -- -j16 -l16
+[3.562s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.605s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.624s] [  4%] Built target ament_cmake_python_copy_rmctrl_msgs
+[4.095s] running egg_info
+[4.096s] creating rmctrl_msgs.egg-info
+[4.096s] writing rmctrl_msgs.egg-info/PKG-INFO
+[4.096s] writing dependency_links to rmctrl_msgs.egg-info/dependency_links.txt
+[4.098s] writing top-level names to rmctrl_msgs.egg-info/top_level.txt
+[4.098s] writing manifest file 'rmctrl_msgs.egg-info/SOURCES.txt'
+[4.101s] reading manifest file 'rmctrl_msgs.egg-info/SOURCES.txt'
+[4.102s] writing manifest file 'rmctrl_msgs.egg-info/SOURCES.txt'
+[4.192s] [  4%] Built target ament_cmake_python_build_rmctrl_msgs_egg
+[4.708s] [  6%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_generator_c.dir/rosidl_generator_c/rmctrl_msgs/msg/detail/chassis__functions.c.o[0m
+[4.724s] [  8%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_generator_c.dir/rosidl_generator_c/rmctrl_msgs/msg/detail/odom__functions.c.o[0m
+[4.724s] [ 10%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_generator_c.dir/rosidl_generator_c/rmctrl_msgs/msg/detail/imu__functions.c.o[0m
+[4.812s] [ 10%] Built target rmctrl_msgs__cpp
+[4.840s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.842s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.844s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.872s] [ 19%] [32m[1mLinking C shared library librmctrl_msgs__rosidl_generator_c.so[0m
+[5.043s] [ 19%] Built target rmctrl_msgs__rosidl_generator_c
+[5.070s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.074s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.081s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.463s] [ 27%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmctrl_msgs/msg/chassis__type_support.cpp.o[0m
+[5.465s] [ 31%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmctrl_msgs/msg/odom__type_support.cpp.o[0m
+[5.467s] [ 31%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmctrl_msgs/msg/imu__type_support.cpp.o[0m
+[5.821s] [ 34%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmctrl_msgs/msg/detail/imu__type_support.cpp.o[0m
+[5.821s] [ 36%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmctrl_msgs/msg/detail/chassis__type_support.cpp.o[0m
+[5.826s] [ 38%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmctrl_msgs/msg/detail/odom__type_support.cpp.o[0m
+[5.869s] [ 44%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmctrl_msgs/msg/detail/imu__type_support_c.cpp.o[0m
+[5.869s] [ 44%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmctrl_msgs/msg/detail/chassis__type_support_c.cpp.o[0m
+[5.875s] [ 40%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmctrl_msgs/msg/chassis__type_support.cpp.o[0m
+[5.885s] [ 46%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmctrl_msgs/msg/detail/odom__type_support_c.cpp.o[0m
+[5.887s] [ 48%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmctrl_msgs/msg/odom__type_support.cpp.o[0m
+[5.898s] [ 51%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmctrl_msgs/msg/imu__type_support.cpp.o[0m
+[5.937s] [ 53%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmctrl_msgs/msg/detail/dds_fastrtps/chassis__type_support.cpp.o[0m
+[5.938s] [ 55%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmctrl_msgs/msg/detail/dds_fastrtps/imu__type_support.cpp.o[0m
+[5.954s] [ 57%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmctrl_msgs/msg/detail/dds_fastrtps/odom__type_support.cpp.o[0m
+[5.993s] [ 59%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_c.so[0m
+[6.118s] [ 59%] Built target rmctrl_msgs__rosidl_typesupport_c
+[6.151s] [ 63%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmctrl_msgs/msg/detail/chassis__type_support.c.o[0m
+[6.155s] [ 63%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmctrl_msgs/msg/detail/odom__type_support.c.o[0m
+[6.158s] [ 65%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmctrl_msgs/msg/detail/imu__type_support.c.o[0m
+[6.287s] [ 68%] [32m[1mLinking C shared library librmctrl_msgs__rosidl_typesupport_introspection_c.so[0m
+[6.384s] [ 70%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_cpp.so[0m
+[6.420s] [ 70%] Built target rmctrl_msgs__rosidl_typesupport_introspection_c
+[6.510s] [ 70%] Built target rmctrl_msgs__rosidl_typesupport_cpp
+[6.881s] [ 72%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[6.977s] [ 74%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.192s] [ 74%] Built target rmctrl_msgs__rosidl_typesupport_fastrtps_c
+[7.216s] [ 74%] Built target rmctrl_msgs__rosidl_typesupport_introspection_cpp
+[7.242s] [ 76%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.456s] [ 76%] Built target rmctrl_msgs__rosidl_typesupport_fastrtps_cpp
+[7.524s] [ 76%] Built target rmctrl_msgs
+[7.591s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.701s] [ 78%] Built target rmctrl_msgs__py
+[8.764s] [ 80%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_generator_py.dir/rosidl_generator_py/rmctrl_msgs/msg/_chassis_s.c.o[0m
+[8.765s] [ 82%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_generator_py.dir/rosidl_generator_py/rmctrl_msgs/msg/_odom_s.c.o[0m
+[8.766s] [ 85%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_generator_py.dir/rosidl_generator_py/rmctrl_msgs/msg/_imu_s.c.o[0m
+[9.120s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/rmctrl_msgs/librmctrl_msgs__rosidl_generator_py.so[0m
+[9.240s] [ 87%] Built target rmctrl_msgs__rosidl_generator_py
+[9.308s] [ 89%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rmctrl_msgs/_rmctrl_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[9.308s] [ 91%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rmctrl_msgs/_rmctrl_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[9.309s] [ 93%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rmctrl_msgs/_rmctrl_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.589s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.589s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.592s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.692s] [100%] Built target rmctrl_msgs__rosidl_typesupport_c__pyext
+[9.696s] [100%] Built target rmctrl_msgs__rosidl_typesupport_introspection_c__pyext
+[9.733s] [100%] Built target rmctrl_msgs__rosidl_typesupport_fastrtps_c__pyext
+[9.774s] Invoked command in '/home/zrk/engineer_up/engineer/build/rmctrl_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/rmctrl_msgs -- -j16 -l16
+[9.778s] Invoking command in '/home/zrk/engineer_up/engineer/build/rmctrl_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/rmctrl_msgs
+[9.798s] -- Install configuration: ""
+[9.798s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/ament_index/resource_index/rosidl_interfaces/rmctrl_msgs
+[9.803s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[9.803s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[9.803s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[9.803s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__functions.h
+[9.803s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__functions.c
+[9.804s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__struct.h
+[9.804s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__functions.c
+[9.804s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__functions.h
+[9.804s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__type_support.h
+[9.804s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__type_support.h
+[9.804s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__struct.h
+[9.804s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__functions.h
+[9.804s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__struct.h
+[9.804s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__functions.c
+[9.805s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__type_support.h
+[9.805s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/chassis.h
+[9.808s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/imu.h
+[9.809s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_generator_c__visibility_control.h
+[9.809s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/odom.h
+[9.809s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/library_path.sh
+[9.809s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/library_path.dsv
+[9.810s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_generator_c.so
+[9.810s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_generator_c.so" to ""
+[9.810s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[9.810s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[9.810s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.811s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[9.811s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__rosidl_typesupport_fastrtps_c.h
+[9.811s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__rosidl_typesupport_fastrtps_c.h
+[9.811s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__rosidl_typesupport_fastrtps_c.h
+[9.811s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_fastrtps_c.so
+[9.819s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[9.819s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[9.820s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/chassis.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/odom.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/imu.hpp
+[9.820s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__builder.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__type_support.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__struct.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__builder.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__builder.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__type_support.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__type_support.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__struct.hpp
+[9.820s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__traits.hpp
+[9.821s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__struct.hpp
+[9.821s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__traits.hpp
+[9.822s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__traits.hpp
+[9.822s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[9.823s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[9.823s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[9.823s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.823s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[9.823s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__rosidl_typesupport_fastrtps_cpp.hpp
+[9.823s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/dds_fastrtps
+[9.825s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__rosidl_typesupport_fastrtps_cpp.hpp
+[9.825s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__rosidl_typesupport_fastrtps_cpp.hpp
+[9.825s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_fastrtps_cpp.so
+[9.825s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.826s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[9.826s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[9.826s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.826s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[9.826s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__rosidl_typesupport_introspection_c.h
+[9.826s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__type_support.c
+[9.826s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__rosidl_typesupport_introspection_c.h
+[9.826s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__type_support.c
+[9.826s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__type_support.c
+[9.826s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__rosidl_typesupport_introspection_c.h
+[9.830s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_introspection_c.so
+[9.831s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_introspection_c.so" to ""
+[9.831s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_c.so
+[9.831s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_c.so" to ""
+[9.831s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[9.832s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[9.832s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[9.835s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__rosidl_typesupport_introspection_cpp.hpp
+[9.836s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__rosidl_typesupport_introspection_cpp.hpp
+[9.836s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__type_support.cpp
+[9.836s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__type_support.cpp
+[9.836s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__type_support.cpp
+[9.837s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp
+[9.837s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_introspection_cpp.so
+[9.837s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[9.837s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_cpp.so
+[9.837s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_cpp.so" to ""
+[9.837s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/pythonpath.sh
+[9.838s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/pythonpath.dsv
+[9.838s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info
+[9.841s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[9.841s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/__init__.py
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_odom.py
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_odom_s.c
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_chassis_s.c
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_chassis.py
+[9.842s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_imu.py
+[9.843s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_imu_s.c
+[9.843s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/librmctrl_msgs__rosidl_generator_py.so
+[9.843s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/_rmctrl_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.843s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/__init__.py
+[9.843s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.843s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/_rmctrl_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[9.843s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.843s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.843s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/_rmctrl_msgs_s.ep.rosidl_typesupport_c.c
+[9.958s] Listing '/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs'...
+[9.958s] Compiling '/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/__init__.py'...
+[9.958s] Listing '/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg'...
+[9.958s] Compiling '/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/__init__.py'...
+[9.958s] Compiling '/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_chassis.py'...
+[9.958s] Compiling '/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_imu.py'...
+[9.958s] Compiling '/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_odom.py'...
+[9.978s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.979s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.979s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.980s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.980s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.981s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.982s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_generator_py.so
+[9.986s] -- Set runtime path of "/home/zrk/engineer_up/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_generator_py.so" to ""
+[9.990s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Chassis.idl
+[9.990s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Imu.idl
+[9.990s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Odom.idl
+[9.990s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Chassis.msg
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Imu.msg
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Odom.msg
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/ament_index/resource_index/package_run_dependencies/rmctrl_msgs
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/ament_index/resource_index/parent_prefix_path/rmctrl_msgs
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/ament_prefix_path.sh
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/ament_prefix_path.dsv
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/path.sh
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/path.dsv
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/local_setup.bash
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/local_setup.sh
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/local_setup.zsh
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/local_setup.dsv
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.dsv
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/ament_index/resource_index/packages/rmctrl_msgs
+[9.991s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_cExport.cmake
+[9.992s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.996s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[9.996s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.996s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_cppExport.cmake
+[9.996s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.996s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.997s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.997s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.997s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_cExport.cmake
+[9.997s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.997s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.000s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.000s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_cppExport.cmake
+[10.000s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[10.000s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_pyExport.cmake
+[10.000s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_pyExport-noconfig.cmake
+[10.001s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rosidl_cmake-extras.cmake
+[10.001s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.001s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.001s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[10.001s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[10.001s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.001s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.006s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgsConfig.cmake
+[10.006s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgsConfig-version.cmake
+[10.006s] -- Installing: /home/zrk/engineer_up/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.xml
+[10.018s] Invoked command in '/home/zrk/engineer_up/engineer/build/rmctrl_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/rmctrl_msgs

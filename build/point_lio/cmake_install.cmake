@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhs/engineer/src/rm_localization/point_lio
+# Install script for directory: /home/zrk/engineer_up/engineer/src/rm_localization/point_lio
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhs/engineer/install/point_lio")
+  set(CMAKE_INSTALL_PREFIX "/home/zrk/engineer_up/engineer/install/point_lio")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/point_lio/pointlio_mapping"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/point_lio" TYPE EXECUTABLE FILES "/home/nhs/engineer/build/point_lio/pointlio_mapping")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/point_lio" TYPE EXECUTABLE FILES "/home/zrk/engineer_up/engineer/build/point_lio/pointlio_mapping")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/point_lio/pointlio_mapping" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/point_lio/pointlio_mapping")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/point_lio/pointlio_mapping"
-         OLD_RPATH "/opt/ros/humble/lib:/home/nhs/engineer/install/livox_ros_driver2/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/zrk/engineer_up/engineer/install/livox_ros_driver2/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/point_lio/pointlio_mapping")
@@ -64,18 +64,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE DIRECTORY FILES
-    "/home/nhs/engineer/src/rm_localization/point_lio/config"
-    "/home/nhs/engineer/src/rm_localization/point_lio/launch"
-    "/home/nhs/engineer/src/rm_localization/point_lio/rviz_cfg"
+    "/home/zrk/engineer_up/engineer/src/rm_localization/point_lio/config"
+    "/home/zrk/engineer_up/engineer/src/rm_localization/point_lio/launch"
+    "/home/zrk/engineer_up/engineer/src/rm_localization/point_lio/rviz_cfg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/point_lio")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/point_lio")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/point_lio")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/point_lio")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,7 +83,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio/environment" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio/environment" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -91,46 +91,46 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio/environment" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio/environment" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_index/share/ament_index/resource_index/packages/point_lio")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_index/share/ament_index/resource_index/packages/point_lio")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio/cmake" TYPE FILE FILES "/home/nhs/engineer/build/point_lio/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio/cmake" TYPE FILE FILES "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio/cmake" TYPE FILE FILES
-    "/home/nhs/engineer/build/point_lio/ament_cmake_core/point_lioConfig.cmake"
-    "/home/nhs/engineer/build/point_lio/ament_cmake_core/point_lioConfig-version.cmake"
+    "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_core/point_lioConfig.cmake"
+    "/home/zrk/engineer_up/engineer/build/point_lio/ament_cmake_core/point_lioConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/nhs/engineer/src/rm_localization/point_lio/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/point_lio" TYPE FILE FILES "/home/zrk/engineer_up/engineer/src/rm_localization/point_lio/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -141,5 +141,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nhs/engineer/build/point_lio/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zrk/engineer_up/engineer/build/point_lio/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

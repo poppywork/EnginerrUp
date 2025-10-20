@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dlivox_lidar_sdk_shared_EXPORTS
 
-CXX_INCLUDES = -I/home/nhs/engineer/src/rm_driver/Livox-SDK2/sdk_core/../include -I/home/nhs/engineer/src/rm_driver/Livox-SDK2/sdk_core/../3rdparty -I/home/nhs/engineer/src/rm_driver/Livox-SDK2/sdk_core/../3rdparty/spdlog -I/home/nhs/engineer/src/rm_driver/Livox-SDK2/sdk_core/.
+CXX_INCLUDES = -I/home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2/sdk_core/../include -I/home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2/sdk_core/../3rdparty -I/home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2/sdk_core/../3rdparty/spdlog -I/home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2/sdk_core/.
 
 CXX_FLAGS =  -pthread -fPIC -Wall -std=gnu++11
 

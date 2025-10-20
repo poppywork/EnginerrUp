@@ -1,0 +1,38 @@
+-- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zrk/engineer_up/engineer/build/navi
+-- Install configuration: ""
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/params
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/params/nav2_params.yaml
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/params/mapper_params_online_async.yaml
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/slam_launch.py
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/rviz_launch.py
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/localization_launch.py
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/navigation2acm.launch.py
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/navigation_launch.py
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/online_async_launch.py
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/launch/bringup_launch.py
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps/9-room.pgm
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps/9-room.yaml
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps/9-room-2.pgm
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/maps/9-room-2.yaml
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/rviz
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/rviz/nav2_default_view.rviz
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/ament_index/resource_index/package_run_dependencies/navi
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/ament_index/resource_index/parent_prefix_path/navi
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/environment/ament_prefix_path.sh
+-- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/environment/path.sh
+-- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/environment/path.dsv
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/local_setup.bash
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/local_setup.sh
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/local_setup.zsh
+-- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/local_setup.dsv
+-- Installing: /home/zrk/engineer_up/engineer/install/navi/share/navi/package.dsv
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/ament_index/resource_index/packages/navi
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/cmake/naviConfig.cmake
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/cmake/naviConfig-version.cmake
+-- Up-to-date: /home/zrk/engineer_up/engineer/install/navi/share/navi/package.xml

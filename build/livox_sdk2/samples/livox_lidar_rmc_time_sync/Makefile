@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nhs/engineer/src/rm_driver/Livox-SDK2
+CMAKE_SOURCE_DIR = /home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nhs/engineer/build/livox_sdk2
+CMAKE_BINARY_DIR = /home/zrk/engineer_up/engineer/build/livox_sdk2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nhs/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -E cmake_progress_start /home/nhs/engineer/build/livox_sdk2/CMakeFiles /home/nhs/engineer/build/livox_sdk2/samples/livox_lidar_rmc_time_sync//CMakeFiles/progress.marks
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nhs/engineer/build/livox_sdk2/CMakeFiles 0
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -E cmake_progress_start /home/zrk/engineer_up/engineer/build/livox_sdk2/CMakeFiles /home/zrk/engineer_up/engineer/build/livox_sdk2/samples/livox_lidar_rmc_time_sync//CMakeFiles/progress.marks
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zrk/engineer_up/engineer/build/livox_sdk2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/clean
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/preinstall
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/preinstall
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/rule:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/rule
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/rule
 .PHONY : samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ livox_lidar_rmc_time_sync: samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_li
 
 # fast build rule for target.
 livox_lidar_rmc_time_sync/fast:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build
 .PHONY : livox_lidar_rmc_time_sync/fast
 
 linux/synchro.o: linux/synchro.cpp.o
@@ -180,7 +180,7 @@ linux/synchro.o: linux/synchro.cpp.o
 
 # target to build an object file
 linux/synchro.cpp.o:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o
 .PHONY : linux/synchro.cpp.o
 
 linux/synchro.i: linux/synchro.cpp.i
@@ -188,7 +188,7 @@ linux/synchro.i: linux/synchro.cpp.i
 
 # target to preprocess a source file
 linux/synchro.cpp.i:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.i
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.i
 .PHONY : linux/synchro.cpp.i
 
 linux/synchro.s: linux/synchro.cpp.s
@@ -196,7 +196,7 @@ linux/synchro.s: linux/synchro.cpp.s
 
 # target to generate assembly for a file
 linux/synchro.cpp.s:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.s
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.s
 .PHONY : linux/synchro.cpp.s
 
 main.o: main.cpp.o
@@ -204,7 +204,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -212,7 +212,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.i
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -220,7 +220,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.s
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/build.make samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

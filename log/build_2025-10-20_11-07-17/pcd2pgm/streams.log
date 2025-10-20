@@ -1,0 +1,80 @@
+[0.207s] Invoking command in '/home/zrk/engineer_up/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_localization/pcd2pgm -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/pcd2pgm
+[0.218s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.329s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.357s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.359s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.366s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.374s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.384s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.410s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.411s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.516s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.564s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.594s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.841s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.847s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.847s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.977s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.983s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.989s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.109s] -- Found Qhull version 8.0.2
+[1.234s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.346s] -- looking for PCL_COMMON
+[1.346s] -- looking for PCL_KDTREE
+[1.347s] -- looking for PCL_OCTREE
+[1.347s] -- looking for PCL_SEARCH
+[1.347s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.347s] -- looking for PCL_FILTERS
+[1.347s] -- looking for PCL_2D
+[1.348s] -- looking for PCL_GEOMETRY
+[1.348s] -- looking for PCL_IO
+[1.348s] -- looking for PCL_FEATURES
+[1.348s] -- looking for PCL_ML
+[1.348s] -- looking for PCL_SEGMENTATION
+[1.349s] -- looking for PCL_VISUALIZATION
+[1.349s] -- looking for PCL_SURFACE
+[1.349s] -- looking for PCL_REGISTRATION
+[1.350s] -- looking for PCL_KEYPOINTS
+[1.350s] -- looking for PCL_TRACKING
+[1.350s] -- looking for PCL_RECOGNITION
+[1.350s] -- looking for PCL_STEREO
+[1.351s] -- looking for PCL_APPS
+[1.351s] -- looking for PCL_IN_HAND_SCANNER
+[1.351s] -- looking for PCL_MODELER
+[1.352s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.352s] -- looking for PCL_OUTOFCORE
+[1.352s] -- looking for PCL_PEOPLE
+[1.410s] -- Configuring done
+[1.434s] -- Generating done
+[1.443s] -- Build files have been written to: /home/zrk/engineer_up/engineer/build/pcd2pgm
+[1.457s] Invoked command in '/home/zrk/engineer_up/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_localization/pcd2pgm -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/pcd2pgm
+[1.459s] Invoking command in '/home/zrk/engineer_up/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/pcd2pgm -- -j16 -l16
+[1.497s] [35m[1mConsolidate compiler generated dependencies of target pcd2pgm[0m
+[1.525s] [100%] Built target pcd2pgm
+[1.535s] Invoked command in '/home/zrk/engineer_up/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/pcd2pgm -- -j16 -l16
+[1.537s] Invoking command in '/home/zrk/engineer_up/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/pcd2pgm
+[1.544s] -- Install configuration: ""
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/lib/pcd2pgm/pcd2pgm
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/launch
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/launch/pcd2pgm.launch.py
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/config
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/config/pcd2pgm.yaml
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/map
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/map/test.yaml
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/map/test.pgm
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/ament_index/resource_index/package_run_dependencies/pcd2pgm
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/ament_index/resource_index/parent_prefix_path/pcd2pgm
+[1.544s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/environment/ament_prefix_path.sh
+[1.544s] -- Installing: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/environment/ament_prefix_path.dsv
+[1.545s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/environment/path.sh
+[1.545s] -- Installing: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/environment/path.dsv
+[1.545s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/local_setup.bash
+[1.545s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/local_setup.sh
+[1.545s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/local_setup.zsh
+[1.545s] -- Installing: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/local_setup.dsv
+[1.545s] -- Installing: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/package.dsv
+[1.545s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/ament_index/resource_index/packages/pcd2pgm
+[1.545s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/cmake/pcd2pgmConfig.cmake
+[1.545s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/cmake/pcd2pgmConfig-version.cmake
+[1.545s] -- Up-to-date: /home/zrk/engineer_up/engineer/install/pcd2pgm/share/pcd2pgm/package.xml
+[1.547s] Invoked command in '/home/zrk/engineer_up/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/pcd2pgm

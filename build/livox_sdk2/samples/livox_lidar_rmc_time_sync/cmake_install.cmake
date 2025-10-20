@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhs/engineer/src/rm_driver/Livox-SDK2/samples/livox_lidar_rmc_time_sync
+# Install script for directory: /home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2/samples/livox_lidar_rmc_time_sync
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhs/engineer/install/livox_sdk2")
+  set(CMAKE_INSTALL_PREFIX "/home/zrk/engineer_up/engineer/install/livox_sdk2")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

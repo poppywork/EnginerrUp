@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nhs/engineer/src/rm_driver/Livox-SDK2/samples/livox_lidar_rmc_time_sync/linux/synchro.cpp" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o" "gcc" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o.d"
-  "/home/nhs/engineer/src/rm_driver/Livox-SDK2/samples/livox_lidar_rmc_time_sync/main.cpp" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o" "gcc" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o.d"
+  "/home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2/samples/livox_lidar_rmc_time_sync/linux/synchro.cpp" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o" "gcc" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/linux/synchro.cpp.o.d"
+  "/home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2/samples/livox_lidar_rmc_time_sync/main.cpp" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o" "gcc" "samples/livox_lidar_rmc_time_sync/CMakeFiles/livox_lidar_rmc_time_sync.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/nhs/engineer/build/livox_sdk2/sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/DependInfo.cmake"
+  "/home/zrk/engineer_up/engineer/build/livox_sdk2/sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

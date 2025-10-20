@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nhs/engineer/src/rm_driver/Livox-SDK2
+CMAKE_SOURCE_DIR = /home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nhs/engineer/build/livox_sdk2
+CMAKE_BINARY_DIR = /home/zrk/engineer_up/engineer/build/livox_sdk2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nhs/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -E cmake_progress_start /home/nhs/engineer/build/livox_sdk2/CMakeFiles /home/nhs/engineer/build/livox_sdk2/samples//CMakeFiles/progress.marks
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nhs/engineer/build/livox_sdk2/CMakeFiles 0
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -E cmake_progress_start /home/zrk/engineer_up/engineer/build/livox_sdk2/CMakeFiles /home/zrk/engineer_up/engineer/build/livox_sdk2/samples//CMakeFiles/progress.marks
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zrk/engineer_up/engineer/build/livox_sdk2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/clean
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,17 +148,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/preinstall
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/preinstall
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -184,6 +184,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nhs/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zrk/engineer_up/engineer/build/livox_sdk2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

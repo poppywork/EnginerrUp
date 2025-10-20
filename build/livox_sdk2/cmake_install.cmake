@@ -1,8 +1,8 @@
-# Install script for directory: /home/nhs/engineer/src/rm_driver/Livox-SDK2
+# Install script for directory: /home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nhs/engineer/install/livox_sdk2")
+  set(CMAKE_INSTALL_PREFIX "/home/zrk/engineer_up/engineer/install/livox_sdk2")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nhs/engineer/build/livox_sdk2/sdk_core/cmake_install.cmake")
-  include("/home/nhs/engineer/build/livox_sdk2/samples/cmake_install.cmake")
+  include("/home/zrk/engineer_up/engineer/build/livox_sdk2/sdk_core/cmake_install.cmake")
+  include("/home/zrk/engineer_up/engineer/build/livox_sdk2/samples/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nhs/engineer/build/livox_sdk2/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zrk/engineer_up/engineer/build/livox_sdk2/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

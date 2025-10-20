@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rmctrl_msgs__py",
+		"source" : "/home/zrk/engineer_up/engineer/build/rmctrl_msgs/rmctrl_msgs__py"
+	}
+}

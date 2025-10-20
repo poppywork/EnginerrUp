@@ -1,5 +1,5 @@
-/home/nhs/engineer/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a
-/home/nhs/engineer/install/livox_sdk2/include/livox_lidar_def.h
-/home/nhs/engineer/install/livox_sdk2/include/livox_lidar_api.h
-/home/nhs/engineer/install/livox_sdk2/include/livox_lidar_cfg.h
-/home/nhs/engineer/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so
+/home/zrk/engineer_up/engineer/install/livox_sdk2/lib/liblivox_lidar_sdk_static.a
+/home/zrk/engineer_up/engineer/install/livox_sdk2/include/livox_lidar_def.h
+/home/zrk/engineer_up/engineer/install/livox_sdk2/include/livox_lidar_api.h
+/home/zrk/engineer_up/engineer/install/livox_sdk2/include/livox_lidar_cfg.h
+/home/zrk/engineer_up/engineer/install/livox_sdk2/lib/liblivox_lidar_sdk_shared.so

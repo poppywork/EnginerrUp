@@ -145,7 +145,7 @@ class CustomMsg(metaclass=Metaclass_CustomMsg):
             return False
         if self.lidar_id != other.lidar_id:
             return False
-        if any(self.rsvd != other.rsvd):
+        if all(self.rsvd != other.rsvd):
             return False
         if self.points != other.points:
             return False

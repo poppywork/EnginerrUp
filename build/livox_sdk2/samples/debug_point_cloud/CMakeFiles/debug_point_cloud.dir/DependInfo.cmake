@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nhs/engineer/src/rm_driver/Livox-SDK2/samples/debug_point_cloud/main.cpp" "samples/debug_point_cloud/CMakeFiles/debug_point_cloud.dir/main.cpp.o" "gcc" "samples/debug_point_cloud/CMakeFiles/debug_point_cloud.dir/main.cpp.o.d"
+  "/home/zrk/engineer_up/engineer/src/rm_driver/Livox-SDK2/samples/debug_point_cloud/main.cpp" "samples/debug_point_cloud/CMakeFiles/debug_point_cloud.dir/main.cpp.o" "gcc" "samples/debug_point_cloud/CMakeFiles/debug_point_cloud.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/nhs/engineer/build/livox_sdk2/sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/DependInfo.cmake"
+  "/home/zrk/engineer_up/engineer/build/livox_sdk2/sdk_core/CMakeFiles/livox_lidar_sdk_static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

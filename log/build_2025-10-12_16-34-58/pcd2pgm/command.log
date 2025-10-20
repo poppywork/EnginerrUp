@@ -1,4 +1,0 @@
-Invoking command in '/home/nhs/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/pcd2pgm -- -j8 -l8
-Invoked command in '/home/nhs/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/pcd2pgm -- -j8 -l8
-Invoking command in '/home/nhs/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/pcd2pgm
-Invoked command in '/home/nhs/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/pcd2pgm

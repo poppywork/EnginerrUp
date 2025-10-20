@@ -1,0 +1,6 @@
+Invoking command in '/home/zrk/engineer_up/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_localization/pcd2pgm -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/pcd2pgm
+Invoked command in '/home/zrk/engineer_up/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_localization/pcd2pgm -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/pcd2pgm
+Invoking command in '/home/zrk/engineer_up/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/pcd2pgm -- -j16 -l16
+Invoked command in '/home/zrk/engineer_up/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/pcd2pgm -- -j16 -l16
+Invoking command in '/home/zrk/engineer_up/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/pcd2pgm
+Invoked command in '/home/zrk/engineer_up/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/pcd2pgm
