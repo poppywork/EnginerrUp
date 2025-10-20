@@ -30,7 +30,6 @@ sudo ifconfig查看自己电脑网口名称(我的是enp89s0)
 //给雷达临时权限指令
 sudo ifconfig enp89s0 192.168.2.50  
 
-
 //给雷达永久权限指令
 1、cd  /ect/netplan/
 2、sudo gedit 01-network-manager-all.yaml  (没有就创建一个)
@@ -48,6 +47,13 @@ sudo gedit /etc/udev/rules.d/99-stm32.rules 新建stm32开发板规则文件
 sudo udevadm control --reload-rules
 sudo udevadm trigger  # 重新触发设备检测
 ls -l /dev/STM32H7    #检查是否生成了 /dev/STM32H7
+
+## 构建地图+保存地图
+1、启动pre.sh + ros2 launch navi slam_launch.py + rviz2 
+2、ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{filename: '~/ros2_ws/maps/my_slam_map', map_format: 'pgm'}"
+
+
+
 
 
 

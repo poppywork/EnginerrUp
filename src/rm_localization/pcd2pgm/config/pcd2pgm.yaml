@@ -5,7 +5,7 @@ pcd2pgm_node:
     max_points_in_pix: 1
     min_height: 0.32
     max_height: 0.5
-    input_pcd: "/home/rm/sentry1up/src/rm_localization/point_lio/PCD/scans.pcd"
-    dest_directory: "/home/rm/sentry1up/src/rm_localization/pcd2pgm/map"
+    input_pcd: "/home/zrk/engineer_up/engineer/src/rm_localization/point_lio/PCD/scans.pcd"
+    dest_directory: "/home/zrk/engineer_up/engineer/src/rm_localization/pcd2pgm/map"
     output_pgm_name: "test"
     
