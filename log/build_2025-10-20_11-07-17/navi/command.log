@@ -1,6 +1,0 @@
-Invoking command in '/home/zrk/engineer_up/engineer/build/navi': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_navigation/navi -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/navi
-Invoked command in '/home/zrk/engineer_up/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zrk/engineer_up/engineer/src/rm_navigation/navi -DCMAKE_INSTALL_PREFIX=/home/zrk/engineer_up/engineer/install/navi
-Invoking command in '/home/zrk/engineer_up/engineer/build/navi': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/navi -- -j16 -l16
-Invoked command in '/home/zrk/engineer_up/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zrk/engineer_up/engineer/build/navi -- -j16 -l16
-Invoking command in '/home/zrk/engineer_up/engineer/build/navi': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/navi
-Invoked command in '/home/zrk/engineer_up/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zrk/engineer_up/engineer/build/navi

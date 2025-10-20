@@ -1,6 +1,0 @@
-msg/Chassis.idl
-msg/Chassis.msg
-msg/Imu.idl
-msg/Imu.msg
-msg/Odom.idl
-msg/Odom.msg

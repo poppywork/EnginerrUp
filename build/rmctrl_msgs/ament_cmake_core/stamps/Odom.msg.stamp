@@ -1,9 +1,0 @@
-# BCP odometry msgs define
-float64 odom_position_x
-float64 odom_position_y
-float64 odom_position_z
-
-float64 odom_orientation_x
-float64 odom_orientation_y
-float64 odom_orientation_z
-float64 odom_orientation_w

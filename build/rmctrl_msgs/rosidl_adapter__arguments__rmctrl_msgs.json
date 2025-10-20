@@ -1,8 +1,0 @@
-{
-  "package_name": "rmctrl_msgs",
-  "non_idl_tuples": [
-    "/home/zrk/engineer_up/engineer/src/rm_communication/bubble_interface/rmctrl_msgs:msg/Chassis.msg",
-    "/home/zrk/engineer_up/engineer/src/rm_communication/bubble_interface/rmctrl_msgs:msg/Imu.msg",
-    "/home/zrk/engineer_up/engineer/src/rm_communication/bubble_interface/rmctrl_msgs:msg/Odom.msg"
-  ]
-}
