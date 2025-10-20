@@ -1,6 +1,0 @@
-float64 chassis_target_linear_x
-float64 chassis_target_linear_y
-float64 chassis_target_linear_z
-float64 chassis_target_angular_x
-float64 chassis_target_angular_y
-float64 chassis_target_angular_z

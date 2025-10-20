@@ -1,5 +1,0 @@
-[console_scripts]
-bcp_core = bubble_protocol.bcp_core:main
-pyserial = bubble_protocol.pyserial:main
-test_cmd = bubble_protocol.test_cmd:main
-
