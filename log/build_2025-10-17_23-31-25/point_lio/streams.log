@@ -1,0 +1,169 @@
+[0.007s] Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/nhs/engineer/src/rm_localization/point_lio -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/nhs/engineer/install/point_lio
+[0.049s] -- The C compiler identification is GNU 11.4.0
+[0.087s] -- The CXX compiler identification is GNU 11.4.0
+[0.092s] -- Detecting C compiler ABI info
+[0.140s] -- Detecting C compiler ABI info - done
+[0.147s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.147s] -- Detecting C compile features
+[0.148s] -- Detecting C compile features - done
+[0.150s] -- Detecting CXX compiler ABI info
+[0.204s] -- Detecting CXX compiler ABI info - done
+[0.210s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.210s] -- Detecting CXX compile features
+[0.210s] -- Detecting CXX compile features - done
+[0.211s] -- Current CPU architecture: x86_64
+[0.215s] -- Processor number:  8
+[0.215s] -- core for MP:  3
+[0.216s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.323s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.384s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.414s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.417s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.423s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.432s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.443s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.473s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.475s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.536s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.563s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.593s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.600s] -- Looking for pthread.h
+[0.649s] -- Looking for pthread.h - found
+[0.649s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.700s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.701s] -- Found Threads: TRUE  
+[0.738s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.739s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.749s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.763s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.774s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[0.805s] -- Checking for module 'eigen3'
+[0.814s] --   Found eigen3, version 3.4.0
+[0.835s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.835s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.857s] -- Checking for module 'flann'
+[0.866s] --   Found flann, version 1.9.1
+[0.890s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.890s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.516s] -- Checking for module 'libusb-1.0'
+[1.524s] --   Found libusb-1.0, version 1.0.25
+[1.546s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.547s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.582s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.680s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.685s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.689s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.789s] -- Found Qhull version 8.0.2
+[1.892s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.990s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.991s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[1.992s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.992s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[1.993s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[1.994s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[1.994s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[1.994s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[1.995s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.996s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[1.997s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[1.997s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[1.998s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[1.999s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.000s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.000s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.001s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.002s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.003s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.003s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.004s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.004s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.005s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.006s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.006s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.036s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.037s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.037s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.102s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.122s] -- Found livox_ros_driver2: 1.0.0 (/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[2.373s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[2.429s] -- Configuring done
+[2.456s] -- Generating done
+[2.457s] [33mCMake Warning:
+[2.457s]   Manually-specified variables were not used by the project:
+[2.458s] 
+[2.458s]     HUMBLE_ROS
+[2.458s]     ROS_EDITION
+[2.458s] 
+[2.458s] [0m
+[2.464s] -- Build files have been written to: /home/nhs/engineer/build/point_lio
+[2.477s] Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/nhs/engineer/src/rm_localization/point_lio -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/nhs/engineer/install/point_lio
+[2.478s] Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/point_lio -- -j8 -l8
+[2.517s] [ 33%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
+[2.517s] [ 33%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o[0m
+[2.518s] [ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[2.518s] [ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[6.276s] [ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
+[7.843s] In file included from [01m[K/usr/include/boost/bind.hpp:30[m[K,
+[7.843s]                  from [01m[K/home/nhs/engineer/src/rm_localization/point_lio/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:42[m[K,
+[7.844s]                  from [01m[K/home/nhs/engineer/src/rm_localization/point_lio/src/Estimator.h:4[m[K,
+[7.844s]                  from [01m[K/home/nhs/engineer/src/rm_localization/point_lio/src/Estimator.cpp:2[m[K:
+[7.844s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[7.844s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[7.844s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[8.565s] In file included from [01m[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/date_time/microsec_time_clock.hpp:18[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36[m[K,
+[8.565s]                  from [01m[K/usr/include/boost/interprocess/sync/file_lock.hpp:26[m[K,
+[8.565s]                  from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46[m[K,
+[8.565s]                  from [01m[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73[m[K,
+[8.565s]                  from [01m[K/home/nhs/engineer/src/rm_localization/point_lio/src/IMU_Processing.hpp:20[m[K,
+[8.565s]                  from [01m[K/home/nhs/engineer/src/rm_localization/point_lio/src/laserMapping.cpp:12[m[K:
+[8.565s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[8.566s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[8.566s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[41.620s] [100%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[42.291s] [100%] Built target pointlio_mapping
+[42.298s] Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/point_lio -- -j8 -l8
+[42.300s] Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/point_lio
+[42.304s] -- Install configuration: ""
+[42.305s] -- Installing: /home/nhs/engineer/install/point_lio/lib/point_lio/pointlio_mapping
+[42.306s] -- Set runtime path of "/home/nhs/engineer/install/point_lio/lib/point_lio/pointlio_mapping" to ""
+[42.306s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/config
+[42.306s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/config/velody16.yaml
+[42.306s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/config/mid360.yaml
+[42.306s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/config/ouster64.yaml
+[42.306s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/config/horizon.yaml
+[42.306s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/config/avia.yaml
+[42.307s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/launch
+[42.307s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[42.307s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[42.307s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[42.307s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[42.307s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[42.307s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[42.307s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/rviz_cfg
+[42.307s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/environment/path.sh
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/environment/path.dsv
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.bash
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.sh
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.zsh
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.dsv
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/package.dsv
+[42.308s] -- Installing: /home/nhs/engineer/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[42.309s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[42.309s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[42.309s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[42.309s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/package.xml
+[42.310s] Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/point_lio

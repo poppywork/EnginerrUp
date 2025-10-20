@@ -1,0 +1,61 @@
+[0.212s] Invoking command in '/home/nhs/engineer/build/navi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake /home/nhs/engineer/src/rm_navigation/navi -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/nhs/engineer/install/navi
+[0.272s] -- The C compiler identification is GNU 11.4.0
+[0.333s] -- The CXX compiler identification is GNU 11.4.0
+[0.341s] -- Detecting C compiler ABI info
+[0.420s] -- Detecting C compiler ABI info - done
+[0.430s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.430s] -- Detecting C compile features
+[0.431s] -- Detecting C compile features - done
+[0.437s] -- Detecting CXX compiler ABI info
+[0.529s] -- Detecting CXX compiler ABI info - done
+[0.536s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.537s] -- Detecting CXX compile features
+[0.537s] -- Detecting CXX compile features - done
+[0.539s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.704s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.058s] -- Configuring done
+[1.068s] -- Generating done
+[1.071s] [33mCMake Warning:
+[1.071s]   Manually-specified variables were not used by the project:
+[1.071s] 
+[1.072s]     HUMBLE_ROS
+[1.072s]     ROS_EDITION
+[1.072s] 
+[1.072s] [0m
+[1.081s] -- Build files have been written to: /home/nhs/engineer/build/navi
+[1.105s] Invoked command in '/home/nhs/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake /home/nhs/engineer/src/rm_navigation/navi -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/nhs/engineer/install/navi
+[1.105s] Invoking command in '/home/nhs/engineer/build/navi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/navi -- -j8 -l8
+[1.266s] Invoked command in '/home/nhs/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/navi -- -j8 -l8
+[1.289s] Invoking command in '/home/nhs/engineer/build/navi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/navi
+[1.323s] -- Install configuration: ""
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/params
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/params/nav2_params.yaml
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/params/mapper_params_online_async.yaml
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/launch
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/launch/rviz_launch.py
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/launch/bringup_launch.py
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/launch/navigation_launch.py
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/launch/localization_launch.py
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/launch/slam_launch.py
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/launch/online_async_launch.py
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/maps
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/maps/test.pgm
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/maps/test.yaml
+[1.323s] -- Installing: /home/nhs/engineer/install/navi/share/navi/rviz
+[1.324s] -- Installing: /home/nhs/engineer/install/navi/share/navi/rviz/nav2_default_view.rviz
+[1.324s] -- Installing: /home/nhs/engineer/install/navi/share/ament_index/resource_index/package_run_dependencies/navi
+[1.324s] -- Installing: /home/nhs/engineer/install/navi/share/ament_index/resource_index/parent_prefix_path/navi
+[1.324s] -- Installing: /home/nhs/engineer/install/navi/share/navi/environment/ament_prefix_path.sh
+[1.332s] -- Installing: /home/nhs/engineer/install/navi/share/navi/environment/ament_prefix_path.dsv
+[1.332s] -- Installing: /home/nhs/engineer/install/navi/share/navi/environment/path.sh
+[1.332s] -- Installing: /home/nhs/engineer/install/navi/share/navi/environment/path.dsv
+[1.332s] -- Installing: /home/nhs/engineer/install/navi/share/navi/local_setup.bash
+[1.332s] -- Installing: /home/nhs/engineer/install/navi/share/navi/local_setup.sh
+[1.332s] -- Installing: /home/nhs/engineer/install/navi/share/navi/local_setup.zsh
+[1.332s] -- Installing: /home/nhs/engineer/install/navi/share/navi/local_setup.dsv
+[1.333s] -- Installing: /home/nhs/engineer/install/navi/share/navi/package.dsv
+[1.333s] -- Installing: /home/nhs/engineer/install/navi/share/ament_index/resource_index/packages/navi
+[1.333s] -- Installing: /home/nhs/engineer/install/navi/share/navi/cmake/naviConfig.cmake
+[1.333s] -- Installing: /home/nhs/engineer/install/navi/share/navi/cmake/naviConfig-version.cmake
+[1.333s] -- Installing: /home/nhs/engineer/install/navi/share/navi/package.xml
+[1.341s] Invoked command in '/home/nhs/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/navi

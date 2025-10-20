@@ -1,0 +1,23 @@
+[0.913s] Invoking command in '/home/nhs/engineer/src/rm_communication/bubble_protocol': PYTHONPATH=/home/nhs/engineer/build/bubble_protocol/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/bubble_protocol build --build-base /home/nhs/engineer/build/bubble_protocol/build install --record /home/nhs/engineer/build/bubble_protocol/install.log --single-version-externally-managed install_data
+[1.116s] running egg_info
+[1.117s] writing ../../../build/bubble_protocol/bubble_protocol.egg-info/PKG-INFO
+[1.117s] writing dependency_links to ../../../build/bubble_protocol/bubble_protocol.egg-info/dependency_links.txt
+[1.117s] writing entry points to ../../../build/bubble_protocol/bubble_protocol.egg-info/entry_points.txt
+[1.117s] writing requirements to ../../../build/bubble_protocol/bubble_protocol.egg-info/requires.txt
+[1.117s] writing top-level names to ../../../build/bubble_protocol/bubble_protocol.egg-info/top_level.txt
+[1.118s] reading manifest file '../../../build/bubble_protocol/bubble_protocol.egg-info/SOURCES.txt'
+[1.119s] writing manifest file '../../../build/bubble_protocol/bubble_protocol.egg-info/SOURCES.txt'
+[1.119s] running build
+[1.119s] running build_py
+[1.120s] running install
+[1.121s] running install_lib
+[1.121s] running install_data
+[1.122s] running install_egg_info
+[1.124s] removing '/home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol-0.1.0-py3.10.egg-info' (and everything under it)
+[1.124s] Copying ../../../build/bubble_protocol/bubble_protocol.egg-info to /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol-0.1.0-py3.10.egg-info
+[1.124s] running install_scripts
+[1.145s] Installing bcp_core script to /home/nhs/engineer/install/bubble_protocol/lib/bubble_protocol
+[1.145s] Installing pyserial script to /home/nhs/engineer/install/bubble_protocol/lib/bubble_protocol
+[1.145s] Installing test_cmd script to /home/nhs/engineer/install/bubble_protocol/lib/bubble_protocol
+[1.145s] writing list of installed files to '/home/nhs/engineer/build/bubble_protocol/install.log'
+[1.162s] Invoked command in '/home/nhs/engineer/src/rm_communication/bubble_protocol' returned '0': PYTHONPATH=/home/nhs/engineer/build/bubble_protocol/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/bubble_protocol build --build-base /home/nhs/engineer/build/bubble_protocol/build install --record /home/nhs/engineer/build/bubble_protocol/install.log --single-version-externally-managed install_data

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rmctrl_msgs/msg/Chassis.msg
+// generated code does not contain a copyright notice
+
+
+module rmctrl_msgs {
+  module msg {
+    struct Chassis {
+      double chassis_target_linear_x;
+
+      double chassis_target_linear_y;
+
+      double chassis_target_linear_z;
+
+      double chassis_target_angular_x;
+
+      double chassis_target_angular_y;
+
+      double chassis_target_angular_z;
+    };
+  };
+};

@@ -1,0 +1,10 @@
+setup.py
+rmctrl_msgs/__init__.py
+rmctrl_msgs.egg-info/PKG-INFO
+rmctrl_msgs.egg-info/SOURCES.txt
+rmctrl_msgs.egg-info/dependency_links.txt
+rmctrl_msgs.egg-info/top_level.txt
+rmctrl_msgs/msg/__init__.py
+rmctrl_msgs/msg/_chassis.py
+rmctrl_msgs/msg/_imu.py
+rmctrl_msgs/msg/_odom.py

@@ -1,0 +1,5 @@
+  File "/home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/hardware.py", line 144
+    print(rx_byte!!)
+                 ^
+SyntaxError: invalid syntax
+

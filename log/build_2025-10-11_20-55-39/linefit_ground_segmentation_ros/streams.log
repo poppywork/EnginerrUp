@@ -1,0 +1,22 @@
+[0.007s] Invoking command in '/home/nhs/engineer/build/linefit_ground_segmentation_ros': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/linefit_ground_segmentation/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/nhs/engineer/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros -DCMAKE_INSTALL_PREFIX=/home/nhs/engineer/install/linefit_ground_segmentation_ros
+[0.020s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.267s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.270s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.277s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.288s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.302s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.339s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.341s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.436s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.586s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.607s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.855s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.859s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.977s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.982s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.987s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.089s] -- Found Qhull version 8.0.2
+[1.189s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.303s] -- Configuring done
+[1.337s] -- Generating done
+[1.348s] -- Build files have been written to: /home/nhs/engineer/build/linefit_ground_segmentation_ros

@@ -1,0 +1,3 @@
+/home/nhs/engineer/build/rmctrl_msgs/rosidl_adapter/rmctrl_msgs:msg/Chassis.idl
+/home/nhs/engineer/build/rmctrl_msgs/rosidl_adapter/rmctrl_msgs:msg/Imu.idl
+/home/nhs/engineer/build/rmctrl_msgs/rosidl_adapter/rmctrl_msgs:msg/Odom.idl

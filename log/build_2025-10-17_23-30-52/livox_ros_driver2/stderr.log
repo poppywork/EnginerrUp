@@ -1,0 +1,40 @@
+CMake Error: Target DependInfo.cmake file not found
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/nhs/engineer/build/livox_ros_driver2/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp: 没有那个文件或目录
+compilation terminated.
+gmake[2]: *** [CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/build.make:122：CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:399：CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+Error processing idl file: /home/nhs/engineer/build/livox_ros_driver2/rosidl_adapter/livox_ros_driver2/msg/CustomMsg.idl
+CMake Error: Target DependInfo.cmake file not found
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/nhs/engineer/build/livox_ros_driver2/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_point__type_support.cpp: 没有那个文件或目录
+compilation terminated.
+gmake[2]: *** [CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/build.make:130：CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_point__type_support.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 28, in <module>
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 24, in main
+    generate_c(args.generator_arguments_file, args.typesupports)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_c/__init__.py", line 28, in generate_c
+    return generate_files(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 96, in generate_files
+    raise(e)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 62, in parse_idl_file
+    string = locator.get_absolute_path().read_text(encoding='utf-8')
+  File "/usr/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/home/nhs/engineer/build/livox_ros_driver2/rosidl_adapter/livox_ros_driver2/msg/CustomMsg.idl'
+gmake[2]: *** [CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/build.make:113：rosidl_typesupport_c/livox_ros_driver2/msg/custom_point__type_support.cpp] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:294：CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/all] 错误 2
+[01m[K/home/nhs/engineer/build/livox_ros_driver2/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Klivox_ros_driver2/msg/detail/custom_msg__struct.hpp: 没有那个文件或目录
+   12 | #include [01;31m[K"livox_ros_driver2/msg/detail/custom_msg__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/build.make:144：CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:373：CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

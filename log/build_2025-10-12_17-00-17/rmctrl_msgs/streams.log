@@ -1,0 +1,202 @@
+[0.016s] Invoking command in '/home/nhs/engineer/build/rmctrl_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/rmctrl_msgs -- -j8 -l8
+[0.075s] [  2%] Built target rmctrl_msgs__cpp
+[0.077s] [ 12%] Built target rmctrl_msgs__rosidl_generator_c
+[0.087s] [ 12%] Built target ament_cmake_python_copy_rmctrl_msgs
+[0.113s] [ 23%] Built target rmctrl_msgs__rosidl_typesupport_cpp
+[0.114s] [ 34%] Built target rmctrl_msgs__rosidl_typesupport_introspection_cpp
+[0.133s] [ 44%] Built target rmctrl_msgs__rosidl_typesupport_fastrtps_c
+[0.133s] [ 55%] Built target rmctrl_msgs__rosidl_typesupport_c
+[0.133s] [ 65%] Built target rmctrl_msgs__rosidl_typesupport_fastrtps_cpp
+[0.143s] [ 76%] Built target rmctrl_msgs__rosidl_typesupport_introspection_c
+[0.168s] [ 76%] Built target rmctrl_msgs
+[0.193s] [ 78%] Built target rmctrl_msgs__py
+[0.216s] [ 87%] Built target rmctrl_msgs__rosidl_generator_py
+[0.239s] [ 95%] Built target rmctrl_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.240s] [ 95%] Built target rmctrl_msgs__rosidl_typesupport_introspection_c__pyext
+[0.240s] [100%] Built target rmctrl_msgs__rosidl_typesupport_c__pyext
+[0.326s] running egg_info
+[0.328s] writing rmctrl_msgs.egg-info/PKG-INFO
+[0.328s] writing dependency_links to rmctrl_msgs.egg-info/dependency_links.txt
+[0.328s] writing top-level names to rmctrl_msgs.egg-info/top_level.txt
+[0.330s] reading manifest file 'rmctrl_msgs.egg-info/SOURCES.txt'
+[0.330s] writing manifest file 'rmctrl_msgs.egg-info/SOURCES.txt'
+[0.351s] [100%] Built target ament_cmake_python_build_rmctrl_msgs_egg
+[0.358s] Invoked command in '/home/nhs/engineer/build/rmctrl_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/rmctrl_msgs -- -j8 -l8
+[0.359s] Invoking command in '/home/nhs/engineer/build/rmctrl_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/rmctrl_msgs
+[0.366s] -- Install configuration: ""
+[0.366s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/ament_index/resource_index/rosidl_interfaces/rmctrl_msgs
+[0.366s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[0.366s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[0.366s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/chassis.h
+[0.366s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/gimbal.h
+[0.366s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/imu.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__struct.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__type_support.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__functions.c
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__type_support.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__struct.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__struct.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__functions.c
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__struct.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__functions.c
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__type_support.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__functions.c
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__type_support.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__functions.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__functions.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__functions.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__functions.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/odom.h
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/library_path.sh
+[0.367s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/library_path.dsv
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_generator_c.so
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__rosidl_typesupport_fastrtps_c.h
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__rosidl_typesupport_fastrtps_c.h
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__rosidl_typesupport_fastrtps_c.h
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__rosidl_typesupport_fastrtps_c.h
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_fastrtps_c.so
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/chassis.hpp
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__builder.hpp
+[0.368s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__struct.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__type_support.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__type_support.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__builder.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__builder.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__builder.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__type_support.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__struct.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__struct.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__struct.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__traits.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__traits.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__type_support.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__traits.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__traits.hpp
+[0.369s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/imu.hpp
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/gimbal.hpp
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/odom.hpp
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__rosidl_typesupport_fastrtps_cpp.hpp
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__rosidl_typesupport_fastrtps_cpp.hpp
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__rosidl_typesupport_fastrtps_cpp.hpp
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/dds_fastrtps
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__rosidl_typesupport_fastrtps_cpp.hpp
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[0.370s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__rosidl_typesupport_introspection_c.h
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__rosidl_typesupport_introspection_c.h
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__rosidl_typesupport_introspection_c.h
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__type_support.c
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__type_support.c
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__rosidl_typesupport_introspection_c.h
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__type_support.c
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__type_support.c
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_introspection_c.so
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_c.so
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__type_support.cpp
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__rosidl_typesupport_introspection_cpp.hpp
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__type_support.cpp
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/chassis__rosidl_typesupport_introspection_cpp.hpp
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__type_support.cpp
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/gimbal__type_support.cpp
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/odom__rosidl_typesupport_introspection_cpp.hpp
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/include/rmctrl_msgs/rmctrl_msgs/msg/detail/imu__rosidl_typesupport_introspection_cpp.hpp
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_introspection_cpp.so
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_typesupport_cpp.so
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/pythonpath.sh
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/pythonpath.dsv
+[0.371s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info
+[0.371s] -- Installing: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[0.372s] -- Installing: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[0.372s] -- Installing: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[0.372s] -- Installing: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/_rmctrl_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/_rmctrl_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/__init__.py
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_gimbal.py
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_chassis_s.c
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_gimbal_s.c
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_imu_s.c
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/__init__.py
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_imu.py
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_chassis.py
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_odom.py
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg/_odom_s.c
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/_rmctrl_msgs_s.ep.rosidl_typesupport_c.c
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/librmctrl_msgs__rosidl_generator_py.so
+[0.372s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.392s] Listing '/home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs'...
+[0.392s] Listing '/home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/msg'...
+[0.395s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.395s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.395s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/local/lib/python3.10/dist-packages/rmctrl_msgs/rmctrl_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.395s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/lib/librmctrl_msgs__rosidl_generator_py.so
+[0.395s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Chassis.idl
+[0.395s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Imu.idl
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Odom.idl
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Chassis.msg
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Imu.msg
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/msg/Odom.msg
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/ament_index/resource_index/package_run_dependencies/rmctrl_msgs
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/ament_index/resource_index/parent_prefix_path/rmctrl_msgs
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/ament_prefix_path.sh
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/ament_prefix_path.dsv
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/path.sh
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/environment/path.dsv
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/local_setup.bash
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/local_setup.sh
+[0.396s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/local_setup.zsh
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/local_setup.dsv
+[0.397s] -- Installing: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.dsv
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/ament_index/resource_index/packages/rmctrl_msgs
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_cExport.cmake
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_cppExport.cmake
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.397s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_cExport.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_cppExport.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_pyExport.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/export_rmctrl_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rosidl_cmake-extras.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgsConfig.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/cmake/rmctrl_msgsConfig-version.cmake
+[0.398s] -- Up-to-date: /home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.xml
+[0.400s] Invoked command in '/home/nhs/engineer/build/rmctrl_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/rmctrl_msgs

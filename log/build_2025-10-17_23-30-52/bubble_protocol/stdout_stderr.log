@@ -1,0 +1,56 @@
+running egg_info
+creating ../../../build/bubble_protocol/bubble_protocol.egg-info
+writing ../../../build/bubble_protocol/bubble_protocol.egg-info/PKG-INFO
+writing dependency_links to ../../../build/bubble_protocol/bubble_protocol.egg-info/dependency_links.txt
+writing entry points to ../../../build/bubble_protocol/bubble_protocol.egg-info/entry_points.txt
+writing requirements to ../../../build/bubble_protocol/bubble_protocol.egg-info/requires.txt
+writing top-level names to ../../../build/bubble_protocol/bubble_protocol.egg-info/top_level.txt
+writing manifest file '../../../build/bubble_protocol/bubble_protocol.egg-info/SOURCES.txt'
+reading manifest file '../../../build/bubble_protocol/bubble_protocol.egg-info/SOURCES.txt'
+writing manifest file '../../../build/bubble_protocol/bubble_protocol.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nhs/engineer/build/bubble_protocol/build
+creating /home/nhs/engineer/build/bubble_protocol/build/lib
+creating /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol
+copying bubble_protocol/pyserial.py -> /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol
+copying bubble_protocol/__init__.py -> /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol
+copying bubble_protocol/protocol.py -> /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol
+copying bubble_protocol/test_cmd.py -> /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol
+copying bubble_protocol/bcp_core.py -> /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol
+copying bubble_protocol/robot_status.py -> /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol
+copying bubble_protocol/dispatch.py -> /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol
+copying bubble_protocol/hardware.py -> /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol
+running install
+running install_lib
+creating /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol
+copying /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol/pyserial.py -> /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol
+copying /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol/__init__.py -> /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol
+copying /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol/protocol.py -> /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol
+copying /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol/test_cmd.py -> /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol
+copying /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol/bcp_core.py -> /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol
+copying /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol/robot_status.py -> /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol
+copying /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol/dispatch.py -> /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol
+copying /home/nhs/engineer/build/bubble_protocol/build/lib/bubble_protocol/hardware.py -> /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol
+byte-compiling /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/pyserial.py to pyserial.cpython-310.pyc
+byte-compiling /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/protocol.py to protocol.cpython-310.pyc
+byte-compiling /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/test_cmd.py to test_cmd.cpython-310.pyc
+byte-compiling /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/bcp_core.py to bcp_core.cpython-310.pyc
+byte-compiling /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/robot_status.py to robot_status.cpython-310.pyc
+byte-compiling /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/dispatch.py to dispatch.cpython-310.pyc
+byte-compiling /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol/hardware.py to hardware.cpython-310.pyc
+running install_data
+creating /home/nhs/engineer/install/bubble_protocol/share/ament_index
+creating /home/nhs/engineer/install/bubble_protocol/share/ament_index/resource_index
+creating /home/nhs/engineer/install/bubble_protocol/share/ament_index/resource_index/packages
+copying resource/bubble_protocol -> /home/nhs/engineer/install/bubble_protocol/share/ament_index/resource_index/packages
+copying package.xml -> /home/nhs/engineer/install/bubble_protocol/share/bubble_protocol
+copying launch/engineer_up_serial_launch.py -> /home/nhs/engineer/install/bubble_protocol/share/bubble_protocol
+running install_egg_info
+Copying ../../../build/bubble_protocol/bubble_protocol.egg-info to /home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages/bubble_protocol-0.1.0-py3.10.egg-info
+running install_scripts
+Installing bcp_core script to /home/nhs/engineer/install/bubble_protocol/lib/bubble_protocol
+Installing pyserial script to /home/nhs/engineer/install/bubble_protocol/lib/bubble_protocol
+Installing test_cmd script to /home/nhs/engineer/install/bubble_protocol/lib/bubble_protocol
+writing list of installed files to '/home/nhs/engineer/build/bubble_protocol/install.log'

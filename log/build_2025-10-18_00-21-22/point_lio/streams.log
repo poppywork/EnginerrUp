@@ -1,0 +1,75 @@
+[0.007s] Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/nhs/engineer/src/rm_localization/point_lio -DCMAKE_INSTALL_PREFIX=/home/nhs/engineer/install/point_lio
+[0.017s] -- Current CPU architecture: x86_64
+[0.020s] -- Processor number:  8
+[0.020s] -- core for MP:  3
+[0.020s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.114s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.132s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.134s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.138s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.144s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.153s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.174s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.175s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.241s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.273s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.273s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.281s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.293s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.305s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[0.334s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.357s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.563s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.567s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.676s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.681s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.685s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.786s] -- Found Qhull version 8.0.2
+[0.892s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.005s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.006s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.058s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.069s] -- Found livox_ros_driver2: 1.0.0 (/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[1.138s] -- Configuring done
+[1.166s] -- Generating done
+[1.173s] -- Build files have been written to: /home/nhs/engineer/build/point_lio
+[1.184s] Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/nhs/engineer/src/rm_localization/point_lio -DCMAKE_INSTALL_PREFIX=/home/nhs/engineer/install/point_lio
+[1.186s] Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/point_lio -- -j8 -l8
+[1.222s] [35m[1mConsolidate compiler generated dependencies of target pointlio_mapping[0m
+[1.252s] [100%] Built target pointlio_mapping
+[1.260s] Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/point_lio -- -j8 -l8
+[1.261s] Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/point_lio
+[1.266s] -- Install configuration: ""
+[1.266s] -- Up-to-date: /home/nhs/engineer/install/point_lio/lib/point_lio/pointlio_mapping
+[1.266s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/velody16.yaml
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/mid360.yaml
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/ouster64.yaml
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/horizon.yaml
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/avia.yaml
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/rviz_cfg
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[1.267s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/environment/path.sh
+[1.267s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/environment/path.dsv
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.bash
+[1.267s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.sh
+[1.268s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.zsh
+[1.268s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.dsv
+[1.268s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/package.dsv
+[1.268s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[1.268s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.268s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[1.268s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[1.268s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/package.xml
+[1.269s] Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/point_lio

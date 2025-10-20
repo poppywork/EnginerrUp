@@ -1,0 +1,360 @@
+[0.026s] Invoking command in '/home/nhs/engineer/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake /home/nhs/engineer/src/rm_driver/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/nhs/engineer/install/livox_ros_driver2
+[0.224s] -- The C compiler identification is GNU 11.4.0
+[0.224s] -- The CXX compiler identification is GNU 11.4.0
+[0.224s] -- Detecting C compiler ABI info
+[0.225s] -- Detecting C compiler ABI info - done
+[0.225s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.225s] -- Detecting C compile features
+[0.225s] -- Detecting C compile features - done
+[0.225s] -- Detecting CXX compiler ABI info
+[0.282s] -- Detecting CXX compiler ABI info - done
+[0.292s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.293s] -- Detecting CXX compile features
+[0.293s] -- Detecting CXX compile features - done
+[0.302s] -- livox_ros_driver2 version: 1.2.4
+[0.302s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.483s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.669s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.680s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.771s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.985s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.995s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.226s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.300s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.384s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.406s] -- Looking for pthread.h
+[1.622s] -- Looking for pthread.h - found
+[1.622s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.775s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.775s] -- Found Threads: TRUE  
+[2.120s] -- Checking for module 'eigen3'
+[2.153s] --   Found eigen3, version 3.4.0
+[2.251s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.251s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.362s] -- Checking for module 'flann'
+[2.401s] --   Found flann, version 1.9.1
+[2.525s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.525s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[5.429s] -- Checking for module 'libusb-1.0'
+[5.461s] --   Found libusb-1.0, version 1.0.25
+[5.550s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[5.550s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.719s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.403s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.438s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.452s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.753s] -- Found Qhull version 8.0.2
+[7.062s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.450s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[7.457s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[7.458s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[7.461s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[7.461s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[7.464s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[7.464s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[7.464s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[7.472s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[7.473s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[7.474s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[7.476s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[7.481s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[7.488s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[7.488s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[7.490s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[7.495s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[7.498s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[7.505s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[7.509s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[7.509s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[7.525s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[7.527s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[7.528s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[7.530s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[7.576s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[7.578s] -- Checking for module 'apr-1'
+[7.582s] --   No package 'apr-1' found
+[7.991s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[8.644s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.801s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.875s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[9.877s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[10.021s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[10.028s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[10.029s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[10.029s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[10.275s] -- Found PythonExtra: .so  
+[10.615s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[10.704s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.719s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.738s] -- Configured cppcheck include dirs: /home/nhs/engineer/src/rm_driver/livox_ros_driver2/3rdparty;/home/nhs/engineer/src/rm_driver/livox_ros_driver2/src
+[10.739s] -- Configured cppcheck exclude dirs and/or files: 
+[10.748s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[10.753s] -- Configured cpplint exclude dirs and/or files: 
+[10.754s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.769s] -- Added test 'lint_cmake' to check CMake code style
+[10.770s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[10.780s] -- Added test 'uncrustify' to check C / C++ code style
+[10.781s] -- Configured uncrustify additional arguments: 
+[10.783s] -- Added test 'xmllint' to check XML markup files
+[10.804s] -- Configuring done
+[11.029s] -- Generating done
+[11.119s] -- Build files have been written to: /home/nhs/engineer/build/livox_ros_driver2
+[11.228s] Invoked command in '/home/nhs/engineer/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake /home/nhs/engineer/src/rm_driver/livox_ros_driver2 -DROS_EDITION=ROS2 -DHUMBLE_ROS=humble -DCMAKE_INSTALL_PREFIX=/home/nhs/engineer/install/livox_ros_driver2
+[11.229s] Invoking command in '/home/nhs/engineer/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/livox_ros_driver2 -- -j8 -l8
+[11.382s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[11.431s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[11.439s] [  3%] Built target ament_cmake_python_copy_livox_ros_driver2
+[11.440s] [  5%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2_node.dir/rclcpp_components/node_main_livox_ros_driver2_node.cpp.o[0m
+[12.269s] running egg_info
+[12.275s] creating livox_ros_driver2.egg-info
+[12.275s] writing livox_ros_driver2.egg-info/PKG-INFO
+[12.275s] writing dependency_links to livox_ros_driver2.egg-info/dependency_links.txt
+[12.275s] writing top-level names to livox_ros_driver2.egg-info/top_level.txt
+[12.275s] writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[12.289s] reading manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[12.290s] writing manifest file 'livox_ros_driver2.egg-info/SOURCES.txt'
+[12.353s] [  5%] Built target ament_cmake_python_build_livox_ros_driver2_egg
+[12.721s] [  7%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_point__functions.c.o[0m
+[12.740s] [  8%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_c.dir/rosidl_generator_c/livox_ros_driver2/msg/detail/custom_msg__functions.c.o[0m
+[12.769s] [  8%] Built target livox_interfaces2__cpp
+[12.807s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[12.839s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[12.855s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[13.009s] [ 15%] [32m[1mLinking C shared library liblivox_ros_driver2__rosidl_generator_c.so[0m
+[13.210s] [ 15%] Built target livox_interfaces2__rosidl_generator_c
+[13.240s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[13.275s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.276s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[13.852s] [ 22%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_point__type_support.cpp.o[0m
+[13.880s] [ 24%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp.o[0m
+[14.514s] [ 26%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_point__type_support.cpp.o[0m
+[14.794s] [ 28%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_point__type_support.cpp.o[0m
+[15.507s] [ 29%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_point__type_support.c.o[0m
+[15.589s] [ 31%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/livox_ros_driver2/msg/detail/custom_msg__type_support.c.o[0m
+[15.726s] [ 33%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_point__type_support_c.cpp.o[0m
+[15.871s] [ 35%] [32m[1mLinking C shared library liblivox_ros_driver2__rosidl_typesupport_introspection_c.so[0m
+[15.884s] [ 36%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_point__type_support.cpp.o[0m
+[16.005s] [ 36%] Built target livox_interfaces2__rosidl_typesupport_introspection_c
+[16.015s] [ 38%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_c.dir/rosidl_typesupport_c/livox_ros_driver2/msg/custom_msg__type_support.cpp.o[0m
+[16.027s] [ 40%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/livox_ros_driver2/msg/detail/dds_fastrtps/custom_msg__type_support.cpp.o[0m
+[16.028s] [ 42%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/livox_ros_driver2/msg/custom_msg__type_support.cpp.o[0m
+[16.063s] [ 43%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so[0m
+[16.150s] [ 45%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_c.so[0m
+[16.331s] [ 45%] Built target livox_interfaces2__rosidl_typesupport_c
+[16.369s] [ 47%] [32mBuilding CXX object CMakeFiles/livox_interfaces2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/livox_ros_driver2/msg/detail/custom_msg__type_support_c.cpp.o[0m
+[16.394s] [ 47%] Built target livox_interfaces2__rosidl_typesupport_introspection_cpp
+[16.819s] [ 49%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_cpp.so[0m
+[16.956s] [ 49%] Built target livox_interfaces2__rosidl_typesupport_cpp
+[17.039s] [ 50%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/livox_ros_driver2.cpp.o[0m
+[17.049s] [ 52%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lddc.cpp.o[0m
+[17.067s] [ 54%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds.cpp.o[0m
+[17.093s] [ 56%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/driver_node.cpp.o[0m
+[17.409s] [ 57%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so[0m
+[17.535s] [ 59%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/lds_lidar.cpp.o[0m
+[17.579s] [ 61%] [32m[1mLinking CXX shared library liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so[0m
+[17.736s] [ 61%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_cpp
+[17.778s] [ 63%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/comm.cpp.o[0m
+[18.004s] [ 63%] Built target livox_interfaces2__rosidl_typesupport_fastrtps_c
+[18.026s] [ 64%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/ldq.cpp.o[0m
+[19.122s] [ 66%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/semaphore.cpp.o[0m
+[19.822s] [ 68%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/lidar_imu_data_queue.cpp.o[0m
+[20.250s] [ 68%] Built target livox_interfaces2
+[20.308s] [ 70%] [34m[1mGenerating Python code for ROS interfaces[0m
+[20.698s] [ 71%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/cache_index.cpp.o[0m
+[20.750s] [ 73%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/comm/pub_handler.cpp.o[0m
+[21.660s] [ 75%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_cfg_file.cpp.o[0m
+[23.503s] [ 75%] Built target livox_interfaces2__py
+[23.556s] [ 77%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_point_s.c.o[0m
+[23.935s] [ 78%] [32mBuilding C object CMakeFiles/livox_interfaces2__rosidl_generator_py.dir/rosidl_generator_py/livox_ros_driver2/msg/_custom_msg_s.c.o[0m
+[24.122s] [ 80%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/parse_cfg_file/parse_livox_lidar_cfg.cpp.o[0m
+[24.214s] [ 82%] [32m[1mLinking CXX executable livox_ros_driver2_node[0m
+[24.268s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so[0m
+[24.368s] [ 84%] Built target livox_interfaces2__rosidl_generator_py
+[24.420s] [ 85%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[24.561s] [ 85%] Built target livox_ros_driver2_node
+[24.655s] [ 87%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[24.712s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.811s] [ 89%] Built target livox_ros_driver2__rosidl_typesupport_fastrtps_c__pyext
+[25.009s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.104s] [ 92%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/lidar_common_callback.cpp.o[0m
+[25.132s] [ 94%] [32mBuilding C object CMakeFiles/livox_ros_driver2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c.o[0m
+[25.197s] [ 94%] Built target livox_ros_driver2__rosidl_typesupport_introspection_c__pyext
+[25.518s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[25.598s] [ 96%] Built target livox_ros_driver2__rosidl_typesupport_c__pyext
+[25.918s] [ 98%] [32mBuilding CXX object CMakeFiles/livox_ros_driver2.dir/src/call_back/livox_lidar_callback.cpp.o[0m
+[34.058s] [100%] [32m[1mLinking CXX shared library liblivox_ros_driver2.so[0m
+[34.868s] [100%] Built target livox_ros_driver2
+[34.879s] Invoked command in '/home/nhs/engineer/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/livox_ros_driver2 -- -j8 -l8
+[34.881s] Invoking command in '/home/nhs/engineer/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/livox_ros_driver2
+[34.887s] -- Install configuration: ""
+[34.887s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/ament_index/resource_index/rosidl_interfaces/livox_ros_driver2
+[34.887s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[34.887s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[34.887s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.h
+[34.887s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_c__visibility_control.h
+[34.887s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[34.887s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.h
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.h
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.c
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.h
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.h
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__functions.c
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__functions.h
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.h
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.h
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.sh
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/environment/library_path.dsv
+[34.888s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so
+[34.889s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_generator_c.so" to ""
+[34.889s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[34.889s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[34.889s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[34.889s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_c.h
+[34.889s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h
+[34.889s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[34.889s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so
+[34.889s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_c.so" to ""
+[34.889s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[34.889s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[34.890s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[34.890s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_c.h
+[34.890s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h
+[34.890s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.c
+[34.890s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.c
+[34.890s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[34.890s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so
+[34.890s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_c.so" to ""
+[34.890s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so
+[34.890s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_c.so" to ""
+[34.891s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[34.891s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[34.891s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.hpp
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__struct.hpp
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__traits.hpp
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__builder.hpp
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.hpp
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__traits.hpp
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__struct.hpp
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__builder.hpp
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_point.hpp
+[34.891s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/custom_msg.hpp
+[34.892s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_generator_cpp__visibility_control.hpp
+[34.892s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[34.892s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[34.892s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[34.892s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[34.892s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_fastrtps_cpp.hpp
+[34.892s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/dds_fastrtps
+[34.892s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[34.892s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so
+[34.892s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_fastrtps_cpp.so" to ""
+[34.892s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2
+[34.893s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg
+[34.893s] -- Up-to-date: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail
+[34.893s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp
+[34.893s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_msg__type_support.cpp
+[34.893s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__type_support.cpp
+[34.893s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/include/livox_ros_driver2/livox_ros_driver2/msg/detail/custom_point__rosidl_typesupport_introspection_cpp.hpp
+[34.893s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so
+[34.893s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_introspection_cpp.so" to ""
+[34.893s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so
+[34.894s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2__rosidl_typesupport_cpp.so" to ""
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.sh
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/environment/pythonpath.dsv
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/dependency_links.txt
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/top_level.txt
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/PKG-INFO
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2-1.0.0-py3.10.egg-info/SOURCES.txt
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_c.c
+[34.894s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/liblivox_interfaces2__rosidl_generator_py.so
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_introspection_c.c
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/_livox_ros_driver2_s.ep.rosidl_typesupport_fastrtps_c.c
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point_s.c
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg_s.c
+[34.895s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[34.921s] Listing '/home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2'...
+[34.921s] Compiling '/home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/__init__.py'...
+[34.921s] Listing '/home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg'...
+[34.921s] Compiling '/home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/__init__.py'...
+[34.922s] Compiling '/home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_msg.py'...
+[34.922s] Compiling '/home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/msg/_custom_point.py'...
+[34.925s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[34.925s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[34.925s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[34.925s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[34.926s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[34.926s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/local/lib/python3.10/dist-packages/livox_ros_driver2/livox_ros_driver2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[34.926s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so
+[34.926s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_interfaces2__rosidl_generator_py.so" to ""
+[34.926s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.idl
+[34.926s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.idl
+[34.926s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomPoint.msg
+[34.926s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/msg/CustomMsg.msg
+[34.927s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node
+[34.927s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/livox_ros_driver2/livox_ros_driver2_node" to ""
+[34.927s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2.so
+[34.930s] -- Set runtime path of "/home/nhs/engineer/install/livox_ros_driver2/lib/liblivox_ros_driver2.so" to ""
+[34.930s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/config
+[34.930s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS2.rviz
+[34.930s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/config/MID360_config.json
+[34.930s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/config/display_point_cloud_ROS1.rviz
+[34.930s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/config/HAP_config.json
+[34.931s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/config/mixed_HAP_MID360_config.json
+[34.931s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2
+[34.931s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_MID360_launch.py
+[34.931s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_mixed.py
+[34.931s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_HAP_launch.py
+[34.931s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_MID360_custom_launch.py
+[34.931s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/msg_MID360_cloud_launch.py
+[34.931s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/launch_ROS2/rviz_HAP_launch.py
+[34.932s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/ament_index/resource_index/package_run_dependencies/livox_ros_driver2
+[34.932s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/ament_index/resource_index/parent_prefix_path/livox_ros_driver2
+[34.932s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.sh
+[34.932s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/environment/ament_prefix_path.dsv
+[34.932s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.sh
+[34.932s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/environment/path.dsv
+[34.932s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.bash
+[34.932s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.sh
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.zsh
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/local_setup.dsv
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/ament_index/resource_index/packages/livox_ros_driver2
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport.cmake
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cExport-noconfig.cmake
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport.cmake
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport.cmake
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport.cmake
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cExport-noconfig.cmake
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_cppExport.cmake
+[34.933s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport.cmake
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport.cmake
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport.cmake
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_interfaces2__rosidl_typesupport_cppExport-noconfig.cmake
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport.cmake
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/export_livox_interfaces2__rosidl_generator_pyExport-noconfig.cmake
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/ament_index/resource_index/rclcpp_components/livox_ros_driver2
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake-extras.cmake
+[34.934s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.935s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.935s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_libraries-extras.cmake
+[34.935s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/ament_cmake_export_targets-extras.cmake
+[34.935s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[34.935s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[34.935s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config.cmake
+[34.935s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/cmake/livox_ros_driver2Config-version.cmake
+[34.935s] -- Installing: /home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.xml
+[34.938s] Invoked command in '/home/nhs/engineer/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/livox_ros_driver2

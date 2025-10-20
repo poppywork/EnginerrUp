@@ -1,0 +1,905 @@
+[0.065s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.065s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73dcee364670>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73dcee459a50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73dcee459a50>>)
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.158s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nhs/engineer'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/rmctrl_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/rmctrl_msgs) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/rmctrl_msgs) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/rmctrl_msgs) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/rmctrl_msgs) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/rmctrl_msgs) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/rmctrl_msgs) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/rmctrl_msgs) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/rmctrl_msgs) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_communication/bubble_interface/rmctrl_msgs' with type 'ros.ament_cmake' and name 'rmctrl_msgs'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_interface/script) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_protocol) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_protocol) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_protocol) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_protocol) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_protocol) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_protocol) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_protocol) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_protocol) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_communication/bubble_protocol) by extension 'ros'
+[0.170s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_communication/bubble_protocol' with type 'ros.ament_python' and name 'bubble_protocol'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_description) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_description) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_description) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_description) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_description) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_description) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_description) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_description) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_description) by extension 'ros'
+[0.171s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_description' with type 'ros.ament_cmake' and name 'rm_description'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/Livox-SDK2) by extension 'python'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_driver/Livox-SDK2' with type 'cmake' and name 'livox_sdk2'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/livox_ros_driver2) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/livox_ros_driver2) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/livox_ros_driver2) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/livox_ros_driver2) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/livox_ros_driver2) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/livox_ros_driver2) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/livox_ros_driver2) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/livox_ros_driver2) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_driver/livox_ros_driver2) by extension 'ros'
+[0.179s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_driver/livox_ros_driver2' with type 'ros.ament_cmake' and name 'livox_ros_driver2'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'ros'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/pcd2pgm) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/pcd2pgm) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/pcd2pgm) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/pcd2pgm) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/pcd2pgm) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/pcd2pgm) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/pcd2pgm) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/pcd2pgm) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/pcd2pgm) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_localization/pcd2pgm' with type 'ros.ament_cmake' and name 'pcd2pgm'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/point_lio) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/point_lio) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/point_lio) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/point_lio) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/point_lio) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/point_lio) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/point_lio) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/point_lio) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_localization/point_lio) by extension 'ros'
+[0.181s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_localization/point_lio' with type 'ros.ament_cmake' and name 'point_lio'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/navi) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/navi) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/navi) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/navi) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/navi) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/navi) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/navi) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/navi) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/navi) by extension 'ros'
+[0.182s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_navigation/navi' with type 'ros.ament_cmake' and name 'navi'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/doc) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation' with type 'ros.ament_cmake' and name 'linefit_ground_segmentation'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros' with type 'ros.ament_cmake' and name 'linefit_ground_segmentation_ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/pointcloud_to_laserscan) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/pointcloud_to_laserscan) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/pointcloud_to_laserscan) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/pointcloud_to_laserscan) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/pointcloud_to_laserscan) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/pointcloud_to_laserscan) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/pointcloud_to_laserscan) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/pointcloud_to_laserscan) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_perception/pointcloud_to_laserscan) by extension 'ros'
+[0.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_perception/pointcloud_to_laserscan' with type 'ros.ament_cmake' and name 'pointcloud_to_laserscan'
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.200s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/nhs/engineer/install
+[0.201s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[0.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'bubble_protocol' build argument 'cmake_args' from command line to 'None'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'bubble_protocol' build argument 'cmake_target' from command line to 'None'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'bubble_protocol' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'bubble_protocol' build argument 'cmake_clean_cache' from command line to 'False'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'bubble_protocol' build argument 'cmake_clean_first' from command line to 'False'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'bubble_protocol' build argument 'cmake_force_configure' from command line to 'False'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'bubble_protocol' build argument 'ament_cmake_args' from command line to 'None'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'bubble_protocol' build argument 'catkin_cmake_args' from command line to 'None'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'bubble_protocol' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.229s] DEBUG:colcon.colcon_core.verb:Building package 'bubble_protocol' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/bubble_protocol', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/bubble_protocol', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_communication/bubble_protocol', 'symlink_install': False, 'test_result_base': None}
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation' build argument 'cmake_args' from command line to 'None'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation' build argument 'cmake_target' from command line to 'None'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation' build argument 'cmake_clean_first' from command line to 'False'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'linefit_ground_segmentation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/linefit_ground_segmentation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/linefit_ground_segmentation', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation', 'symlink_install': False, 'test_result_base': None}
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_target' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_clean_first' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_ros_driver2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'livox_ros_driver2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/livox_ros_driver2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/livox_ros_driver2', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_driver/livox_ros_driver2', 'symlink_install': False, 'test_result_base': None}
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_target' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_clean_first' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'livox_sdk2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'livox_sdk2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/livox_sdk2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/livox_sdk2', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_driver/Livox-SDK2', 'symlink_install': False, 'test_result_base': None}
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'navi' build argument 'cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'navi' build argument 'cmake_target' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'navi' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'navi' build argument 'cmake_clean_cache' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'navi' build argument 'cmake_clean_first' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'navi' build argument 'cmake_force_configure' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'navi' build argument 'ament_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'navi' build argument 'catkin_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'navi' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.231s] DEBUG:colcon.colcon_core.verb:Building package 'navi' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/navi', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/navi', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_navigation/navi', 'symlink_install': False, 'test_result_base': None}
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pcd2pgm' build argument 'cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pcd2pgm' build argument 'cmake_target' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pcd2pgm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pcd2pgm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pcd2pgm' build argument 'cmake_clean_first' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pcd2pgm' build argument 'cmake_force_configure' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pcd2pgm' build argument 'ament_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pcd2pgm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pcd2pgm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.231s] DEBUG:colcon.colcon_core.verb:Building package 'pcd2pgm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/pcd2pgm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/pcd2pgm', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_localization/pcd2pgm', 'symlink_install': False, 'test_result_base': None}
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_target' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_clean_cache' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_clean_first' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_force_configure' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'ament_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'catkin_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.231s] DEBUG:colcon.colcon_core.verb:Building package 'pointcloud_to_laserscan' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/pointcloud_to_laserscan', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/pointcloud_to_laserscan', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_perception/pointcloud_to_laserscan', 'symlink_install': False, 'test_result_base': None}
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'rm_description' build argument 'cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'rm_description' build argument 'cmake_target' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'rm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rm_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rm_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rm_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.232s] DEBUG:colcon.colcon_core.verb:Building package 'rm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/rm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/rm_description', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_description', 'symlink_install': False, 'test_result_base': None}
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rmctrl_msgs' build argument 'cmake_args' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rmctrl_msgs' build argument 'cmake_target' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rmctrl_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rmctrl_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rmctrl_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rmctrl_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rmctrl_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rmctrl_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'rmctrl_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.232s] DEBUG:colcon.colcon_core.verb:Building package 'rmctrl_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/rmctrl_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/rmctrl_msgs', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_communication/bubble_interface/rmctrl_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation_ros' build argument 'cmake_args' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation_ros' build argument 'cmake_target' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'linefit_ground_segmentation_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.232s] DEBUG:colcon.colcon_core.verb:Building package 'linefit_ground_segmentation_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/linefit_ground_segmentation_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/linefit_ground_segmentation_ros', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros', 'symlink_install': False, 'test_result_base': None}
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_args' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_target' from command line to 'None'
+[0.232s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_clean_cache' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_clean_first' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'cmake_force_configure' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'ament_cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'catkin_cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'point_lio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.233s] DEBUG:colcon.colcon_core.verb:Building package 'point_lio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nhs/engineer/build/point_lio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nhs/engineer/install/point_lio', 'merge_install': False, 'path': '/home/nhs/engineer/src/rm_localization/point_lio', 'symlink_install': False, 'test_result_base': None}
+[0.233s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.233s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.234s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nhs/engineer/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation' with build type 'ament_cmake'
+[0.234s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation'
+[0.235s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.235s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.235s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.237s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nhs/engineer/src/rm_driver/livox_ros_driver2' with build type 'ament_cmake'
+[0.238s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_driver/livox_ros_driver2'
+[0.238s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.238s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.240s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nhs/engineer/src/rm_communication/bubble_protocol' with build type 'ament_python'
+[0.240s] Level 1:colcon.colcon_core.shell:create_environment_hook('bubble_protocol', 'ament_prefix_path')
+[0.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/hook/ament_prefix_path.ps1'
+[0.241s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/hook/ament_prefix_path.dsv'
+[0.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/hook/ament_prefix_path.sh'
+[0.242s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.242s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.245s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_driver/Livox-SDK2'
+[0.246s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.246s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.249s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nhs/engineer/src/rm_navigation/navi' with build type 'ament_cmake'
+[0.249s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_navigation/navi'
+[0.249s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.249s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.251s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nhs/engineer/src/rm_localization/pcd2pgm' with build type 'ament_cmake'
+[0.251s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_localization/pcd2pgm'
+[0.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.254s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nhs/engineer/src/rm_perception/pointcloud_to_laserscan' with build type 'ament_cmake'
+[0.254s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_perception/pointcloud_to_laserscan'
+[0.254s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.254s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.256s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nhs/engineer/src/rm_description' with build type 'ament_cmake'
+[0.256s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_description'
+[0.256s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.256s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/linefit_ground_segmentation -- -j8 -l8
+[0.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/livox_ros_driver2 -- -j8 -l8
+[0.450s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nhs/engineer/src/rm_communication/bubble_protocol'
+[0.450s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.450s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/livox_sdk2': /usr/bin/cmake --build /home/nhs/engineer/build/livox_sdk2 -- -j8 -l8
+[0.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/navi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/navi -- -j8 -l8
+[0.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/pcd2pgm -- -j8 -l8
+[0.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/pointcloud_to_laserscan -- -j8 -l8
+[0.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/rm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/rm_description -- -j8 -l8
+[0.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/linefit_ground_segmentation -- -j8 -l8
+[0.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/linefit_ground_segmentation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/linefit_ground_segmentation
+[0.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/navi -- -j8 -l8
+[0.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/navi': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/navi
+[0.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linefit_ground_segmentation)
+[0.499s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation' for CMake module files
+[0.500s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation' for CMake config files
+[0.500s] Level 1:colcon.colcon_core.shell:create_environment_hook('linefit_ground_segmentation', 'cmake_prefix_path')
+[0.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/cmake_prefix_path.ps1'
+[0.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/cmake_prefix_path.dsv'
+[0.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/cmake_prefix_path.sh'
+[0.501s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/linefit_ground_segmentation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/linefit_ground_segmentation
+[0.503s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/lib'
+[0.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('linefit_ground_segmentation', 'ld_library_path_lib')
+[0.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/ld_library_path_lib.ps1'
+[0.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/ld_library_path_lib.dsv'
+[0.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/ld_library_path_lib.sh'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/bin'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/lib/pkgconfig/linefit_ground_segmentation.pc'
+[0.508s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/lib/python3.10/site-packages'
+[0.508s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/bin'
+[0.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.ps1'
+[0.509s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.dsv'
+[0.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.sh'
+[0.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.bash'
+[0.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.zsh'
+[0.512s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/linefit_ground_segmentation/share/colcon-core/packages/linefit_ground_segmentation)
+[0.513s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linefit_ground_segmentation)
+[0.513s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation' for CMake module files
+[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation' for CMake config files
+[0.514s] Level 1:colcon.colcon_core.shell:create_environment_hook('linefit_ground_segmentation', 'cmake_prefix_path')
+[0.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/cmake_prefix_path.ps1'
+[0.515s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/cmake_prefix_path.dsv'
+[0.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/cmake_prefix_path.sh'
+[0.515s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/lib'
+[0.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('linefit_ground_segmentation', 'ld_library_path_lib')
+[0.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/ld_library_path_lib.ps1'
+[0.516s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/ld_library_path_lib.dsv'
+[0.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/hook/ld_library_path_lib.sh'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/bin'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/lib/pkgconfig/linefit_ground_segmentation.pc'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/lib/python3.10/site-packages'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation/bin'
+[0.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.ps1'
+[0.518s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.dsv'
+[0.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.sh'
+[0.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.bash'
+[0.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation/share/linefit_ground_segmentation/package.zsh'
+[0.520s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/linefit_ground_segmentation/share/colcon-core/packages/linefit_ground_segmentation)
+[0.520s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nhs/engineer/src/rm_communication/bubble_interface/rmctrl_msgs' with build type 'ament_cmake'
+[0.520s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_communication/bubble_interface/rmctrl_msgs'
+[0.521s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.521s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.529s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navi)
+[0.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/navi' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/navi
+[0.530s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi' for CMake module files
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi' for CMake config files
+[0.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('navi', 'cmake_prefix_path')
+[0.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/navi/share/navi/hook/cmake_prefix_path.ps1'
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/navi/share/navi/hook/cmake_prefix_path.dsv'
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/navi/share/navi/hook/cmake_prefix_path.sh'
+[0.535s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi/bin'
+[0.535s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi/lib/pkgconfig/navi.pc'
+[0.535s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi/lib/python3.10/site-packages'
+[0.536s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi/bin'
+[0.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/navi/share/navi/package.ps1'
+[0.537s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/navi/share/navi/package.dsv'
+[0.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/navi/share/navi/package.sh'
+[0.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/navi/share/navi/package.bash'
+[0.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/navi/share/navi/package.zsh'
+[0.538s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/navi/share/colcon-core/packages/navi)
+[0.544s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navi)
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi' for CMake module files
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi' for CMake config files
+[0.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('navi', 'cmake_prefix_path')
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/navi/share/navi/hook/cmake_prefix_path.ps1'
+[0.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/navi/share/navi/hook/cmake_prefix_path.dsv'
+[0.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/navi/share/navi/hook/cmake_prefix_path.sh'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi/bin'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi/lib/pkgconfig/navi.pc'
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi/lib/python3.10/site-packages'
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/navi/bin'
+[0.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/navi/share/navi/package.ps1'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/navi/share/navi/package.dsv'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/navi/share/navi/package.sh'
+[0.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/navi/share/navi/package.bash'
+[0.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/navi/share/navi/package.zsh'
+[0.560s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/navi/share/colcon-core/packages/navi)
+[0.563s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nhs/engineer/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros' with build type 'ament_cmake'
+[0.566s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation_ros'
+[0.567s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.568s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/rm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/rm_description -- -j8 -l8
+[0.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/rm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/rm_description
+[0.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/rmctrl_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/rmctrl_msgs -- -j8 -l8
+[0.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/livox_ros_driver2 -- -j8 -l8
+[0.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/livox_ros_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/livox_ros_driver2
+[0.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/pcd2pgm -- -j8 -l8
+[0.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/pcd2pgm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/pcd2pgm
+[0.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/linefit_ground_segmentation_ros': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/linefit_ground_segmentation/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/linefit_ground_segmentation_ros -- -j8 -l8
+[0.639s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_description)
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description' for CMake module files
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description' for CMake config files
+[0.641s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_description', 'cmake_prefix_path')
+[0.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rm_description/share/rm_description/hook/cmake_prefix_path.ps1'
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/rm_description/share/rm_description/hook/cmake_prefix_path.dsv'
+[0.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rm_description/share/rm_description/hook/cmake_prefix_path.sh'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description/bin'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description/lib/pkgconfig/rm_description.pc'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description/lib/python3.10/site-packages'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description/bin'
+[0.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rm_description/share/rm_description/package.ps1'
+[0.647s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/rm_description/share/rm_description/package.dsv'
+[0.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rm_description/share/rm_description/package.sh'
+[0.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rm_description/share/rm_description/package.bash'
+[0.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/rm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/rm_description
+[0.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rm_description/share/rm_description/package.zsh'
+[0.650s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/rm_description/share/colcon-core/packages/rm_description)
+[0.651s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_description)
+[0.651s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description' for CMake module files
+[0.651s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description' for CMake config files
+[0.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_description', 'cmake_prefix_path')
+[0.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rm_description/share/rm_description/hook/cmake_prefix_path.ps1'
+[0.652s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/rm_description/share/rm_description/hook/cmake_prefix_path.dsv'
+[0.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rm_description/share/rm_description/hook/cmake_prefix_path.sh'
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description/bin'
+[0.654s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description/lib/pkgconfig/rm_description.pc'
+[0.655s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description/lib/python3.10/site-packages'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rm_description/bin'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rm_description/share/rm_description/package.ps1'
+[0.660s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/rm_description/share/rm_description/package.dsv'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rm_description/share/rm_description/package.sh'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rm_description/share/rm_description/package.bash'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rm_description/share/rm_description/package.zsh'
+[0.664s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/rm_description/share/colcon-core/packages/rm_description)
+[0.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/livox_sdk2' returned '0': /usr/bin/cmake --build /home/nhs/engineer/build/livox_sdk2 -- -j8 -l8
+[0.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/livox_sdk2': /usr/bin/cmake --install /home/nhs/engineer/build/livox_sdk2
+[0.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pcd2pgm)
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm' for CMake module files
+[0.673s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm' for CMake config files
+[0.674s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/pcd2pgm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/pcd2pgm
+[0.674s] Level 1:colcon.colcon_core.shell:create_environment_hook('pcd2pgm', 'cmake_prefix_path')
+[0.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/hook/cmake_prefix_path.ps1'
+[0.675s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/hook/cmake_prefix_path.dsv'
+[0.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/hook/cmake_prefix_path.sh'
+[0.676s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/lib'
+[0.676s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/bin'
+[0.676s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/lib/pkgconfig/pcd2pgm.pc'
+[0.677s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/lib/python3.10/site-packages'
+[0.677s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/bin'
+[0.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.ps1'
+[0.682s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.dsv'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.sh'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.bash'
+[0.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.zsh'
+[0.686s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/pcd2pgm/share/colcon-core/packages/pcd2pgm)
+[0.687s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pcd2pgm)
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm' for CMake module files
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm' for CMake config files
+[0.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('pcd2pgm', 'cmake_prefix_path')
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/hook/cmake_prefix_path.ps1'
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/hook/cmake_prefix_path.dsv'
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/hook/cmake_prefix_path.sh'
+[0.698s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/lib'
+[0.698s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/bin'
+[0.698s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/lib/pkgconfig/pcd2pgm.pc'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/lib/python3.10/site-packages'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pcd2pgm/bin'
+[0.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.ps1'
+[0.700s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.dsv'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.sh'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.bash'
+[0.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pcd2pgm/share/pcd2pgm/package.zsh'
+[0.703s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/pcd2pgm/share/colcon-core/packages/pcd2pgm)
+[0.705s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(livox_sdk2)
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_sdk2' for CMake module files
+[0.707s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_sdk2' for CMake config files
+[0.707s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_sdk2/lib'
+[0.707s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_sdk2', 'ld_library_path_lib')
+[0.706s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/livox_sdk2' returned '0': /usr/bin/cmake --install /home/nhs/engineer/build/livox_sdk2
+[0.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_sdk2/share/livox_sdk2/hook/ld_library_path_lib.ps1'
+[0.708s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/livox_sdk2/share/livox_sdk2/hook/ld_library_path_lib.dsv'
+[0.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_sdk2/share/livox_sdk2/hook/ld_library_path_lib.sh'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_sdk2/bin'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_sdk2/lib/pkgconfig/livox_sdk2.pc'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_sdk2/lib/python3.10/site-packages'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_sdk2/bin'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_sdk2/share/livox_sdk2/package.ps1'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/livox_sdk2/share/livox_sdk2/package.dsv'
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_sdk2/share/livox_sdk2/package.sh'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_sdk2/share/livox_sdk2/package.bash'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_sdk2/share/livox_sdk2/package.zsh'
+[0.711s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/livox_sdk2/share/colcon-core/packages/livox_sdk2)
+[0.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/pointcloud_to_laserscan -- -j8 -l8
+[0.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/pointcloud_to_laserscan
+[0.723s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(livox_ros_driver2)
+[0.723s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2' for CMake module files
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2' for CMake config files
+[0.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/livox_ros_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/livox_ros_driver2
+[0.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'cmake_prefix_path')
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.ps1'
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.dsv'
+[0.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.sh'
+[0.733s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/lib'
+[0.733s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'ld_library_path_lib')
+[0.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.ps1'
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.dsv'
+[0.734s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.sh'
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/bin'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/lib/pkgconfig/livox_ros_driver2.pc'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/lib/python3.10/site-packages'
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/bin'
+[0.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.ps1'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv'
+[0.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.sh'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.bash'
+[0.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.zsh'
+[0.738s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/livox_ros_driver2/share/colcon-core/packages/livox_ros_driver2)
+[0.738s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(livox_ros_driver2)
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2' for CMake module files
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2' for CMake config files
+[0.741s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'cmake_prefix_path')
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.ps1'
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.dsv'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/cmake_prefix_path.sh'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/lib'
+[0.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('livox_ros_driver2', 'ld_library_path_lib')
+[0.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.ps1'
+[0.744s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.dsv'
+[0.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/hook/ld_library_path_lib.sh'
+[0.745s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/bin'
+[0.745s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/lib/pkgconfig/livox_ros_driver2.pc'
+[0.745s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/lib/python3.10/site-packages'
+[0.745s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/livox_ros_driver2/bin'
+[0.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.ps1'
+[0.746s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.dsv'
+[0.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.sh'
+[0.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.bash'
+[0.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/livox_ros_driver2/share/livox_ros_driver2/package.zsh'
+[0.748s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/livox_ros_driver2/share/colcon-core/packages/livox_ros_driver2)
+[0.748s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nhs/engineer/src/rm_localization/point_lio' with build type 'ament_cmake'
+[0.748s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nhs/engineer/src/rm_localization/point_lio'
+[0.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.749s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.753s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pointcloud_to_laserscan)
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan' for CMake module files
+[0.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/pointcloud_to_laserscan
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan' for CMake config files
+[0.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('pointcloud_to_laserscan', 'cmake_prefix_path')
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.ps1'
+[0.755s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.dsv'
+[0.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.sh'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/lib'
+[0.755s] Level 1:colcon.colcon_core.shell:create_environment_hook('pointcloud_to_laserscan', 'ld_library_path_lib')
+[0.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.ps1'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.dsv'
+[0.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.sh'
+[0.756s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/bin'
+[0.756s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/lib/pkgconfig/pointcloud_to_laserscan.pc'
+[0.757s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/lib/python3.10/site-packages'
+[0.757s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/bin'
+[0.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.ps1'
+[0.757s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.dsv'
+[0.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.sh'
+[0.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.bash'
+[0.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.zsh'
+[0.758s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/pointcloud_to_laserscan/share/colcon-core/packages/pointcloud_to_laserscan)
+[0.759s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pointcloud_to_laserscan)
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan' for CMake module files
+[0.759s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan' for CMake config files
+[0.760s] Level 1:colcon.colcon_core.shell:create_environment_hook('pointcloud_to_laserscan', 'cmake_prefix_path')
+[0.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.ps1'
+[0.760s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.dsv'
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.sh'
+[0.761s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/lib'
+[0.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('pointcloud_to_laserscan', 'ld_library_path_lib')
+[0.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.ps1'
+[0.762s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.dsv'
+[0.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.sh'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/bin'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/lib/pkgconfig/pointcloud_to_laserscan.pc'
+[0.762s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/lib/python3.10/site-packages'
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/pointcloud_to_laserscan/bin'
+[0.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.ps1'
+[0.763s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.dsv'
+[0.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.sh'
+[0.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.bash'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.zsh'
+[0.765s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/pointcloud_to_laserscan/share/colcon-core/packages/pointcloud_to_laserscan)
+[0.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/linefit_ground_segmentation_ros' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/linefit_ground_segmentation/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/linefit_ground_segmentation_ros -- -j8 -l8
+[0.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/linefit_ground_segmentation_ros': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/linefit_ground_segmentation/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/linefit_ground_segmentation_ros
+[0.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/point_lio -- -j8 -l8
+[0.777s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linefit_ground_segmentation_ros)
+[0.777s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros' for CMake module files
+[0.778s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros' for CMake config files
+[0.778s] Level 1:colcon.colcon_core.shell:create_environment_hook('linefit_ground_segmentation_ros', 'cmake_prefix_path')
+[0.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/hook/cmake_prefix_path.ps1'
+[0.779s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/hook/cmake_prefix_path.dsv'
+[0.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/linefit_ground_segmentation_ros' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/linefit_ground_segmentation/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/livox_ros_driver2/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/linefit_ground_segmentation_ros
+[0.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/hook/cmake_prefix_path.sh'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/lib'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/bin'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/lib/pkgconfig/linefit_ground_segmentation_ros.pc'
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/lib/python3.10/site-packages'
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/bin'
+[0.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.ps1'
+[0.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.dsv'
+[0.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.sh'
+[0.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.bash'
+[0.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.zsh'
+[0.783s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/colcon-core/packages/linefit_ground_segmentation_ros)
+[0.783s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linefit_ground_segmentation_ros)
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros' for CMake module files
+[0.784s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros' for CMake config files
+[0.784s] Level 1:colcon.colcon_core.shell:create_environment_hook('linefit_ground_segmentation_ros', 'cmake_prefix_path')
+[0.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/hook/cmake_prefix_path.ps1'
+[0.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/hook/cmake_prefix_path.dsv'
+[0.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/hook/cmake_prefix_path.sh'
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/lib'
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/bin'
+[0.785s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/lib/pkgconfig/linefit_ground_segmentation_ros.pc'
+[0.786s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/lib/python3.10/site-packages'
+[0.786s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/linefit_ground_segmentation_ros/bin'
+[0.786s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.ps1'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.dsv'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.sh'
+[0.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.bash'
+[0.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/linefit_ground_segmentation_ros/package.zsh'
+[0.789s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/linefit_ground_segmentation_ros/share/colcon-core/packages/linefit_ground_segmentation_ros)
+[0.846s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/point_lio -- -j8 -l8
+[0.848s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/point_lio
+[0.855s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_lio)
+[0.855s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio' for CMake module files
+[0.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/point_lio
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio' for CMake config files
+[0.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_lio', 'cmake_prefix_path')
+[0.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/point_lio/share/point_lio/hook/cmake_prefix_path.ps1'
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/point_lio/share/point_lio/hook/cmake_prefix_path.dsv'
+[0.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/point_lio/share/point_lio/hook/cmake_prefix_path.sh'
+[0.857s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/lib'
+[0.857s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/bin'
+[0.857s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/lib/pkgconfig/point_lio.pc'
+[0.857s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/lib/python3.10/site-packages'
+[0.858s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/bin'
+[0.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/point_lio/share/point_lio/package.ps1'
+[0.858s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/point_lio/share/point_lio/package.dsv'
+[0.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/point_lio/share/point_lio/package.sh'
+[0.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/point_lio/share/point_lio/package.bash'
+[0.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/point_lio/share/point_lio/package.zsh'
+[0.859s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/point_lio/share/colcon-core/packages/point_lio)
+[0.859s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_lio)
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio' for CMake module files
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio' for CMake config files
+[0.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_lio', 'cmake_prefix_path')
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/point_lio/share/point_lio/hook/cmake_prefix_path.ps1'
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/point_lio/share/point_lio/hook/cmake_prefix_path.dsv'
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/point_lio/share/point_lio/hook/cmake_prefix_path.sh'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/lib'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/bin'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/lib/pkgconfig/point_lio.pc'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/lib/python3.10/site-packages'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/point_lio/bin'
+[0.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/point_lio/share/point_lio/package.ps1'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/point_lio/share/point_lio/package.dsv'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/point_lio/share/point_lio/package.sh'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/point_lio/share/point_lio/package.bash'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/point_lio/share/point_lio/package.zsh'
+[0.863s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/point_lio/share/colcon-core/packages/point_lio)
+[0.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/src/rm_communication/bubble_protocol': PYTHONPATH=/home/nhs/engineer/build/bubble_protocol/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/bubble_protocol build --build-base /home/nhs/engineer/build/bubble_protocol/build install --record /home/nhs/engineer/build/bubble_protocol/install.log --single-version-externally-managed install_data
+[0.975s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/rmctrl_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --build /home/nhs/engineer/build/rmctrl_msgs -- -j8 -l8
+[0.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nhs/engineer/build/rmctrl_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/rmctrl_msgs
+[1.022s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmctrl_msgs)
+[1.022s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs' for CMake module files
+[1.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/build/rmctrl_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble /usr/bin/cmake --install /home/nhs/engineer/build/rmctrl_msgs
+[1.023s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs' for CMake config files
+[1.023s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmctrl_msgs', 'cmake_prefix_path')
+[1.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/cmake_prefix_path.ps1'
+[1.023s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/cmake_prefix_path.dsv'
+[1.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/cmake_prefix_path.sh'
+[1.024s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/lib'
+[1.024s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmctrl_msgs', 'ld_library_path_lib')
+[1.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/ld_library_path_lib.ps1'
+[1.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/ld_library_path_lib.dsv'
+[1.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/ld_library_path_lib.sh'
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/bin'
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/lib/pkgconfig/rmctrl_msgs.pc'
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/lib/python3.10/site-packages'
+[1.025s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/bin'
+[1.025s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.ps1'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.dsv'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.sh'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.bash'
+[1.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.zsh'
+[1.027s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/rmctrl_msgs/share/colcon-core/packages/rmctrl_msgs)
+[1.027s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmctrl_msgs)
+[1.027s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs' for CMake module files
+[1.028s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs' for CMake config files
+[1.028s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmctrl_msgs', 'cmake_prefix_path')
+[1.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/cmake_prefix_path.ps1'
+[1.028s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/cmake_prefix_path.dsv'
+[1.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/cmake_prefix_path.sh'
+[1.029s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/lib'
+[1.029s] Level 1:colcon.colcon_core.shell:create_environment_hook('rmctrl_msgs', 'ld_library_path_lib')
+[1.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/ld_library_path_lib.ps1'
+[1.029s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/ld_library_path_lib.dsv'
+[1.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/hook/ld_library_path_lib.sh'
+[1.030s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/bin'
+[1.030s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/lib/pkgconfig/rmctrl_msgs.pc'
+[1.030s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/lib/python3.10/site-packages'
+[1.030s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/rmctrl_msgs/bin'
+[1.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.ps1'
+[1.030s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.dsv'
+[1.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.sh'
+[1.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.bash'
+[1.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/rmctrl_msgs/share/rmctrl_msgs/package.zsh'
+[1.031s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/rmctrl_msgs/share/colcon-core/packages/rmctrl_msgs)
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/bubble_protocol' for CMake module files
+[1.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nhs/engineer/src/rm_communication/bubble_protocol' returned '0': PYTHONPATH=/home/nhs/engineer/build/bubble_protocol/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/bubble_protocol build --build-base /home/nhs/engineer/build/bubble_protocol/build install --record /home/nhs/engineer/build/bubble_protocol/install.log --single-version-externally-managed install_data
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/bubble_protocol' for CMake config files
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/bubble_protocol/lib'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/bubble_protocol/bin'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/bubble_protocol/lib/pkgconfig/bubble_protocol.pc'
+[1.103s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/bubble_protocol/lib/python3.10/site-packages'
+[1.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('bubble_protocol', 'pythonpath')
+[1.103s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/hook/pythonpath.ps1'
+[1.104s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/hook/pythonpath.dsv'
+[1.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/hook/pythonpath.sh'
+[1.104s] Level 1:colcon.colcon_core.environment:checking '/home/nhs/engineer/install/bubble_protocol/bin'
+[1.104s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bubble_protocol)
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/package.ps1'
+[1.105s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/package.dsv'
+[1.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/package.sh'
+[1.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/package.bash'
+[1.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/nhs/engineer/install/bubble_protocol/share/bubble_protocol/package.zsh'
+[1.106s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nhs/engineer/install/bubble_protocol/share/colcon-core/packages/bubble_protocol)
+[1.106s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.106s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.106s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.106s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.111s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.111s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.111s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.119s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.119s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nhs/engineer/install/local_setup.ps1'
+[1.120s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nhs/engineer/install/_local_setup_util_ps1.py'
+[1.121s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nhs/engineer/install/setup.ps1'
+[1.122s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nhs/engineer/install/local_setup.sh'
+[1.122s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nhs/engineer/install/_local_setup_util_sh.py'
+[1.123s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nhs/engineer/install/setup.sh'
+[1.124s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nhs/engineer/install/local_setup.bash'
+[1.124s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nhs/engineer/install/setup.bash'
+[1.125s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nhs/engineer/install/local_setup.zsh'
+[1.125s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nhs/engineer/install/setup.zsh'

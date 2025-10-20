@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rmctrl_msgs/msg/Imu.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module rmctrl_msgs {
+  module msg {
+    struct Imu {
+      std_msgs::msg::Header header;
+
+      double yaw;
+
+      double pitch;
+
+      double roll;
+    };
+  };
+};

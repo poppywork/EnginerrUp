@@ -1,0 +1,92 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nhs/engineer/build/rmctrl_msgs
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  4%] Built target ament_cmake_python_copy_rmctrl_msgs
+running egg_info
+creating rmctrl_msgs.egg-info
+writing rmctrl_msgs.egg-info/PKG-INFO
+writing dependency_links to rmctrl_msgs.egg-info/dependency_links.txt
+writing top-level names to rmctrl_msgs.egg-info/top_level.txt
+writing manifest file 'rmctrl_msgs.egg-info/SOURCES.txt'
+reading manifest file 'rmctrl_msgs.egg-info/SOURCES.txt'
+writing manifest file 'rmctrl_msgs.egg-info/SOURCES.txt'
+[  4%] Built target ament_cmake_python_build_rmctrl_msgs_egg
+[  4%] Built target rmctrl_msgs__cpp
+[  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 12%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_generator_c.dir/rosidl_generator_c/rmctrl_msgs/msg/detail/chassis__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_generator_c.dir/rosidl_generator_c/rmctrl_msgs/msg/detail/imu__functions.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_generator_c.dir/rosidl_generator_c/rmctrl_msgs/msg/detail/odom__functions.c.o[0m
+[ 19%] [32m[1mLinking C shared library librmctrl_msgs__rosidl_generator_c.so[0m
+[ 19%] Built target rmctrl_msgs__rosidl_generator_c
+[ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmctrl_msgs/msg/imu__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmctrl_msgs/msg/chassis__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rmctrl_msgs/msg/odom__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmctrl_msgs/msg/detail/chassis__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmctrl_msgs/msg/detail/imu__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rmctrl_msgs/msg/detail/odom__type_support.cpp.o[0m
+[ 40%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_c.so[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmctrl_msgs/msg/chassis__type_support.cpp.o[0m
+[ 42%] Built target rmctrl_msgs__rosidl_typesupport_c
+[ 44%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmctrl_msgs/msg/imu__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmctrl_msgs/msg/detail/dds_fastrtps/chassis__type_support.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmctrl_msgs/msg/detail/chassis__type_support_c.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmctrl_msgs/msg/detail/imu__type_support_c.cpp.o[0m
+[ 53%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmctrl_msgs/msg/detail/chassis__type_support.c.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rmctrl_msgs/msg/odom__type_support.cpp.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmctrl_msgs/msg/detail/imu__type_support.c.o[0m
+[ 59%] [32mBuilding C object CMakeFiles/rmctrl_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rmctrl_msgs/msg/detail/odom__type_support.c.o[0m
+[ 61%] [32m[1mLinking C shared library librmctrl_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmctrl_msgs/msg/detail/dds_fastrtps/imu__type_support.cpp.o[0m
+[ 63%] Built target rmctrl_msgs__rosidl_typesupport_introspection_c
+[ 65%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rmctrl_msgs/msg/detail/odom__type_support_c.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/rmctrl_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rmctrl_msgs/msg/detail/dds_fastrtps/odom__type_support.cpp.o[0m
+[ 70%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 72%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_cpp.so[0m
+[ 72%] Built target rmctrl_msgs__rosidl_typesupport_introspection_cpp
+[ 72%] Built target rmctrl_msgs__rosidl_typesupport_cpp
+[ 74%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 74%] Built target rmctrl_msgs__rosidl_typesupport_fastrtps_c
+[ 76%] [32m[1mLinking CXX shared library librmctrl_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 76%] Built target rmctrl_msgs__rosidl_typesupport_fastrtps_cpp
+[ 76%] Built target rmctrl_msgs
+[ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+Built target rmctrl_msgs__py

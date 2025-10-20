@@ -1,0 +1,38 @@
+[0.013s] Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/point_lio -- -j8 -l8
+[0.093s] [100%] Built target pointlio_mapping
+[0.103s] Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/nhs/engineer/build/point_lio -- -j8 -l8
+[0.105s] Invoking command in '/home/nhs/engineer/build/point_lio': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/point_lio
+[0.112s] -- Install configuration: ""
+[0.112s] -- Up-to-date: /home/nhs/engineer/install/point_lio/lib/point_lio/pointlio_mapping
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/velody16.yaml
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/mid360.yaml
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/ouster64.yaml
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/horizon.yaml
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/config/avia.yaml
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/rviz_cfg
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[0.113s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/environment/path.sh
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/environment/path.dsv
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.bash
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.sh
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.zsh
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/local_setup.dsv
+[0.114s] -- Installing: /home/nhs/engineer/install/point_lio/share/point_lio/package.dsv
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[0.114s] -- Up-to-date: /home/nhs/engineer/install/point_lio/share/point_lio/package.xml
+[0.116s] Invoked command in '/home/nhs/engineer/build/point_lio' returned '0': CMAKE_PREFIX_PATH=/home/nhs/engineer/install/livox_ros_driver2:/home/nhs/engineer/install/rmctrl_msgs:/home/nhs/engineer/install/rm_description:/home/nhs/engineer/install/pointcloud_to_laserscan:/home/nhs/engineer/install/point_lio:/home/nhs/engineer/install/pcd2pgm:/home/nhs/engineer/install/navi:/home/nhs/engineer/install/linefit_ground_segmentation_ros:/home/nhs/engineer/install/linefit_ground_segmentation:/home/nhs/engineer/install/bubble_protocol:/opt/ros/humble LD_LIBRARY_PATH=/home/nhs/engineer/install/livox_ros_driver2/lib:/home/nhs/engineer/install/rmctrl_msgs/lib:/home/nhs/engineer/install/pointcloud_to_laserscan/lib:/home/nhs/engineer/install/livox_sdk2/lib:/home/nhs/engineer/install/linefit_ground_segmentation/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/nhs/engineer/build/point_lio

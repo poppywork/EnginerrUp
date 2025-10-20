@@ -1,0 +1,8 @@
+{
+  "package_name": "rmctrl_msgs",
+  "non_idl_tuples": [
+    "/home/nhs/engineer/src/rm_communication/bubble_interface/rmctrl_msgs:msg/Chassis.msg",
+    "/home/nhs/engineer/src/rm_communication/bubble_interface/rmctrl_msgs:msg/Imu.msg",
+    "/home/nhs/engineer/src/rm_communication/bubble_interface/rmctrl_msgs:msg/Odom.msg"
+  ]
+}
