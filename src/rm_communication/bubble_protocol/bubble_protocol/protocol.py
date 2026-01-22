@@ -136,15 +136,19 @@ odom_info["odom_angle"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 
 # gimbal data
 gimbal_info = OrderedDict()
-# for gimbal control mode:
-# 0. Absolute angle control
-# 1. Relative angle control
-gimbal_info["joint1"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###10000是放大比例
-gimbal_info["joint2"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
-gimbal_info["joint3"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
-gimbal_info["joint4"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
-gimbal_info["joint5"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
-gimbal_info["joint6"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint1_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###10000将原始数据接受后缩小的倍数
+gimbal_info["joint2_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###下位机那边要将原始数据乘以这个倍数
+gimbal_info["joint3_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint4_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint5_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint6_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint1_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint2_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint3_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint4_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint5_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint6_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+
 
 # core mode contrl
 mode_info = OrderedDict()
@@ -199,7 +203,7 @@ ID = {
     "chassis_ctrl": [0x12, chassis_ctrl_info],
     "chassis_imu": [0x13, chassis_imu_info],#1
 
-    "joint_state_sub_from_moveit2": [0x20, gimbal_info],
+    "joint_state_sub_from_mcu": [0x20, gimbal_info],
 
     "robot_command": [0x34, robot_command_info],
     "client_map_command_command": [0x35, client_map_command_command_info],
@@ -219,7 +223,7 @@ ID = {
 
 STATUS = {
     "manifold_ctrl": copy.deepcopy(manifold_ctrl_info),
-    "joint_state_sub_from_moveit2": copy.deepcopy(gimbal_info),
+    "joint_state_sub_from_mcu": copy.deepcopy(gimbal_info),
     "chassis_cmd_from_mcu": copy.deepcopy(chassis_info),
     "chassis_odom": copy.deepcopy(odom_info),
     "chassis_imu": copy.deepcopy(chassis_imu_info),
@@ -233,6 +237,7 @@ REALTIME_CALLBACK = {
     "chassis_ctrl": None,
     "chassis_imu": None,
     "chassis_cmd_from_mcu": None,
+    "joint_state_sub_from_mcu": None,
 }
 
 

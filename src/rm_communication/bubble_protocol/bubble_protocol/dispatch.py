@@ -23,7 +23,7 @@ from bubble_protocol.hardware import RobotSerial
 from bubble_protocol.robot_status import RobotStatus
 import rmctrl_msgs   # type: ignore
 from rmctrl_msgs.msg import Chassis, Imu  # type: ignore
-from std_msgs.msg import Int32MultiArray
+from std_msgs.msg import Float32MultiArray
 
 
 class RobotAPI(Node):
@@ -90,17 +90,19 @@ class RobotAPI(Node):
         self.uartrx_timer = self.create_timer(
             0.01, self.robot_serial.rx_function)
 
+        ### rx_function读取数据解析出符合格式数据包，process将解析的数据包具体分配到protocol定义好的数据包里面
+        ### 和将发送缓冲区里的数据包发送出去
+
     def api_init(self) -> None:
-        # subscriber api 订阅模式控制信息
+        #在此添加需要从上位机别的地方发来的话题,通过回调函数发出去
+        # 前提是robot_status文件里面写了对于的话题名称和对于消息类型
         if self.name == "engineer":
-            self.gimbal_sub = self.create_subscription(
-                Imu, '/processor/gimbal', self.gimbal_callback, 10)
             self.chassis_sub = self.create_subscription(
                 Twist, '/cmd_vel', self.ex_chassis_callback, 10)
             self.odom_sub = self.create_subscription(
                 Twist, '/odom', self.ex_odom_callback, 10)
             self.joint_state_sub = self.create_subscription(
-                Int32MultiArray, '/joint_state_sub_from_moveit2', self.ex_joint_state_sub_from_moveit2_callback, 10)
+                Float32MultiArray, '/joint_state_sub_from_moveit2', self.ex_joint_state_sub_from_moveit2_callback, 10)
 
     def gimbal_callback(self, msg: Imu) -> None:
         mode = 1
@@ -110,11 +112,12 @@ class RobotAPI(Node):
         print(f"send data yaw:{msg.yaw},pitch{msg.pitch},pitch{msg.roll}")
 
     def ex_chassis_callback(self, msg: Twist) -> None:
-        print("recived data chassis and now send to pc")
+        print("接收到上位机对下位机底盘的控制命令，现在发出")
         self.robot_serial.send_data("chassis_ctrl", [msg.linear.x, msg.linear.y, msg.linear.z,
                                                      msg.angular.x, msg.angular.y, -msg.angular.z])
 
     def ex_odom_callback(self, msg: PoseWithCovariance):
+        print("接收到里程计,现在通过串口发送出去")
         odom_list = []
         odom_list.append(msg.pose.position.x)
         odom_list.append(msg.pose.position.y)
@@ -125,14 +128,13 @@ class RobotAPI(Node):
         odom_list.append(msg.pose.orientation.w)
         self.robot_serial.send_data("odom", odom_list)
 
-    def ex_joint_state_sub_from_moveit2_callback(self, msg: Int32MultiArray):
-        print("recived data joint_state_sub_from_moveit2 and now send to pc")
-        joint_state_sub_from_moveit2_list = []
-        joint_state_sub_from_moveit2_list.append(msg.data[0])
-        joint_state_sub_from_moveit2_list.append(msg.data[1])
-        joint_state_sub_from_moveit2_list.append(msg.data[2])
-        joint_state_sub_from_moveit2_list.append(msg.data[3])
-        joint_state_sub_from_moveit2_list.append(msg.data[4])
-        joint_state_sub_from_moveit2_list.append(msg.data[5])
-        print(msg.data[0],msg.data[1],msg.data[2])
-        self.robot_serial.send_data("joint_state_sub_from_moveit2", joint_state_sub_from_moveit2_list)
+    def ex_joint_state_sub_from_moveit2_callback(self, msg: Float32MultiArray):
+        print("接收到上位机对下位机机械臂的控制命令,现在通过串口发送出去")
+        joint_cmd_sub_from_moveit2_list = []
+        joint_cmd_sub_from_moveit2_list.append(msg.data[0])
+        joint_cmd_sub_from_moveit2_list.append(msg.data[1])
+        joint_cmd_sub_from_moveit2_list.append(msg.data[2])
+        joint_cmd_sub_from_moveit2_list.append(msg.data[3])
+        joint_cmd_sub_from_moveit2_list.append(msg.data[4])
+        joint_cmd_sub_from_moveit2_list.append(msg.data[5])
+        self.robot_serial.send_data("joint_cmd_sub_from_moveit2", joint_cmd_sub_from_moveit2_list)

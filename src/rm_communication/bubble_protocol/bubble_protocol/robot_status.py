@@ -19,9 +19,9 @@ import nav_msgs.msg
 import rmctrl_msgs # type: ignore
 import rmctrl_msgs.msg # type: ignore
 import numpy as np
-
+from std_msgs.msg import Float32MultiArray
 from bubble_protocol.protocol import *
-
+from rmctrl_msgs.msg import ArmData
 
 class RobotStatus():
     """Send robot status information.
@@ -49,7 +49,7 @@ class RobotStatus():
         ''' The function defines publishes required for the robot status.
             该函数定义机器人状态所需的发布。
         '''
-
+#下面的回调函数是将接到的mcu的数据通过话题整理后发给别的地方用
         def chassis_callback():
             odom_msg = nav_msgs.msg.Odometry()
             odom_msg.header.stamp = self.node.get_clock().now().to_msg()
@@ -176,17 +176,44 @@ class RobotStatus():
 
             return q
 
+        def joints_status_from_mcu_callback():
+            joint_state_sub_from_mcu_msg = ArmData()
+
+            joint_state_sub_from_mcu_msg.joint1_position = float(
+                self.status["joint_state_sub_from_mcu"]["joint1_position"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint2_position = float(
+                self.status["joint_state_sub_from_mcu"]["joint2_position"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint3_position = float(
+                self.status["joint_state_sub_from_mcu"]["joint3_position"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint4_position = float(
+                self.status["joint_state_sub_from_mcu"]["joint4_position"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint5_position = float(
+                self.status["joint_state_sub_from_mcu"]["joint5_position"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint6_position = float(
+                self.status["joint_state_sub_from_mcu"]["joint6_position"][IDX_VAL])
+            
+            joint_state_sub_from_mcu_msg.joint1_velocity = float(
+                self.status["joint_state_sub_from_mcu"]["joint1_velocity"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint2_velocity = float(
+                self.status["joint_state_sub_from_mcu"]["joint2_velocity"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint3_velocity= float(
+                self.status["joint_state_sub_from_mcu"]["joint3_velocity"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint4_velocity = float(
+                self.status["joint_state_sub_from_mcu"]["joint4_velocity"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint5_velocity = float(
+                self.status["joint_state_sub_from_mcu"]["joint5_velocity"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint6_velocity = float(
+                self.status["joint_state_sub_from_mcu"]["joint6_velocity"][IDX_VAL])
+            
+            self.joint_state_sub_from_mcu_pub.publish(joint_state_sub_from_mcu_msg)
+
         # real-time publisher api
         if self.name == "engineer":###定义NUC现在是那个机器人在用###
-            ###在此处添加机器人需要发布给MCU的话题数据###
-            self.joint_pub = self.node.create_publisher(
-                sensor_msgs.msg.JointState, '/joint_states', 10)
-            self.chassis_imu_pub = self.node.create_publisher(
-                sensor_msgs.msg.Imu, '/chassis_imu', 10)
-            self.chassis_cmd_from_mcu = self.node.create_publisher(
-                geometry_msgs.msg.Twist, '/chassis_cmd_from_mcu', 10)
+            ###在此处添加需要发布出去给大家的MCU话题数据###
+            self.joint_state_sub_from_mcu_pub = self.node.create_publisher(
+                ArmData,'/joint_state_sub_from_mcu', 10)
+            
             
             ###在此处添加机器人需要从MCU接收的话题数据###
-            ###不需要那个回调函数注释就行###
-            self.realtime_callback["chassis_imu"] = chassis_imu_callback
-            self.realtime_callback["chassis_cmd_from_mcu"] = chassis_cmd_from_mcu_callback##回传控制指令
+            self.realtime_callback["joint_state_sub_from_mcu"] = joints_status_from_mcu_callback
+            

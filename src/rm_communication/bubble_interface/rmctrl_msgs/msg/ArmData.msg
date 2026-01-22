@@ -1,0 +1,12 @@
+float32 joint1_position
+float32 joint2_position
+float32 joint3_position
+float32 joint4_position
+float32 joint5_position
+float32 joint6_position
+float32 joint1_velocity
+float32 joint2_velocity
+float32 joint3_velocity
+float32 joint4_velocity
+float32 joint5_velocity
+float32 joint6_velocity

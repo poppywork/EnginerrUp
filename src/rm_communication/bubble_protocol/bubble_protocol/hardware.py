@@ -191,7 +191,7 @@ class RobotSerial(serial.Serial):
                 return
             if current_packet[ID_POSE] == ID[key][IDX_BCPID]:
                 data_info = ID[key][IDX_BCP_DETAIL]
-                print("===ID====", hex(current_packet[ID_POSE]))
+                print("接收到ID为", hex(current_packet[ID_POSE]),"的数据")
                 unpack_info = struct.unpack(getFrameFmt(
                     data_info), current_packet[DATA_POSE: SUM_CHECK_POSE])
                 ratio_list = getFrameRatio(data_info)
