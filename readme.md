@@ -12,17 +12,19 @@ pip3 install pyserial   下载串口包
 
 ## 如何配置代码于自己电脑
 1、git clone https://github.com/poppywork/EnginerrUp.git
-2、cd ./Livox-SDK2/
-3、rm build
-4、mkdir build 
-5、cd build
-6、cmake .. && make -j8
-7、sudo make install
-8、cd /livox_ws/src/livox_ros_driver2
-9、source /opt/ros/humble/setup.sh
-10、./build.sh humble  
-11、cd 自己工作空间
-12、colcon build (如果显示黄色,再构建一次)
+2、cd src/rm_drive
+3、git clone https://github.com/Livox-SDK/Livox-SDK2.git
+4、cd ./Livox-SDK2/
+5、mkdir build 
+6、cd build
+7、cmake .. && make -j8
+8、sudo make install
+9、cd ..   cd ..
+10、cd livox_ros_driver2
+11、source /opt/ros/humble/setup.sh
+12、./build.sh humble  
+13、cd 自己工作空间
+14、colcon build (如果显示黄色,再构建一次)
 
 
 ## 连接雷达权限需求
