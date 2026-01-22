@@ -7,7 +7,7 @@ and send the data to MCU.
 At the same time, the data received by the onboard computer will also be 
 transmitted to the DDS through this module 
 to be received by other subscribers.
-机器人通信调度层,该模块是DDS与串口硬件之间的桥梁。
+机器人通信调度层,该模块是DDS(内存)与串口硬件之间的桥梁。
 通过模块,可以初始化一个BCP帧来接收DDS传输的数据并将数据发送给MCU。
 同时,车载电脑接收到的数据也会通过该模块传输到DDS,由其他订户接收。
 '''
@@ -23,7 +23,7 @@ from bubble_protocol.hardware import RobotSerial
 from bubble_protocol.robot_status import RobotStatus
 import rmctrl_msgs   # type: ignore
 from rmctrl_msgs.msg import Chassis, Imu  # type: ignore
-
+from std_msgs.msg import Int32MultiArray
 
 
 class RobotAPI(Node):
@@ -49,7 +49,7 @@ class RobotAPI(Node):
         """
         super().__init__("BCP_Core")
 
-        self.declare_parameter('robot_type', 'None')
+        self.declare_parameter('robot_type', 'None')#这两个参数都在launch文件定义好了
         self.declare_parameter('serial_port', 'None')
         self.name = self.get_parameter(
             'robot_type').get_parameter_value().string_value
@@ -68,6 +68,7 @@ class RobotAPI(Node):
         serial_opened = False
         while not serial_opened:
             try:
+                #在这里进行机器人初始化和串口初始化
                 self.robot_serial = RobotSerial(self.name, port=self.serial_port)
                 self.get_logger().info(f'Serial Port {self.serial_port} has been initialized...')
                 serial_opened = True
@@ -76,25 +77,30 @@ class RobotAPI(Node):
                     f'Open serial port error, try to reopen port:{self.serial_port}, info: {e}')
                 time.sleep(3)
 
-        self.robot_status = RobotStatus(self.robot_serial.status, self)
+        self.robot_status = RobotStatus(self.robot_serial.status, self)###注册与MCU关联的话题和回调函数层
         self.robot_serial.realtime_pub = self.robot_status.realtime_callback
         self.robot_serial.serial_done = True
 
-        self.api_init()
+        self.api_init()###注册与NUC关联的订阅话题和回调函数层
+
+        ###发送流程：话题回调，将数据放在txbuffer里面，定时回调process函数发送出去
         self.uart_timer = self.create_timer(0.01, self.robot_serial.process)
+        ###接收流程：定时回调process函数接受串口缓冲区数据，并解析出数据包->
+        ###定时回调函数rx_function将数据包分类调用写好的接收回调函数
         self.uartrx_timer = self.create_timer(
             0.01, self.robot_serial.rx_function)
 
     def api_init(self) -> None:
-
         # subscriber api 订阅模式控制信息
         if self.name == "engineer":
             self.gimbal_sub = self.create_subscription(
                 Imu, '/processor/gimbal', self.gimbal_callback, 10)
             self.chassis_sub = self.create_subscription(
                 Twist, '/cmd_vel', self.ex_chassis_callback, 10)
-            self.chassis_sub = self.create_subscription(
+            self.odom_sub = self.create_subscription(
                 Twist, '/odom', self.ex_odom_callback, 10)
+            self.joint_state_sub = self.create_subscription(
+                Int32MultiArray, '/joint_state_sub_from_moveit2', self.ex_joint_state_sub_from_moveit2_callback, 10)
 
     def gimbal_callback(self, msg: Imu) -> None:
         mode = 1
@@ -118,3 +124,15 @@ class RobotAPI(Node):
         odom_list.append(msg.pose.orientation.z)
         odom_list.append(msg.pose.orientation.w)
         self.robot_serial.send_data("odom", odom_list)
+
+    def ex_joint_state_sub_from_moveit2_callback(self, msg: Int32MultiArray):
+        print("recived data joint_state_sub_from_moveit2 and now send to pc")
+        joint_state_sub_from_moveit2_list = []
+        joint_state_sub_from_moveit2_list.append(msg.data[0])
+        joint_state_sub_from_moveit2_list.append(msg.data[1])
+        joint_state_sub_from_moveit2_list.append(msg.data[2])
+        joint_state_sub_from_moveit2_list.append(msg.data[3])
+        joint_state_sub_from_moveit2_list.append(msg.data[4])
+        joint_state_sub_from_moveit2_list.append(msg.data[5])
+        print(msg.data[0],msg.data[1],msg.data[2])
+        self.robot_serial.send_data("joint_state_sub_from_moveit2", joint_state_sub_from_moveit2_list)

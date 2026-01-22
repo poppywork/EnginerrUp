@@ -38,7 +38,7 @@ class RobotStatus():
         self.node = node
         self.name = node.name
         self.status = status
-        self.realtime_callback = REALTIME_CALLBACK
+        self.realtime_callback = REALTIME_CALLBACK ###定义接受MCU数据的全部回调函数###
         self.status_init()
 
         # 定时发布非实时状态
@@ -100,15 +100,15 @@ class RobotStatus():
                 self.status["chassis_imu"]["chassis_imu_angle_z"][IDX_VAL]))
             self.chassis_imu_pub.publish(chassis_imu_msg)
 
-        def chassis_cmd_from_muc_callback():
-            chassis_cmd_from_muc_msg = geometry_msgs.msg.Twist()
-            chassis_cmd_from_muc_msg.linear.x = float(
-                self.status["chassis"]["chassis_vx_cmd_from_mcu"][IDX_VAL])
-            chassis_cmd_from_muc_msg.linear.y = float(
-                self.status["chassis"]["chassis_vy_cmd_from_mcu"][IDX_VAL])
-            chassis_cmd_from_muc_msg.angular.z = float(
-                self.status["chassis"]["chassis_vw_cmd_from_mcu"][IDX_VAL])
-            self.chassis_cmd_from_muc.publish(chassis_cmd_from_muc_msg)
+        def chassis_cmd_from_mcu_callback():
+            chassis_cmd_from_mcu_msg = geometry_msgs.msg.Twist()
+            chassis_cmd_from_mcu_msg.linear.x = float(
+                self.status["chassis_cmd_from_mcu"]["chassis_vx_cmd_from_mcu"][IDX_VAL])
+            chassis_cmd_from_mcu_msg.linear.y = float(
+                self.status["chassis_cmd_from_mcu"]["chassis_vy_cmd_from_mcu"][IDX_VAL])
+            chassis_cmd_from_mcu_msg.angular.z = float(
+                self.status["chassis_cmd_from_mcu"]["chassis_vw_cmd_from_mcu"][IDX_VAL])
+            self.chassis_cmd_from_mcu.publish(chassis_cmd_from_mcu_msg)
 
         def chassis_odom_callback():
             # 发布tf2的odom变换
@@ -177,14 +177,16 @@ class RobotStatus():
             return q
 
         # real-time publisher api
-        if self.name == "engineer":
+        if self.name == "engineer":###定义NUC现在是那个机器人在用###
+            ###在此处添加机器人需要发布给MCU的话题数据###
             self.joint_pub = self.node.create_publisher(
                 sensor_msgs.msg.JointState, '/joint_states', 10)
             self.chassis_imu_pub = self.node.create_publisher(
                 sensor_msgs.msg.Imu, '/chassis_imu', 10)
-            self.chassis_cmd_from_muc = self.node.create_publisher(
-                geometry_msgs.msg.Twist, '/chassis_cmd_from_muc', 10)
+            self.chassis_cmd_from_mcu = self.node.create_publisher(
+                geometry_msgs.msg.Twist, '/chassis_cmd_from_mcu', 10)
+            
+            ###在此处添加机器人需要从MCU接收的话题数据###
+            ###不需要那个回调函数注释就行###
             self.realtime_callback["chassis_imu"] = chassis_imu_callback
-            self.realtime_callback["chassis_cmd_from_muc"] = chassis_cmd_from_muc_callback
-
-        
+            self.realtime_callback["chassis_cmd_from_mcu"] = chassis_cmd_from_mcu_callback##回传控制指令

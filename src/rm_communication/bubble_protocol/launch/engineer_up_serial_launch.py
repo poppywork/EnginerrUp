@@ -13,7 +13,7 @@ from launch_ros.actions import Node
 args_list = [
     DeclareLaunchArgument(
         'robot_type',
-        default_value='engineer',
+        default_value='engineer',#在这里修改要启动机器人的名称
         description='Robot name',
         choices=[
             "engineer"
@@ -21,7 +21,7 @@ args_list = [
 
     DeclareLaunchArgument(
         'serial_port',
-        default_value='/dev/ttySTM32H7',
+        default_value='/dev/ttySTM32H7',#在这里修改开发板的名称
         description='Onboard serial port name'
     ),
 ]
@@ -41,4 +41,3 @@ def generate_launch_description():
             }]
         )
     ])
-

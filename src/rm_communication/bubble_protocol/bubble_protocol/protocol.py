@@ -139,13 +139,12 @@ gimbal_info = OrderedDict()
 # for gimbal control mode:
 # 0. Absolute angle control
 # 1. Relative angle control
-gimbal_info["gimbal_ctrl_mode"] = [TYPE_FOR_CTYPE["uint8"], 0, 1]
-gimbal_info["gimbal_yaw"] = [TYPE_FOR_CTYPE["int32"], 0, 1000]
-gimbal_info["gimbal_pitch"] = [TYPE_FOR_CTYPE["int32"], 0, 1000]
-gimbal_info["gimbal_roll"] = [TYPE_FOR_CTYPE["int32"], 0, 1000]
-gimbal_info["gimbal_yaw_speed"] = [TYPE_FOR_CTYPE["int32"], 0, 1000]
-gimbal_info["gimbal_pitch_speed"] = [TYPE_FOR_CTYPE["int32"], 0, 1000]
-gimbal_info["gimbal_roll_speed"] = [TYPE_FOR_CTYPE["int32"], 0, 1000]
+gimbal_info["joint1"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###10000是放大比例
+gimbal_info["joint2"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint3"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint4"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint5"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["joint6"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 
 # core mode contrl
 mode_info = OrderedDict()
@@ -195,12 +194,12 @@ dev_error_info["error_module"] = [TYPE_FOR_CTYPE["uint8"], 0, 1],
 dev_error_info["error_code"] = [TYPE_FOR_CTYPE["uint8"], 0, 1],
 
 ID = {
-    "chassis": [0x10, chassis_info],
+    "chassis_cmd_from_mcu": [0x10, chassis_info],
     "chassis_odom": [0x11, odom_info],#1
     "chassis_ctrl": [0x12, chassis_ctrl_info],
     "chassis_imu": [0x13, chassis_imu_info],#1
 
-    "gimbal": [0x20, gimbal_info],
+    "joint_state_sub_from_moveit2": [0x20, gimbal_info],
 
     "robot_command": [0x34, robot_command_info],
     "client_map_command_command": [0x35, client_map_command_command_info],
@@ -220,8 +219,8 @@ ID = {
 
 STATUS = {
     "manifold_ctrl": copy.deepcopy(manifold_ctrl_info),
-    "gimbal": copy.deepcopy(gimbal_info),
-    "chassis": copy.deepcopy(chassis_info),
+    "joint_state_sub_from_moveit2": copy.deepcopy(gimbal_info),
+    "chassis_cmd_from_mcu": copy.deepcopy(chassis_info),
     "chassis_odom": copy.deepcopy(odom_info),
     "chassis_imu": copy.deepcopy(chassis_imu_info),
     "chassis_ctrl": copy.deepcopy(chassis_ctrl_info),
@@ -233,7 +232,7 @@ STATUS = {
 REALTIME_CALLBACK = {
     "chassis_ctrl": None,
     "chassis_imu": None,
-    "chassis_cmd_from_muc": None,
+    "chassis_cmd_from_mcu": None,
 }
 
 
