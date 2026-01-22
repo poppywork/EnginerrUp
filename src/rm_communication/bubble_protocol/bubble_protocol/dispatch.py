@@ -23,7 +23,7 @@ from bubble_protocol.hardware import RobotSerial
 from bubble_protocol.robot_status import RobotStatus
 import rmctrl_msgs   # type: ignore
 from rmctrl_msgs.msg import Chassis, Imu  # type: ignore
-from std_msgs.msg import Float32MultiArray
+from std_msgs.msg import Int32MultiArray
 
 
 class RobotAPI(Node):
@@ -102,7 +102,7 @@ class RobotAPI(Node):
             self.odom_sub = self.create_subscription(
                 Twist, '/odom', self.ex_odom_callback, 10)
             self.joint_state_sub = self.create_subscription(
-                Float32MultiArray, '/joint_state_sub_from_moveit2', self.ex_joint_state_sub_from_moveit2_callback, 10)
+                Int32MultiArray, '/joint_cmd_from_moveit2', self.ex_joint_state_sub_from_moveit2_callback, 10)
 
     def gimbal_callback(self, msg: Imu) -> None:
         mode = 1
@@ -128,7 +128,7 @@ class RobotAPI(Node):
         odom_list.append(msg.pose.orientation.w)
         self.robot_serial.send_data("odom", odom_list)
 
-    def ex_joint_state_sub_from_moveit2_callback(self, msg: Float32MultiArray):
+    def ex_joint_state_sub_from_moveit2_callback(self, msg: Int32MultiArray):
         print("接收到上位机对下位机机械臂的控制命令,现在通过串口发送出去")
         joint_cmd_sub_from_moveit2_list = []
         joint_cmd_sub_from_moveit2_list.append(msg.data[0])
@@ -137,4 +137,4 @@ class RobotAPI(Node):
         joint_cmd_sub_from_moveit2_list.append(msg.data[3])
         joint_cmd_sub_from_moveit2_list.append(msg.data[4])
         joint_cmd_sub_from_moveit2_list.append(msg.data[5])
-        self.robot_serial.send_data("joint_cmd_sub_from_moveit2", joint_cmd_sub_from_moveit2_list)
+        self.robot_serial.send_data("joint_cmd_from_moveit2", joint_cmd_sub_from_moveit2_list)
