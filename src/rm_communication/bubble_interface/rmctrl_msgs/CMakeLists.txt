@@ -12,7 +12,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Chassis.msg"
   "msg/Imu.msg"
   "msg/Odom.msg"
-  "msg/ArmData.msg"
+  "msg/ArmStateData.msg"
+  "msg/ArmCtrlData.msg"
   DEPENDENCIES std_msgs
 )
 

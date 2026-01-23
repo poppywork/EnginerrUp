@@ -21,7 +21,7 @@ import rmctrl_msgs.msg # type: ignore
 import numpy as np
 from std_msgs.msg import Float32MultiArray
 from bubble_protocol.protocol import *
-from rmctrl_msgs.msg import ArmData
+from rmctrl_msgs.msg import ArmStateData
 
 class RobotStatus():
     """Send robot status information.
@@ -177,7 +177,7 @@ class RobotStatus():
             return q
 
         def joints_status_from_mcu_callback():
-            joint_state_sub_from_mcu_msg = ArmData()
+            joint_state_sub_from_mcu_msg = ArmStateData()
 
             joint_state_sub_from_mcu_msg.joint1_position = float(
                 self.status["joint_state_sub_from_mcu"]["joint1_position"][IDX_VAL])
@@ -205,13 +205,16 @@ class RobotStatus():
             joint_state_sub_from_mcu_msg.joint6_velocity = float(
                 self.status["joint_state_sub_from_mcu"]["joint6_velocity"][IDX_VAL])
             
+            joint_state_sub_from_mcu_msg.gripper_state = int(
+                self.status["joint_state_sub_from_mcu"]["gripper_state"][IDX_VAL])
+            
             self.joint_state_sub_from_mcu_pub.publish(joint_state_sub_from_mcu_msg)
 
         # real-time publisher api
         if self.name == "engineer":###定义NUC现在是那个机器人在用###
             ###在此处添加需要发布出去给大家的MCU话题数据###
             self.joint_state_sub_from_mcu_pub = self.node.create_publisher(
-                ArmData,'/joint_state_sub_from_mcu', 10)
+                ArmStateData,'/joint_state_sub_from_mcu', 10)
             
             
             ###在此处添加机器人需要从MCU接收的话题数据###

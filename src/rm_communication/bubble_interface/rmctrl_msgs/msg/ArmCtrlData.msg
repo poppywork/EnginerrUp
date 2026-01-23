@@ -1,0 +1,8 @@
+float32 joint1_position
+float32 joint2_position
+float32 joint3_position
+float32 joint4_position
+float32 joint5_position
+float32 joint6_position
+
+int8 gripper_ctrl

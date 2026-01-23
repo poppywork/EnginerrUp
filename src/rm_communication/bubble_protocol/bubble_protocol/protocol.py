@@ -136,12 +136,13 @@ odom_info["odom_angle"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 
 # gimbal data
 gimbal_info = OrderedDict()
-gimbal_info["joint1_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###10000将原始数据接受后缩小的倍数
+gimbal_info["joint1_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###10000将原始数据接受后缩小的倍数(收)
 gimbal_info["joint2_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###下位机那边要将原始数据乘以这个倍数
 gimbal_info["joint3_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_info["joint4_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_info["joint5_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_info["joint6_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+
 gimbal_info["joint1_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_info["joint2_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_info["joint3_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
@@ -149,14 +150,18 @@ gimbal_info["joint4_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_info["joint5_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_info["joint6_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 
-gimbal_ctrl_info = OrderedDict()
-gimbal_info["joint1_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###10000将原始数据接受后缩小的倍数
-gimbal_info["joint2_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###下位机那边要将原始数据乘以这个倍数
-gimbal_info["joint3_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
-gimbal_info["joint4_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
-gimbal_info["joint5_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
-gimbal_info["joint6_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_info["gripper_state"] = [TYPE_FOR_CTYPE["int8"], 0, 1]#0关，1开
 
+
+gimbal_ctrl_info = OrderedDict()
+gimbal_ctrl_info["joint1_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###10000将原始数据接受后放大的倍数（发）
+gimbal_ctrl_info["joint2_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###下位机那边要将原始数据除以这个倍数
+gimbal_ctrl_info["joint3_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_ctrl_info["joint4_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_ctrl_info["joint5_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+gimbal_ctrl_info["joint6_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
+
+gimbal_ctrl_info["gripper_ctrl"] = [TYPE_FOR_CTYPE["int8"], 0, 1]#0关，1开
 
 
 # core mode contrl
@@ -213,7 +218,7 @@ ID = {
     "chassis_imu": [0x13, chassis_imu_info],#1
 
     "joint_state_sub_from_mcu": [0x20, gimbal_info],
-    "joint_cmd_from_moveit2": [0x21, gimbal_ctrl_info],
+    "joint_cmd_from_moveit2": [0x21, gimbal_ctrl_info],#上位机对下位机机械臂进行控制
 
     "robot_command": [0x34, robot_command_info],
     "client_map_command_command": [0x35, client_map_command_command_info],
