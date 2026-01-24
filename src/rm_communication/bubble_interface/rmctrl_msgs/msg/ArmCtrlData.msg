@@ -4,5 +4,5 @@ float32 joint3_position
 float32 joint4_position
 float32 joint5_position
 float32 joint6_position
-
 int8 gripper_ctrl
+int8 auto_state

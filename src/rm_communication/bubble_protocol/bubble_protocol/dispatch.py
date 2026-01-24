@@ -134,5 +134,7 @@ class RobotAPI(Node):
         joint_cmd_sub_from_moveit2_list.append(msg.data[3])
         joint_cmd_sub_from_moveit2_list.append(msg.data[4])
         joint_cmd_sub_from_moveit2_list.append(msg.data[5])#以上是机械臂位置控制数据(int32)
-        joint_cmd_sub_from_moveit2_list.append(msg.data[6])#夹爪控制数据(uint8)
+        joint_cmd_sub_from_moveit2_list.append(msg.data[6])#夹爪控制数据(int8)
+        joint_cmd_sub_from_moveit2_list.append(msg.data[7])#自动抓取状态数据(int8)
+
         self.robot_serial.send_data("joint_cmd_from_moveit2", joint_cmd_sub_from_moveit2_list)

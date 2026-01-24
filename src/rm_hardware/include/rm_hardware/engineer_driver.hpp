@@ -5,9 +5,12 @@
 #include <chrono>
 #include <thread>
 #include "rmctrl_msgs/msg/arm_ctrl_data.hpp"
+
+#define JOINT_NUM 6 //关节数量
+
+
 class DmDriver {
     public:
-
     DmDriver() {
         // 初始化ROS 2上下文（确保节点能创建）
         if (!rclcpp::ok()) {
@@ -84,32 +87,23 @@ class DmDriver {
 
     float getPosition(int id) 
     {
-        switch (id) 
-        {
-        case 1:
-            return joint1_position;
-        case 2:
-            return joint2_position;
-        case 3:
-            return joint3_position;
-        case 4:
-            return joint4_position;
-        case 5:
-            return joint5_position;
-        case 6:
-            return joint6_position;
-        default:
-            RCLCPP_WARN(rclcpp::get_logger("ArmData"), "无效的关节ID:%d,返回0.0", id);
+        if (id < 1 || id > JOINT_NUM) {
+            RCLCPP_WARN(node_->get_logger(), "无效的关节ID:%d, 有效范围1-%d,返回0.0", id, JOINT_NUM);
             return 0.0f;
         }
+
+        // 加锁保证线程安全（后台线程写，主线程读）
+        std::lock_guard<std::mutex> lock(joint_mutex_);
+        return joint_positions_[id-1]; // 数组索引从0开始，ID从1开始
     }
     
+    
         /**
-         * @brief 设置目标位置（弧度单位）
+         * @brief 设置目标位置（弧度单位）和夹爪控制命令
          * @param dxl_id 目标舵机的ID号
          * @param command 目标位置（弧度）
          */
-    void setTargetPositionRadian(float joint_position_cmd_array[6]) 
+    void setTargetPositionRadian(float joint_position_cmd_array[6],int gripper_ctrl) 
     {
         rmctrl_msgs::msg::ArmCtrlData pub_moveit2_arm_cmd_to_nuc_msg;
 
@@ -119,8 +113,15 @@ class DmDriver {
         pub_moveit2_arm_cmd_to_nuc_msg.joint4_position = joint_position_cmd_array[3];
         pub_moveit2_arm_cmd_to_nuc_msg.joint5_position = joint_position_cmd_array[4];
         pub_moveit2_arm_cmd_to_nuc_msg.joint6_position = joint_position_cmd_array[5];
-
+        pub_moveit2_arm_cmd_to_nuc_msg.gripper_ctrl = gripper_ctrl;
+        pub_moveit2_arm_cmd_to_nuc_msg.auto_state = auto_state_nuc_;
         pub_moveit2_arm_cmd_to_nuc_->publish(pub_moveit2_arm_cmd_to_nuc_msg);
+    }
+
+    int getGripperState() 
+    {
+        std::lock_guard<std::mutex> lock(joint_mutex_);
+        return gripper_state_;
     }
     
     private:
@@ -129,22 +130,13 @@ class DmDriver {
     std::thread sub_thread_;
     bool stop_sub_ = false;
     rclcpp::Publisher<rmctrl_msgs::msg::ArmCtrlData>::SharedPtr pub_moveit2_arm_cmd_to_nuc_;
-    
-    float joint1_position=0.0f;
-    float joint2_position=0.0f;
-    float joint3_position=0.0f;
-    float joint4_position=0.0f;
-    float joint5_position=0.0f;
-    float joint6_position=0.0f;
+    int auto_state_mcu_;//下位机通过这个变量控制上位机开启自动抓取
+    int auto_state_nuc_;//上位机通过这个变量证明自己开始计算，将这个变量传给下位机形成闭环
 
-    float joint1_velocity=0.0f;
-    float joint2_velocity=0.0f;
-    float joint3_velocity=0.0f;
-    float joint4_velocity=0.0f;
-    float joint5_velocity=0.0f;
-    float joint6_velocity=0.0f;
-
-    int gripper_state =0;
+    float joint_positions_[JOINT_NUM] = {0.0f};  // 关节位置数组（6个元素）
+    float joint_velocities_[JOINT_NUM] = {0.0f}; // 关节速度数组（6个元素）
+    int gripper_state_ = 0;                      // 夹爪状态
+    std::mutex joint_mutex_;
 
     void start_sub_thread() {
         sub_thread_ = std::thread([this]() {
@@ -152,21 +144,22 @@ class DmDriver {
             auto sub = node_->create_subscription<rmctrl_msgs::msg::ArmStateData>(
                 "/joint_state_sub_from_mcu", rclcpp::QoS(10),
                 [this](const rmctrl_msgs::msg::ArmStateData::SharedPtr msg) {
-                    joint1_position = msg->joint1_position;
-                    joint2_position = msg->joint2_position;
-                    joint3_position = msg->joint3_position;
-                    joint4_position = msg->joint4_position;
-                    joint5_position = msg->joint5_position;
-                    joint6_position = msg->joint6_position;
+                    joint_positions_[0] = msg->joint1_position;
+                    joint_positions_[1] = msg->joint2_position;
+                    joint_positions_[2] = msg->joint3_position;
+                    joint_positions_[3] = msg->joint4_position;
+                    joint_positions_[4] = msg->joint5_position;
+                    joint_positions_[5] = msg->joint6_position;
 
-                    joint1_velocity = msg->joint1_velocity;
-                    joint2_velocity = msg->joint2_velocity;
-                    joint3_velocity = msg->joint3_velocity;
-                    joint4_velocity = msg->joint4_velocity;
-                    joint5_velocity = msg->joint5_velocity;
-                    joint6_velocity = msg->joint6_velocity;
+                    joint_velocities_[0] = msg->joint1_velocity;
+                    joint_velocities_[1] = msg->joint2_velocity;
+                    joint_velocities_[2] = msg->joint3_velocity;
+                    joint_velocities_[3] = msg->joint4_velocity;
+                    joint_velocities_[4] = msg->joint5_velocity;
+                    joint_velocities_[5] = msg->joint6_velocity;
 
-                    gripper_state = msg->gripper_state;
+                    gripper_state_ = msg->gripper_state;
+                    auto_state_mcu_ = msg->auto_state;
                 });
 
             // 持续处理话题回调
@@ -174,9 +167,10 @@ class DmDriver {
                 rclcpp::spin_some(node_);
                 std::this_thread::sleep_for(std::chrono::milliseconds(10));
             }
+            sub.reset();
+            RCLCPP_INFO(node_->get_logger(), "订阅线程回调处理结束");
         });
     }
-
 };
 
 #endif

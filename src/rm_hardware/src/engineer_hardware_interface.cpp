@@ -8,12 +8,25 @@
 namespace arm_hardware {
 
 
-// hardware_interface::CallbackReturn ArmHardwareInterface::on_init
-//     (const hardware_interface::HardwareInfo & info)
-// {
+hardware_interface::CallbackReturn ArmHardwareInterface::on_init
+    (const hardware_interface::HardwareInfo & info)
+{
+    (void)info;
+    if(hardware_interface::SystemInterface::on_init(info) != hardware_interface::CallbackReturn::SUCCESS)
+    {
+        return hardware_interface::CallbackReturn::ERROR;
+    }
+    info_ = info;
 
-//     return hardware_interface::CallbackReturn::SUCCESS;
-// }
+    joint1_motor_id_ = 1;
+    joint2_motor_id_ = 2;
+    joint3_motor_id_ = 3;
+    joint4_motor_id_ = 4;
+    joint5_motor_id_ = 5;
+    joint6_motor_id_ = 6;
+
+    return hardware_interface::CallbackReturn::SUCCESS;
+}
 
 hardware_interface::CallbackReturn ArmHardwareInterface::on_configure
     (const rclcpp_lifecycle::State & previous_state)
@@ -30,7 +43,7 @@ hardware_interface::CallbackReturn ArmHardwareInterface::on_configure
 hardware_interface::CallbackReturn ArmHardwareInterface::on_activate
     (const rclcpp_lifecycle::State & previous_state)
 {
-
+    (void)previous_state;
     return hardware_interface::CallbackReturn::SUCCESS;
 }
 
@@ -38,7 +51,7 @@ hardware_interface::CallbackReturn ArmHardwareInterface::on_activate
 hardware_interface::CallbackReturn ArmHardwareInterface::on_deactivate
     (const rclcpp_lifecycle::State & previous_state)
 {
-
+    (void)previous_state;
     return hardware_interface::CallbackReturn::SUCCESS;
 }
 
@@ -58,7 +71,8 @@ hardware_interface::return_type ArmHardwareInterface::read
 hardware_interface::return_type ArmHardwareInterface::write
     (const rclcpp::Time & time, const rclcpp::Duration & period)
 {
-
+    (void)time;
+    (void)period;
     return hardware_interface::return_type::OK;
 }
 

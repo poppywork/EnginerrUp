@@ -206,7 +206,9 @@ class RobotStatus():
                 self.status["joint_state_sub_from_mcu"]["joint6_velocity"][IDX_VAL])
             
             joint_state_sub_from_mcu_msg.gripper_state = int(
-                self.status["joint_state_sub_from_mcu"]["gripper_state"][IDX_VAL])
+                self.status["joint_state_sub_from_mcu"]["gripper_state"][IDX_VAL])    
+            joint_state_sub_from_mcu_msg.auto_state = int(
+                self.status["joint_state_sub_from_mcu"]["auto_state"][IDX_VAL])
             
             self.joint_state_sub_from_mcu_pub.publish(joint_state_sub_from_mcu_msg)
 

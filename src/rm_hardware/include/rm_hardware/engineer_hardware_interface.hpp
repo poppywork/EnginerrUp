@@ -35,10 +35,12 @@ public:
 private:
 
     int joint1_motor_id_;
-
     int joint2_motor_id_;
+    int joint3_motor_id_;
+    int joint4_motor_id_;
+    int joint5_motor_id_;
+    int joint6_motor_id_;
 
-    std::string port_;
 
 }; 
 

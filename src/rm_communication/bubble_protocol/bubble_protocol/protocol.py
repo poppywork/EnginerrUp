@@ -153,6 +153,8 @@ gimbal_info["joint6_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_info["gripper_state"] = [TYPE_FOR_CTYPE["int8"], 0, 1]#0关，1开
 
 
+
+
 gimbal_ctrl_info = OrderedDict()
 gimbal_ctrl_info["joint1_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###10000将原始数据接受后放大的倍数（发）
 gimbal_ctrl_info["joint2_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]###下位机那边要将原始数据除以这个倍数
@@ -162,6 +164,7 @@ gimbal_ctrl_info["joint5_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_ctrl_info["joint6_position"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 
 gimbal_ctrl_info["gripper_ctrl"] = [TYPE_FOR_CTYPE["int8"], 0, 1]#0关，1开
+gimbal_ctrl_info["auto_state"] = [TYPE_FOR_CTYPE["int8"], 0, 1]#0关，1开
 
 
 # core mode contrl

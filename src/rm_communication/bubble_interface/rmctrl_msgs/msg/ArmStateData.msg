@@ -10,5 +10,5 @@ float32 joint3_velocity
 float32 joint4_velocity
 float32 joint5_velocity
 float32 joint6_velocity
-
 int8 gripper_state
+int8 auto_state
