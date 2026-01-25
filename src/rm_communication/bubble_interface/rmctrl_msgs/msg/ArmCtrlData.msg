@@ -1,8 +1,8 @@
-float32 joint1_position
-float32 joint2_position
-float32 joint3_position
-float32 joint4_position
-float32 joint5_position
-float32 joint6_position
-int8 gripper_ctrl
+float64 joint1_position
+float64 joint2_position
+float64 joint3_position
+float64 joint4_position
+float64 joint5_position
+float64 joint6_position
+int8 gripper_ctrl#根据hardware的通信接口，所以全部传入float64也就是double
 int8 auto_state

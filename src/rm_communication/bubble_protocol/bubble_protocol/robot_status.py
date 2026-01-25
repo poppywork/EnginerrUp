@@ -179,36 +179,22 @@ class RobotStatus():
         def joints_status_from_mcu_callback():
             joint_state_sub_from_mcu_msg = ArmStateData()
 
-            joint_state_sub_from_mcu_msg.joint1_position = float(
-                self.status["joint_state_sub_from_mcu"]["joint1_position"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint2_position = float(
-                self.status["joint_state_sub_from_mcu"]["joint2_position"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint3_position = float(
-                self.status["joint_state_sub_from_mcu"]["joint3_position"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint4_position = float(
-                self.status["joint_state_sub_from_mcu"]["joint4_position"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint5_position = float(
-                self.status["joint_state_sub_from_mcu"]["joint5_position"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint6_position = float(
-                self.status["joint_state_sub_from_mcu"]["joint6_position"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint1_position = self.status["joint_state_sub_from_mcu"]["joint1_position"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint2_position = self.status["joint_state_sub_from_mcu"]["joint2_position"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint3_position = self.status["joint_state_sub_from_mcu"]["joint3_position"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint4_position = self.status["joint_state_sub_from_mcu"]["joint4_position"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint5_position = self.status["joint_state_sub_from_mcu"]["joint5_position"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint6_position = self.status["joint_state_sub_from_mcu"]["joint6_position"][IDX_VAL]
             
-            joint_state_sub_from_mcu_msg.joint1_velocity = float(
-                self.status["joint_state_sub_from_mcu"]["joint1_velocity"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint2_velocity = float(
-                self.status["joint_state_sub_from_mcu"]["joint2_velocity"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint3_velocity= float(
-                self.status["joint_state_sub_from_mcu"]["joint3_velocity"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint4_velocity = float(
-                self.status["joint_state_sub_from_mcu"]["joint4_velocity"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint5_velocity = float(
-                self.status["joint_state_sub_from_mcu"]["joint5_velocity"][IDX_VAL])
-            joint_state_sub_from_mcu_msg.joint6_velocity = float(
-                self.status["joint_state_sub_from_mcu"]["joint6_velocity"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.joint1_velocity = self.status["joint_state_sub_from_mcu"]["joint1_velocity"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint2_velocity = self.status["joint_state_sub_from_mcu"]["joint2_velocity"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint3_velocity = self.status["joint_state_sub_from_mcu"]["joint3_velocity"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint4_velocity = self.status["joint_state_sub_from_mcu"]["joint4_velocity"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint5_velocity = self.status["joint_state_sub_from_mcu"]["joint5_velocity"][IDX_VAL]
+            joint_state_sub_from_mcu_msg.joint6_velocity = self.status["joint_state_sub_from_mcu"]["joint6_velocity"][IDX_VAL]
             
-            joint_state_sub_from_mcu_msg.gripper_state = int(
-                self.status["joint_state_sub_from_mcu"]["gripper_state"][IDX_VAL])    
-            joint_state_sub_from_mcu_msg.auto_state = int(
-                self.status["joint_state_sub_from_mcu"]["auto_state"][IDX_VAL])
+            joint_state_sub_from_mcu_msg.gripper_state = self.status["joint_state_sub_from_mcu"]["gripper_state"][IDX_VAL]  
+            joint_state_sub_from_mcu_msg.auto_state = self.status["joint_state_sub_from_mcu"]["auto_state"][IDX_VAL] #通过这个状态控制自动抓取功能的开关
             
             self.joint_state_sub_from_mcu_pub.publish(joint_state_sub_from_mcu_msg)
 
@@ -217,7 +203,6 @@ class RobotStatus():
             ###在此处添加需要发布出去给大家的MCU话题数据###
             self.joint_state_sub_from_mcu_pub = self.node.create_publisher(
                 ArmStateData,'/joint_state_sub_from_mcu', 10)
-            
             
             ###在此处添加机器人需要从MCU接收的话题数据###
             self.realtime_callback["joint_state_sub_from_mcu"] = joints_status_from_mcu_callback

@@ -14,3 +14,17 @@
 
 六、ros2 control list_hardware_components可列出硬件组件(四五六都是启动后才能看到)
 
+七、与海外教程视频不同的是多了两个纯虚函数，一个是export_command_interfaces一个是export_state_interfaces
+
+八、export_state_interfaces主要通过state_interfaces.emplace_back(
+hardware_interface::StateInterface("arm_joint1", "position", &hw_states_position_));
+urdf中的名称和接口名称。变量指针hw_states_position_，设置好后通过改变变量就可以改变内部的数
+URDF示例： <joint name="arm_joint1">
+            <command_interface name="position" />
+            <state_interface name="position" />
+          </joint>
+
+九、export_command_interfaces同八,区别是一个发送，一个读取
+
+
+
