@@ -11,7 +11,8 @@
 
 class DMDriver {
     public:
-    DMDriver() {
+    DMDriver() 
+    {
         // 初始化ROS 2上下文（确保节点能创建）
         if (!rclcpp::ok()) {
             rclcpp::init(0, nullptr);
@@ -32,7 +33,6 @@ class DMDriver {
 
     bool check_joint_state_topic_data(double timeout_sec = 1.0)
     {
-        
         // 1. 检查ROS是否初始化
         if (!rclcpp::ok()) {
             RCLCPP_ERROR(rclcpp::get_logger("DmDriver"), "ROS2没有初始化");
@@ -111,12 +111,12 @@ class DMDriver {
         pub_moveit2_arm_cmd_to_nuc_msg.joint4_position = joint_position_cmd_array[3];
         pub_moveit2_arm_cmd_to_nuc_msg.joint5_position = joint_position_cmd_array[4];
         pub_moveit2_arm_cmd_to_nuc_msg.joint6_position = joint_position_cmd_array[5];
-        pub_moveit2_arm_cmd_to_nuc_msg.gripper_ctrl = gripper_ctrl;//告诉下位机要控制的夹爪cmd
-        pub_moveit2_arm_cmd_to_nuc_msg.auto_state = auto_state_nuc_;//告诉下位机收到开启一键夹取的cmd
+        pub_moveit2_arm_cmd_to_nuc_msg.gripper_ctrl = (int8_t)gripper_ctrl;//告诉下位机要控制的夹爪cmd
+        pub_moveit2_arm_cmd_to_nuc_msg.auto_state = (int8_t)auto_state_nuc_;//告诉下位机收到开启一键夹取的cmd
         pub_moveit2_arm_cmd_to_nuc_->publish(pub_moveit2_arm_cmd_to_nuc_msg);
     }
 
-    double getGripperState(void) 
+    int8_t getGripperState(void) 
     {
         std::lock_guard<std::mutex> lock(joint_mutex_);
         return gripper_state_;

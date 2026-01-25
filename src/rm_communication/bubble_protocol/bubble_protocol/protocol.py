@@ -151,7 +151,7 @@ gimbal_info["joint5_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 gimbal_info["joint6_velocity"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 
 gimbal_info["gripper_state"] = [TYPE_FOR_CTYPE["int8"], 0, 1]#0关，1开
-
+gimbal_info["auto_state"] = [TYPE_FOR_CTYPE["int8"], 0, 1]#0关，1开
 
 
 

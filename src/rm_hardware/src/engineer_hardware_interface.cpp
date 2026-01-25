@@ -118,7 +118,7 @@ hardware_interface::return_type ArmHardwareInterface::read
     hw_states_position5_ = joint_pos[4];
     hw_states_position6_ = joint_pos[5];
 
-    double gripper_state = dm_driver_->getGripperState();
+    int8_t gripper_state = dm_driver_->getGripperState();
     hw_states_gripper_ = gripper_state;
 
     return hardware_interface::return_type::OK;
@@ -131,7 +131,7 @@ hardware_interface::return_type ArmHardwareInterface::write
     (void)time;
     (void)period;
     double joint_pos_ctrl[6];
-    double gripper_ctrl;
+    int8_t gripper_ctrl;
     joint_pos_ctrl[0] = hw_commands_position1_;
     joint_pos_ctrl[1] = hw_commands_position2_;
     joint_pos_ctrl[2] = hw_commands_position3_;
@@ -139,7 +139,14 @@ hardware_interface::return_type ArmHardwareInterface::write
     joint_pos_ctrl[4] = hw_commands_position5_;
     joint_pos_ctrl[5] = hw_commands_position6_;
 
-    gripper_ctrl = hw_commands_gripper_;
+    if(hw_commands_gripper_ > 0.5)//double向int的转换，防止0.9999999变成0
+    {
+        gripper_ctrl = 1;
+    }
+    else
+    {
+        gripper_ctrl = 0;
+    }
     dm_driver_->setTargetPositionRadian(joint_pos_ctrl,gripper_ctrl);
     return hardware_interface::return_type::OK;
 }
