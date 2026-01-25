@@ -12,7 +12,7 @@ pip3 install pyserial   下载串口包
 
 ## 如何配置代码于自己电脑
 1、git clone https://github.com/poppywork/EnginerrUp.git
-2、cd src/rm_drive
+2、cd src/rm_driver
 3、git clone https://github.com/Livox-SDK/Livox-SDK2.git
 4、cd ./Livox-SDK2/
 5、mkdir build 

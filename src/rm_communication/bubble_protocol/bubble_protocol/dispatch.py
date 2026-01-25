@@ -128,13 +128,14 @@ class RobotAPI(Node):
     def ex_joint_state_sub_from_moveit2_callback(self, msg: ArmCtrlData):
         print("接收到上位机对下位机机械臂的控制命令,现在通过串口发送出去")
         joint_cmd_sub_from_moveit2_list = []
-        joint_cmd_sub_from_moveit2_list.append(msg.data[0])
-        joint_cmd_sub_from_moveit2_list.append(msg.data[1])
-        joint_cmd_sub_from_moveit2_list.append(msg.data[2])
-        joint_cmd_sub_from_moveit2_list.append(msg.data[3])
-        joint_cmd_sub_from_moveit2_list.append(msg.data[4])
-        joint_cmd_sub_from_moveit2_list.append(msg.data[5])#以上是机械臂位置控制数据(int32)
-        joint_cmd_sub_from_moveit2_list.append(msg.data[6])#夹爪控制数据(int8)
-        joint_cmd_sub_from_moveit2_list.append(msg.data[7])#自动抓取状态数据(int8)
+        joint_cmd_sub_from_moveit2_list.append(msg.joint1_position)
+        joint_cmd_sub_from_moveit2_list.append(msg.joint2_position)
+        joint_cmd_sub_from_moveit2_list.append(msg.joint3_position)
+        joint_cmd_sub_from_moveit2_list.append(msg.joint4_position)
+        joint_cmd_sub_from_moveit2_list.append(msg.joint5_position)
+        joint_cmd_sub_from_moveit2_list.append(msg.joint6_position)
+        joint_cmd_sub_from_moveit2_list.append(msg.gripper_ctrl)
+        joint_cmd_sub_from_moveit2_list.append(msg.auto_state)
+
 
         self.robot_serial.send_data("joint_cmd_from_moveit2", joint_cmd_sub_from_moveit2_list)
