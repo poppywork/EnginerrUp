@@ -34,14 +34,6 @@ public:
 
 private:
 
-    int joint1_motor_id_;
-    int joint2_motor_id_;
-    int joint3_motor_id_;
-    int joint4_motor_id_;
-    int joint5_motor_id_;
-    int joint6_motor_id_;
-    int gripper_motor_id_;
-
     std::shared_ptr<DMDriver> dm_driver_;
 
     double hw_states_position1_;

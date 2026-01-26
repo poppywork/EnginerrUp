@@ -38,10 +38,6 @@ int main(int argc, char *argv[]) {
     int8_t gripper_ctrl = 1; // 夹爪控制指令
     dm_driver.setTargetPositionRadian(target_joints, gripper_ctrl);
 
-    // 6. 测试设置自动状态
-    std::cout << "=== 测试设置自动状态 ===" << std::endl;
-    dm_driver.set_auto_state_nuc(1); // 开启自动抓取
-
     // 7. 清理资源
     rclcpp::shutdown();
     std::cout << "=== 测试程序已退出 ===" << std::endl;

@@ -1,9 +1,10 @@
-#include "rm_hardware/engineer_hardware_interface.hpp"
 #include <rclcpp/rclcpp.hpp>
+#include "rm_hardware/engineer_hardware_interface.hpp"
 #include "rm_hardware/engineer_driver.hpp"
 #include <chrono>
 #include <thread>
-
+#include <vector>
+#include <cstdint>
 // 命名空间：封装机械臂硬件相关的类和函数
 namespace arm_hardware {
 
@@ -11,22 +12,17 @@ namespace arm_hardware {
 hardware_interface::CallbackReturn ArmHardwareInterface::on_init
     (const hardware_interface::HardwareInfo & info)
 {
-    (void)info;
+    (void)info;//消除WARN
+
     if(hardware_interface::SystemInterface::on_init(info) != hardware_interface::CallbackReturn::SUCCESS)
     {
         return hardware_interface::CallbackReturn::ERROR;
     }
     info_ = info;
 
-    joint1_motor_id_ = 1;
-    joint2_motor_id_ = 2;
-    joint3_motor_id_ = 3;
-    joint4_motor_id_ = 4;
-    joint5_motor_id_ = 5;
-    joint6_motor_id_ = 6;
-
     dm_driver_ = std::make_shared<DMDriver>();
 
+    
     hw_states_position1_ = 0.0;
     hw_states_velocity1_ = 0.0;
     hw_commands_position1_ = 0.0;

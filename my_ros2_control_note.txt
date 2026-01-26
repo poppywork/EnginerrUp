@@ -26,5 +26,16 @@ URDF示例： <joint name="arm_joint1">
 
 九、export_command_interfaces同八,区别是一个发送，一个读取
 
+十、engieer_hardware_interface.xml文件写入工作空间自定义的插件
+格式:
+<library path="engineer_hardware">
+    <class name="arm_hardware/ArmHardwareInterface"
+           type="arm_hardware::ArmHardwareInterface"
+           base_class_type="hardware_interface::SystemInterface">
+        <description>
+            not
+        </description>
+    </class>
+</library>	
 
-
+十一、在moveit2生成的功能包里面有一个shabi.ros2_control.xacro文件,里面有一个标签<plugin>就是用来放入插件的
