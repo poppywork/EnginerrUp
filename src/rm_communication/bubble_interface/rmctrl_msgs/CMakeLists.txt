@@ -14,6 +14,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Odom.msg"
   "msg/ArmStateData.msg"
   "msg/ArmCtrlData.msg"
+  "msg/PoseCommand.msg"
   DEPENDENCIES std_msgs
 )
 

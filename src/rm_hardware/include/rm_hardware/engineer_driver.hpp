@@ -112,11 +112,10 @@ public:
         msg.joint5_position = joint_position_cmd_array[4];
         msg.joint6_position = joint_position_cmd_array[5];
         msg.gripper_ctrl = gripper_ctrl;
-        msg.auto_state = auto_state_nuc_;
+        msg.auto_state = 1;
 
         pub_moveit2_arm_cmd_to_nuc_->publish(msg);
-        RCLCPP_DEBUG(this->get_logger(), "已发布关节控制指令：J1=%.3f, 夹爪=%d",
-            msg.joint1_position, msg.gripper_ctrl);
+        std::cout << msg.auto_state <<msg.joint1_position<< std::endl;
     }
 
     int8_t getGripperState(void) {

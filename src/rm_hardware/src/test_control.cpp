@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
 
     // 5. 测试发送控制指令
     std::cout << "=== 测试发送关节控制指令 ===" << std::endl;
-    double target_joints[6] = {0.5, 0.1, 0.2, 0.2, 0.1, 0.4}; // 示例目标位置
+    double target_joints[6] = {0.6, 2.1, 2.0, 2.0, 2.1, 0.4}; // 示例目标位置
     int8_t gripper_ctrl = 1; // 夹爪控制指令
     dm_driver.setTargetPositionRadian(target_joints, gripper_ctrl);
 

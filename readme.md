@@ -55,10 +55,24 @@ ls -l /dev/STM32H7    #检查是否生成了 /dev/STM32H7
 2、ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{filename: '~/ros2_ws/maps/my_slam_map', map_format: 'pgm'}"
 
 
+### 配置Moveit2环境指令:
+sudo apt install ros-humble-moveit（报错了就修复一下源，报错AI可以解答你）
+sudo apt install ros-humble-moveit-setup-assistant
+sudo apt install ros-humble-moveit-*
 
+网址:https://blog.csdn.net/joyopirate/article/details/129424607?ops_request_misc=elastic_search_misc&request_id=5c41293e69b7297bf39eefe8573b74ef&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-129424607-null-null.142^v102^pc_search_result_base8&utm_term=%E5%9C%A8ros2%E4%B8%AD%EF%BC%8C%E9%80%9A%E8%BF%87Moveit2&spm=1018.2226.3001.4187
 
-
-
+### 重新修改moveit2模型
+1、正常导出urdf文件夹
+2、修改joint_limits.yaml文件里的报错，将整数改为小数
+3、在moveit_controllers.yaml的控制器后面加上
+    action_ns: follow_joint_trajectory
+    default: true
+4、将新出的config的文件覆盖掉原来的yaml文件
+5、在urdf文件更新ros2_control标签的内容，把${initial_positions['joint_gripper_right']}这些换成想要的数字，比如0.0
+6、打开engineer_bingup  launch文件启动机器人
+7、启动控制器
+8、向控制器发布话题即可
 
 
 
