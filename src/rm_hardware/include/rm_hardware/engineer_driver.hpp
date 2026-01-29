@@ -125,6 +125,7 @@ public:
     
     int getActiveCmd(void) {
         std::lock_guard<std::mutex> lock(joint_mutex_);
+        RCLCPP_INFO(this->get_logger(), "auto_state_mcu_=%d",auto_state_mcu_);
         return auto_state_mcu_;
     }
 
@@ -145,7 +146,7 @@ private:
     std::thread sub_thread_;
     bool stop_sub_ = false;
     rclcpp::Publisher<rmctrl_msgs::msg::ArmCtrlData>::SharedPtr pub_moveit2_arm_cmd_to_nuc_;
-    
+    rclcpp::Subscription<rmctrl_msgs::msg::ArmStateData>::SharedPtr sub_arm_state_;
     int8_t auto_state_mcu_;       
     int8_t auto_state_nuc_;       
     int8_t gripper_state_;        
@@ -156,8 +157,7 @@ private:
     // 订阅逻辑：直接使用继承的Node创建订阅器
     void start_subscription() 
     {
-        // 推荐方式1：使用ROS2内置回调线程池（无需自定义线程）
-        auto sub = this->create_subscription<rmctrl_msgs::msg::ArmStateData>(
+            this->sub_arm_state_ = this->create_subscription<rmctrl_msgs::msg::ArmStateData>(
             "/joint_state_sub_from_mcu", 
             rclcpp::QoS(10),
             [this](const rmctrl_msgs::msg::ArmStateData::SharedPtr msg) {
@@ -179,6 +179,8 @@ private:
 
                 gripper_state_ = msg->gripper_state;
                 auto_state_mcu_ = msg->auto_state;
+                
+                
             }
         );
 

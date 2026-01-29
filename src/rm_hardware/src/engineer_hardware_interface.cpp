@@ -152,25 +152,25 @@ std::vector<hardware_interface::StateInterface> ArmHardwareInterface::export_sta
     std::vector<hardware_interface::StateInterface> state_interfaces;
 
     state_interfaces.emplace_back(
-        hardware_interface::StateInterface("arm_joint1", "position", &hw_states_position1_));
+        hardware_interface::StateInterface("joint1", "position", &hw_states_position1_));
 
     state_interfaces.emplace_back(
-        hardware_interface::StateInterface("arm_joint2", "position", &hw_states_position2_));
+        hardware_interface::StateInterface("joint2", "position", &hw_states_position2_));
 
     state_interfaces.emplace_back(
-        hardware_interface::StateInterface("arm_joint3", "position", &hw_states_position3_));
+        hardware_interface::StateInterface("joint3", "position", &hw_states_position3_));
 
     state_interfaces.emplace_back(
-        hardware_interface::StateInterface("arm_joint4", "position", &hw_states_position4_));
+        hardware_interface::StateInterface("joint4", "position", &hw_states_position4_));
 
     state_interfaces.emplace_back(
-        hardware_interface::StateInterface("arm_joint5", "position", &hw_states_position5_));
+        hardware_interface::StateInterface("joint5", "position", &hw_states_position5_));
 
     state_interfaces.emplace_back(
-        hardware_interface::StateInterface("arm_joint6", "position", &hw_states_position6_));
+        hardware_interface::StateInterface("joint6", "position", &hw_states_position6_));
     
     state_interfaces.emplace_back(
-        hardware_interface::StateInterface("gripper", "position", &hw_states_gripper_));
+        hardware_interface::StateInterface("joint_gripper_left", "position", &hw_states_gripper_));
 
     return state_interfaces;
 }
@@ -180,25 +180,25 @@ std::vector<hardware_interface::CommandInterface> ArmHardwareInterface::export_c
 {
     std::vector<hardware_interface::CommandInterface> command_interfaces;
     command_interfaces.emplace_back(
-        hardware_interface::CommandInterface("arm_joint1", "position", &hw_commands_position1_));
+        hardware_interface::CommandInterface("joint1", "position", &hw_commands_position1_));
                                             //这里要修改名称，对应urdf中的名称
     command_interfaces.emplace_back(
-        hardware_interface::CommandInterface("arm_joint2", "position", &hw_commands_position2_));
+        hardware_interface::CommandInterface("joint2", "position", &hw_commands_position2_));
     
     command_interfaces.emplace_back(
-        hardware_interface::CommandInterface("arm_joint3", "position", &hw_commands_position3_));
+        hardware_interface::CommandInterface("joint3", "position", &hw_commands_position3_));
                                             //这里要修改名称，对应urdf中的名称
     command_interfaces.emplace_back(
-        hardware_interface::CommandInterface("arm_joint4", "position", &hw_commands_position4_));
+        hardware_interface::CommandInterface("joint4", "position", &hw_commands_position4_));
 
     command_interfaces.emplace_back(
-        hardware_interface::CommandInterface("arm_joint5", "position", &hw_commands_position5_));
+        hardware_interface::CommandInterface("joint5", "position", &hw_commands_position5_));
                                             //这里要修改名称，对应urdf中的名称
     command_interfaces.emplace_back(
-        hardware_interface::CommandInterface("arm_joint6", "position", &hw_commands_position6_));
+        hardware_interface::CommandInterface("joint6", "position", &hw_commands_position6_));
     
     command_interfaces.emplace_back(
-        hardware_interface::CommandInterface("gripper", "position", &hw_commands_gripper_));
+        hardware_interface::CommandInterface("joint_gripper_left", "position", &hw_commands_gripper_));
     return command_interfaces;
 }
 
