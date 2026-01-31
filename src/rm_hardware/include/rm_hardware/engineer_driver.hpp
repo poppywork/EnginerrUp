@@ -35,9 +35,31 @@ public:
             return;
         }
 
-        // 直接启动订阅逻辑（继承自Node，可直接创建订阅器）
-        start_subscription(); // 替换原有线程，使用ROS2内置回调线程池
-        RCLCPP_INFO(this->get_logger(), "DMDriver驱动初始化完成（继承Node实现）");
+        sub_arm_state_ = this->create_subscription<rmctrl_msgs::msg::ArmStateData>(
+            "/joint_state_sub_from_mcu", rclcpp::QoS(10),
+            [this](const rmctrl_msgs::msg::ArmStateData::SharedPtr msg) {
+                std::lock_guard<std::mutex> lock(joint_mutex_);
+                joint_positions_[0] = -msg->joint1_position;
+                joint_positions_[1] = msg->joint2_position;
+                joint_positions_[2] = -msg->joint3_position;//与下位机相反
+                joint_positions_[3] = msg->joint4_position;
+                joint_positions_[4] = -msg->joint5_position;
+                joint_positions_[5] = -msg->joint6_position;
+
+                joint_velocities_[0] = msg->joint1_velocity;
+                joint_velocities_[1] = msg->joint2_velocity;
+                joint_velocities_[2] = msg->joint3_velocity;
+                joint_velocities_[3] = msg->joint4_velocity;
+                joint_velocities_[4] = -msg->joint5_velocity;
+                joint_velocities_[5] = -msg->joint6_velocity;
+
+                gripper_state_ = (msg->gripper_state > 0.5) ? 0.0 : 0.06;
+                auto_state_mcu_ = msg->auto_state;
+
+                // RCLCPP_INFO(this->get_logger(), "回调正常触发");
+            });
+
+        RCLCPP_INFO(this->get_logger(), "DMDriver 初始化完成，订阅已创建");
     }
 
     // 析构函数：自动调用父类析构，无需手动释放节点
@@ -105,12 +127,12 @@ public:
         }
 
         rmctrl_msgs::msg::ArmCtrlData msg;
-        msg.joint1_position = joint_position_cmd_array[0];
+        msg.joint1_position = -joint_position_cmd_array[0];
         msg.joint2_position = joint_position_cmd_array[1];
-        msg.joint3_position = joint_position_cmd_array[2];
+        msg.joint3_position = -joint_position_cmd_array[2];//与下位机相反
         msg.joint4_position = joint_position_cmd_array[3];
         msg.joint5_position = joint_position_cmd_array[4];
-        msg.joint6_position = joint_position_cmd_array[5];
+        msg.joint6_position = -joint_position_cmd_array[5];
         msg.gripper_ctrl = gripper_ctrl;
         msg.auto_state = 1;
 
@@ -154,38 +176,6 @@ private:
     double joint_velocities_[JOINT_NUM]; 
     std::mutex joint_mutex_;      
 
-    // 订阅逻辑：直接使用继承的Node创建订阅器
-    void start_subscription() 
-    {
-            this->sub_arm_state_ = this->create_subscription<rmctrl_msgs::msg::ArmStateData>(
-            "/joint_state_sub_from_mcu", 
-            rclcpp::QoS(10),
-            [this](const rmctrl_msgs::msg::ArmStateData::SharedPtr msg) {
-                std::lock_guard<std::mutex> lock(joint_mutex_);
-                // 更新数据（原有逻辑不变）
-                joint_positions_[0] = msg->joint1_position;
-                joint_positions_[1] = msg->joint2_position;
-                joint_positions_[2] = msg->joint3_position;
-                joint_positions_[3] = msg->joint4_position;
-                joint_positions_[4] = msg->joint5_position;
-                joint_positions_[5] = msg->joint6_position;
-
-                joint_velocities_[0] = msg->joint1_velocity;
-                joint_velocities_[1] = msg->joint2_velocity;
-                joint_velocities_[2] = msg->joint3_velocity;
-                joint_velocities_[3] = msg->joint4_velocity;
-                joint_velocities_[4] = msg->joint5_velocity;
-                joint_velocities_[5] = msg->joint6_velocity;
-
-                gripper_state_ = msg->gripper_state;
-                auto_state_mcu_ = msg->auto_state;
-                
-                
-            }
-        );
-
-        RCLCPP_INFO(this->get_logger(), "开始订阅机械臂状态话题：/joint_state_sub_from_mcu");
-    }
 };
 
 #endif

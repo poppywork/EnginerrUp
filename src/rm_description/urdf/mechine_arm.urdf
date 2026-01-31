@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot name="rm_description">
-  <!-- 根链接：base_link -->
+  <!-- 第一步：根节点 base_footprint（整棵TF树的根） -->
+  <link name="base_footprint">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1 0.1 0.01" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+  </link>
+
+  <!-- 第二步：基础链接 base_link + 与base_footprint的固定关节 -->
   <link name="base_link">
     <inertial>
       <origin xyz="-0.01122376076567 -0.00284794721579435 0.0119690762525294" rpy="0 0 0" />
@@ -24,9 +37,13 @@
       </geometry>
     </collision>
   </link>
+  <joint name="joint_base_footprint" type="fixed">
+    <origin xyz="0 0 0.18113" rpy="0 0 0" />
+    <parent link="base_footprint" />
+    <child link="base_link" />
+  </joint>
 
-
-  <!-- 雷达 -->
+  <!-- 第三步：附属部件 - 雷达 -->
   <link name="radar">
     <inertial>
       <origin xyz="8.3267E-17 3.0531E-16 -0.0049576" rpy="0 0 0" />
@@ -56,7 +73,7 @@
     <child link="radar" />
   </joint>
 
-  <!-- 机械臂连杆1 -->
+  <!-- 第四步：机械臂连杆层级 - link1 + joint1 -->
   <link name="link1">
     <inertial>
       <origin xyz="7.5138E-05 0.027318 0.03997" rpy="0 0 0" />
@@ -88,7 +105,7 @@
     <limit lower="-3.14" upper="3.14" effort="20" velocity="6.28" />
   </joint>
 
-  <!-- 机械臂连杆2 -->
+  <!-- 机械臂连杆层级 - link2 + joint2 -->
   <link name="link2">
     <inertial>
       <origin xyz="0.0040084 0.15556 0.032129" rpy="0 0 0" />
@@ -120,7 +137,7 @@
     <limit lower="-1.54" upper="0.0" effort="40" velocity="6.28" />
   </joint>
 
-  <!-- 机械臂连杆3 -->
+  <!-- 机械臂连杆层级 - link3 + joint3 -->
   <link name="link3">
     <inertial>
       <origin xyz="0.011856 -0.05002 0.0066166" rpy="0 0 0" />
@@ -152,7 +169,7 @@
     <limit lower="-2.4" upper="0.0" effort="30" velocity="6.28" />
   </joint>
 
-  <!-- 相机1 -->
+  <!-- link3附属部件 - 相机1 + 相机2 -->
   <link name="camera1">
     <inertial>
       <origin xyz="-0.034482 -0.00015312 0.0032629" rpy="0 0 0" />
@@ -182,7 +199,6 @@
     <child link="camera1" />
   </joint>
 
-  <!-- 相机2 -->
   <link name="camera2">
     <inertial>
       <origin xyz="-0.018394 -6.7298E-05 -0.0038392" rpy="0 0 0" />
@@ -212,7 +228,7 @@
     <child link="camera2" />
   </joint>
 
-  <!-- 机械臂连杆4 -->
+  <!-- 机械臂连杆层级 - link4 + joint4 -->
   <link name="link4">
     <inertial>
       <origin xyz="-0.0046535 3.2003E-05 0.076088" rpy="0 0 0" />
@@ -244,7 +260,7 @@
     <limit lower="-3.0" upper="3.0" effort="3" velocity="6.28" />
   </joint>
 
-  <!-- 机械臂连杆5 -->
+  <!-- 机械臂连杆层级 - link5 + joint5 -->
   <link name="link5">
     <inertial>
       <origin xyz="-5.188E-05 0.014864 0.00048766" rpy="0 0 0" />
@@ -276,7 +292,7 @@
     <limit lower="-1.57" upper="1.57" effort="9" velocity="6.28" />
   </joint>
 
-  <!-- 机械臂连杆6 -->
+  <!-- 机械臂连杆层级 - link6 + joint6 -->
   <link name="link6">
     <inertial>
       <origin xyz="-6.5465E-07 -3.2249E-05 0.051478" rpy="0 0 0" />
@@ -308,7 +324,7 @@
     <limit lower="-1.57" upper="1.57" effort="3" velocity="6.28" />
   </joint>
 
-  <!-- 左夹爪 -->
+  <!-- 第五步：末端执行器 - 左夹爪 + 右夹爪 -->
   <link name="gripper_left">
     <inertial>
       <origin xyz="-0.00097623 -0.039906 -0.027286" rpy="0 0 0" />
@@ -337,10 +353,9 @@
     <parent link="link6" />
     <child link="gripper_left" />
     <axis xyz="0 0 -1" />
-    <limit lower="0.0" upper="0.06" effort="1000" velocity="1.0" />
+    <limit lower="0.0" upper="0.06" effort="10" velocity="1.0" />
   </joint>
 
-  <!-- 右夹爪 -->
   <link name="gripper_right">
     <inertial>
       <origin xyz="0.00097623 -0.03896 0.024986" rpy="0 0 0" />
@@ -369,30 +384,12 @@
     <parent link="link6" />
     <child link="gripper_right" />
     <axis xyz="0 0 1" />
-    <limit lower="-0.06" upper="0.0" effort="1000" velocity="1.0" />
+    <limit lower="-0.06" upper="0.0" effort="10" velocity="1.0" />
     <mimic joint="joint_gripper_left" />
     <multiplier value="-1.0" />
   </joint>
 
-  <!-- 虚拟底座：base_footprint -->
-  <link name="base_footprint">
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.1 0.1 0.01" />
-      </geometry>
-      <material name="">
-        <color rgba="1 1 1 0.5" />
-      </material>
-    </visual>
-  </link>
-  <joint name="joint_base_footprint" type="fixed">
-    <origin xyz="0 0 0.18113" rpy="0 0 0" />
-    <parent link="base_footprint" />
-    <child link="base_link" />
-  </joint>
-
-
+  <!-- 第六步：ros2_control配置（顺序与joint定义顺序一致） -->
   <ros2_control name="rm_description_ros2_control" type="system">
     <hardware>
         <!-- <plugin>mock_components/GenericSystem</plugin> -->
@@ -441,4 +438,4 @@
         </state_interface>
     </joint>
   </ros2_control>
-</robot> 
+</robot>

@@ -19,8 +19,8 @@ public:
     {
         node_ = node;
         arm_ = std::make_shared<MoveGroupInterface>(node_,"arm");
-        arm_->setMaxVelocityScalingFactor(1.0);
-        arm_->setMaxAccelerationScalingFactor(1.0);
+        arm_->setMaxVelocityScalingFactor(0.05);
+        arm_->setMaxAccelerationScalingFactor(0.05);
         gripper_ = std::make_shared<MoveGroupInterface>(node_,"gripper");
 
         open_gripper_sub_ = node_->create_subscription<Bool>(

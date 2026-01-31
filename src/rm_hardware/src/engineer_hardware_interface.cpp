@@ -24,27 +24,21 @@ hardware_interface::CallbackReturn ArmHardwareInterface::on_init
 
     
     hw_states_position1_ = 0.0;
-    hw_states_velocity1_ = 0.0;
     hw_commands_position1_ = 0.0;
 
     hw_states_position2_ = 0.0;
-    hw_states_velocity2_ = 0.0;
     hw_commands_position2_ = 0.0;
 
     hw_states_position3_ = 0.0;
-    hw_states_velocity3_ = 0.0;
     hw_commands_position3_ = 0.0;
 
     hw_states_position4_ = 0.0;
-    hw_states_velocity4_ = 0.0;
     hw_commands_position4_ = 0.0;
 
     hw_states_position5_ = 0.0;
-    hw_states_velocity5_ = 0.0;
     hw_commands_position5_ = 0.0;
 
     hw_states_position6_ = 0.0;
-    hw_states_velocity6_ = 0.0;
     hw_commands_position6_ = 0.0;
 
     hw_states_gripper_ = 0.0;
@@ -104,7 +98,7 @@ hardware_interface::return_type ArmHardwareInterface::read
     (void)time;
     (void)period;
     std::vector<double> joint_pos(JOINT_NUM);
-
+    rclcpp::spin_some(dm_driver_->get_node_base_interface());
     joint_pos = dm_driver_->getPosition();
 
     hw_states_position1_ = joint_pos[0];//hw_states_position1_已被指针所指，改变自动会传入

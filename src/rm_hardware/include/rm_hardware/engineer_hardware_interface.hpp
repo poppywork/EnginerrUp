@@ -37,27 +37,21 @@ private:
     std::shared_ptr<DMDriver> dm_driver_;
 
     double hw_states_position1_;
-    double hw_states_velocity1_;
     double hw_commands_position1_;
 
     double hw_states_position2_;
-    double hw_states_velocity2_;
     double hw_commands_position2_;
 
     double hw_states_position3_;
-    double hw_states_velocity3_;
     double hw_commands_position3_;
 
     double hw_states_position4_;
-    double hw_states_velocity4_;
     double hw_commands_position4_;
 
     double hw_states_position5_;
-    double hw_states_velocity5_;
     double hw_commands_position5_;
 
     double hw_states_position6_;
-    double hw_states_velocity6_;
     double hw_commands_position6_;
 
     double hw_states_gripper_;
@@ -67,4 +61,4 @@ private:
 
 } 
 
-#endif 
+#endif
