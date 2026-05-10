@@ -1,5 +1,8 @@
 # Engineering_Up 项目配置指南新机要下载
 
+##
+clash_verge下载网址：https://clashverge.wiki/download/
+
 ## 新机下载
 sudo apt install -y ros-humble-pcl-ros 
 sudo apt install ros-humble-xacro
@@ -88,17 +91,17 @@ sudo apt install ros-humble-moveit-*
 
 
 
-## 如何配置深度相机环境  
-#一、配必要文件  
+## 如何配置深度相机环境
+#一、配必要文件
 1.sudo apt install libgflags-dev  
-2.sudo apt install ros-$ROS_DISTRO-image-geometry  
-3.sudo apt install ros-$ROS_DISTRO-camera-info-manager  
-4.sudo apt install ros-$ROS_DISTRO-image-transport  
-5.sudo apt install ros-$ROS_DISTRO-image-publisher  
-6.sudo apt install libgoogle-glog-dev  
-7.sudo apt install libusb-1.0-0-dev  
-8.sudo apt install libeigen3-dev  
-9.sudo apt install -y nlohmann-json3-dev  
+2.sudo apt install ros-$ROS_DISTRO-image-geometry 
+3.sudo apt install ros-$ROS_DISTRO-camera-info-manager
+4.sudo apt install ros-$ROS_DISTRO-image-transport 
+5.sudo apt install ros-$ROS_DISTRO-image-publisher 
+6.sudo apt install libgoogle-glog-dev 
+7.sudo apt install libusb-1.0-0-dev 
+8.sudo apt install libeigen3-dev
+9.sudo apt install -y nlohmann-json3-dev
 
 cd/Enginerr/src/rm_visual
 git clone https://github.com/libuvc/libuvc.git
@@ -123,21 +126,76 @@ source ./install/setup.bash
 ros2 launch astra_camera astra.launch.xml
 
 
-# 配置语音系统环境  
-## 一、api的部署  
-###注意： 本功能包从2026.4.4日开始开发   由于api只有免费额度三个月 届时api会到期  所以后续开发需要自己接入api 
-###针对api 的个人订阅 只需要改一下tts 和asr 的.py文件中的 appkeyid和appkey secret就好了 具体操作如下  
-1.登陆下列网站  
-https://account.aliyun.com/login/login.htm?oauth_callback=https%3A%2F%2Fmyaccount.console.aliyun.com%2Foverview&clearRedirectCookie=1&lang=zh  
-2.鼠标移到头像右上角 点开权限与安全中的 AccessKEY  
-3.点击创建appkey  然后复制到tts/tts.py 和asr/asr.py就可以了  
-##二、配置环境  
-1.pip3 install sounddevice  
-2.sudo apt update  
-3.sudo apt install portaudio19-dev  
-4.pip3 install git+https://github.com/aliyun/alibabacloud-nls-python-sdk.git  
-5.pip install aliyun-python-sdk-core  
+## ikfast求解器的配置
+https://fishros.org.cn/forum/topic/680/moveit-ikfast%E8%BF%90%E5%8A%A8%E5%AD%A6%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE-%E6%9C%80%E8%AF%A6%E7%BB%86-%E6%B2%A1%E6%9C%89%E4%B9%8B%E4%B8%80  //网址
 
-疑问:
-1、video的urdf有ros2_control,还有为什么不可以去掉<xacro:gripper_macro />
+cd elite_robot
+xhost + && sudo docker run  -it --rm  -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/snd -e DISPLAY=unix$DISPLAY  -v `pwd`:`pwd`  -w `pwd` fishros2/openrave
+# 进入镜像
+
+catkin_make
+# 编译
+
+
+# 怎么解决rivz等报错问题
+# 1. 清除过期的 ROS 源配置（避免干扰）
+sudo rm -f /etc/apt/sources.list.d/ros-latest.list
+sudo rm -f /etc/apt/sources.list.d/ros2-latest.list
+sudo rm -f /etc/apt/sources.list.d/ros-official.list   
+# 2. 添加官方 ROS 源（使用 packages.ros.org，国内镜像有时不同步）
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu focal main" > /etc/apt/sources.list.d/ros-latest.list'
+# 3. 下载并添加新的 GPG 密钥（解决 EXPKEYSIG）
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+# 如果上面的 curl 失败，尝试从密钥服务器获取
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+# 4. 更新软件源（现在应该不再报签名错误）
+sudo apt update
+# 5. 安装缺失的包
+sudo apt install -y ros-noetic-rviz-visual-tools
+sudo apt install -y ros-noetic-moveit-visual-tools
+sudo apt install -y ros-noetic-pcl-ros
+# 6.编译
+catkin_make
+
+cd src/elite_description/urdf/
+
+# 改写对应位置的.urdf文件生存ikfast能看懂的.dae文件
+rosrun collada_urdf urdf_to_collada engineer.urdf engineer.dae
+
+# 将文件的小数点缩短到小数点后五位
+gedit /opt/ros/noetic/lib/moveit_kinematics/round_collada_numbers.py ./round_collada_numbers_modified.py
+
+把 dom = etree.parse(input_file) 改成 parser = etree.XMLParser(huge_tree=True)   dom = etree.parse(input_file, parser=parser)
+
+rosrun moveit_kinematics round_collada_numbers.py engineer.dae engineer.dae 5
+
+# 验证
+openrave engineer.dae //看一下模型对不对
+openrave-robot.py engineer.dae --info links //看一下文件中的link
+
+# 来生成ikfast针对机械臂的正逆解代码,生成.cpp文件，之后可以在ros2配置插件（关键的一步）
+python `openrave-config --python-dir`/openravepy/_openravepy_/ikfast.py --robot=engineer.dae --iktype=transform6d --baselink=0 --eelink=6 --savefile=$(pwd)/ikfast_engineer.cpp
+
+# 复制所需的头文件，接着直接使用g++进行编译(可有可无，用于生成可执行文件看看成功不成功)
+cp /usr/local/lib/python2.7/dist-packages/openravepy/_openravepy_/ikfast.h .
+g++ ikfastec66.cpp -o ikfast-ec66 -llapack -std=c++11
+
+# 转折点:将生成的cpp文件和ikfast.h文件放到rm_description/urdf文件夹中
+
+# 用moveit2工具生成ikfast插件包
+mkdir engineer_ikfast_plugin   //存放插件功能包
+
+cd Engineer/src/engineer_ikfast_plugin
+
+ros2 run moveit_kinematics create_ikfast_moveit_plugin.py   engineer   arm   engineer_ikfast_plugin   "base_link"   "link_6" /home/zrk/EnginerrUp/src/rm_description/urdf/engineer_arm_ikfast_moveit_plugin.cpp  --moveit_config_pkg engineer_moveit2
+
+colcon build
+
+source install setup.bash
+
+# 打开文件src/elite_moveit_ikfast_plugins/elite_moveit_ikfast_plugin_ec66/src/ec66_manipulator_ikfast_solver.cpp 接着修改低392行代码，在其上面添加上一行
+
+IKFAST_API int* GetFreeParameters() { return NULL; }
+
+# 之后就可以根据改kinematics.yaml文件来改求解器了
 
