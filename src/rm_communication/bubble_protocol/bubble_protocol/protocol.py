@@ -94,6 +94,10 @@ chassis_info["chassis_vy_cmd_from_mcu"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 chassis_info["chassis_vw_cmd_from_mcu"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
 
 
+# keyboard control data
+keyboard_data_info = OrderedDict()
+keyboard_data_info["keyboard_data_bits"] = [TYPE_FOR_CTYPE["uint16"], 0, 1]
+
 # imu data
 imu_info = OrderedDict()
 imu_info["yaw"] = [TYPE_FOR_CTYPE["int32"], 0, 10000]
@@ -227,6 +231,7 @@ ID = {
     "chassis_odom": [0x11, odom_info],#1
     "chassis_ctrl": [0x12, chassis_ctrl_info],
     "chassis_imu": [0x13, chassis_imu_info],#1
+    "keyboard_data": [0x14, keyboard_data_info],#1
 
     "joint_state_sub_from_mcu": [0x20, gimbal_info],
     "joint_cmd_from_moveit2": [0x21, gimbal_ctrl_info],#上位机对下位机机械臂进行控制
@@ -257,6 +262,7 @@ STATUS = {
     "voice_control": copy.deepcopy(voice_control_info),
     "chassis_odom": copy.deepcopy(odom_info),
     "chassis_imu": copy.deepcopy(chassis_imu_info),
+    "keyboard_data": copy.deepcopy(keyboard_data_info),
     "chassis_ctrl": copy.deepcopy(chassis_ctrl_info),
     "barrel": copy.deepcopy(shooter_info),
     "robot_command": copy.deepcopy(robot_command_info),
@@ -268,6 +274,7 @@ REALTIME_CALLBACK = {
     "chassis_imu": None,
     "chassis_cmd_from_mcu": None,
     "joint_state_sub_from_mcu": None,
+    "keyboard_data": None,
 }
 
 

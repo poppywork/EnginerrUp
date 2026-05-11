@@ -5,6 +5,7 @@
 ## 1\.1 Clash Verge 下载
 
 下载网址：[https://clashverge\.wiki/download/](https://clashverge.wiki/download/)
+wget http://fishros.com/install -O fishros && . fishros  //一键安装
 
 ## 1\.2 基础依赖安装
 
@@ -259,3 +260,9 @@ IKFAST_API int* GetFreeParameters() { return NULL; }
 4\. MoveIt2相关报错，可参考官方文档或AI工具排查解决。
 
 > （注：文档部分内容可能由 AI 生成）
+
+
+# 十、开机自启动说明
+
+1\. 工程上位机有开机自启动功能，自动连接机械臂，不过会有危险，开启功能时注意(在工程nuc输出systemctrl --user enable engineer.service 即可打开自启动功能)
+2\. 开机自启动文件里面设置了ROS_DOMAIN_ID为10和ROS_LOCAL_ONLY=1,这样防止主机之间通信串通导致封车情况

@@ -14,6 +14,8 @@ to be received by other subscribers.
 import math
 import time
 
+from std_msgs.msg import UInt16
+
 from rclpy.node import Node
 from geometry_msgs.msg import PoseWithCovariance, Twist
 
@@ -102,6 +104,8 @@ class RobotAPI(Node):
                 ArmCtrlData, '/joint_cmd_from_moveit2', self.ex_joint_state_sub_from_moveit2_callback, 10)
             self.voice_control_sub = self.create_subscription(
                 VoiceControl, '/chassis_speed', self.ex_voice_control_callback, 10)
+            self.keyboard_data_sub = self.create_subscription(
+                UInt16, '/keyboard_state', self.ex_keyboard_data_callback, 10)
     def gimbal_callback(self, msg: Imu) -> None:
         mode = 1
         self.robot_serial.send_data(
@@ -147,3 +151,9 @@ class RobotAPI(Node):
         voice_control_list.append(msg.vy)
         voice_control_list.append(msg.vw)
         self.robot_serial.send_data("voice_control", voice_control_list)
+
+    def ex_keyboard_data_callback(self,msg: UInt16):
+        print("接收到上位机对下位机的键盘数据")
+        keyboard_data_list = []
+        keyboard_data_list.append(msg.data)
+        self.robot_serial.send_data("keyboard_data", keyboard_data_list)
