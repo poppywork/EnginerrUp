@@ -17,56 +17,54 @@ class KeyboardBitmaskNode(Node):
             'q', 'e', 'r', 'f', 'g',     # bit6~10
             'z', 'x', 'c', 'v', 'b'      # bit11~15
         ]
-        # 建立按键名 -> bit位置的映射（用于快速查找）
+        # 建立按键名 -> bit位置的映射
         self.key_to_bit = {key: idx for idx, key in enumerate(self.key_sequence)}
         
         # 当前按键状态掩码
         self.state_mask = 0
         
-        # 启动监听线程
+        # 启动键盘监听线程
         self.listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
         self.listener.start()
         
-        self.get_logger().info('键盘位掩码节点已启动')
+        # 创建定时器，以固定频率发布当前掩码（例如 50Hz = 20ms）
+        self.publish_timer = self.create_timer(0.02, self.publish_state)
+        
+        self.get_logger().info('键盘位掩码节点已启动（持续发布模式，50Hz）')
         self.get_logger().info('支持的按键: ' + ' '.join(self.key_sequence))
         self.get_logger().info('ESC键退出节点')
     
     def get_key_name(self, key):
         """将pynput的key对象统一转换为字符串标识"""
         try:
-            # 普通字符键
-            return key.char
+            return key.char  # 普通字符键
         except AttributeError:
-            # 特殊键：shift, ctrl, esc等
-            if key == keyboard.Key.shift or key == keyboard.Key.shift_l or key == keyboard.Key.shift_r:
+            # 特殊键
+            if key in (keyboard.Key.shift, keyboard.Key.shift_l, keyboard.Key.shift_r):
                 return 'shift'
-            elif key == keyboard.Key.ctrl or key == keyboard.Key.ctrl_l or key == keyboard.Key.ctrl_r:
+            elif key in (keyboard.Key.ctrl, keyboard.Key.ctrl_l, keyboard.Key.ctrl_r):
                 return 'ctrl'
             elif key == keyboard.Key.esc:
                 return 'esc'
             else:
-                # 忽略其他特殊键（如alt, cmd等）
-                return None
+                return None  # 忽略其他特殊键
     
-    def update_and_publish(self, key_name, pressed):
-        """更新某个按键的状态并发布新掩码"""
+    def update_mask(self, key_name, pressed):
+        """更新掩码，不发布"""
         if key_name not in self.key_to_bit:
-            return  # 不是我们关心的按键
-        
+            return
         bit = self.key_to_bit[key_name]
-        old_mask = self.state_mask
-        
         if pressed:
             self.state_mask |= (1 << bit)
         else:
             self.state_mask &= ~(1 << bit)
-        
-        # 只有状态发生变化时才发布
-        if self.state_mask != old_mask:
-            msg = UInt16()
-            msg.data = self.state_mask
-            self.publisher_.publish(msg)
-            self.get_logger().debug(f'更新掩码: 0x{self.state_mask:04X}')
+    
+    def publish_state(self):
+        """定时发布当前掩码"""
+        msg = UInt16()
+        msg.data = self.state_mask
+        self.publisher_.publish(msg)
+        self.get_logger().debug(f'发布掩码: 0x{self.state_mask:04X}')
     
     def on_press(self, key):
         key_name = self.get_key_name(key)
@@ -76,12 +74,12 @@ class KeyboardBitmaskNode(Node):
             rclpy.shutdown()
             return
         if key_name:
-            self.update_and_publish(key_name, pressed=True)
+            self.update_mask(key_name, pressed=True)
     
     def on_release(self, key):
         key_name = self.get_key_name(key)
         if key_name:
-            self.update_and_publish(key_name, pressed=False)
+            self.update_mask(key_name, pressed=False)
     
     def __del__(self):
         if hasattr(self, 'listener') and self.listener.running:
