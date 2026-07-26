@@ -1,6 +1,6 @@
 cmds=(
       "ros2 launch livox_ros_driver2 msg_MID360_cloud_launch.py" #连接雷达
-      "ros2 launch engineer_bringup model.launch.xml" #发布静态tf
+      "ros2 launch rm_bringup model.launch.xml" #发布静态tf
       "ros2 launch linefit_ground_segmentation_ros segmentation.launch.py" #对 3D 点云进行地面分割
       "ros2 launch pointcloud_to_laserscan pointcloud_to_laserscan_launch.py" #压缩3D雷达为2D
       "ros2 launch point_lio mapping_mid360.launch.py" #启动point_lio，发布里程计

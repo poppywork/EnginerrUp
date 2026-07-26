@@ -1,6 +1,20 @@
 <?xml version="1.0" ?>
 
 <robot name="engineer">
+  <!-- base_footprint -->
+  <link name="base_footprint">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.1 0.1 0.01" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+  </link>
+
+
   <!-- base_link -->
   <link name="base_link">
     <inertial>
@@ -24,6 +38,45 @@
       </geometry>
     </collision>
   </link>
+
+  <joint name="joint_base_footprint" type="fixed">
+    <origin xyz="0 0 0.18113" rpy="0 0 0" />
+    <parent link="base_footprint" />
+    <child link="base_link" />
+  </joint>
+
+
+<!-- livox_frame -->
+  <link name="livox_frame">
+    <inertial>
+      <origin xyz="8.3267E-17 3.0531E-16 -0.0049576" rpy="0 0 0" />
+      <mass value="0.17859" />
+      <inertia ixx="0.00038339" ixy="6.0429E-19" ixz="-1.0897E-21"
+               iyy="0.00038339" iyz="1.6591E-21" izz="0.00076383" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rm_description/meshes/radar.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rm_description/meshes/radar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="livox_frame_joint" type="fixed">
+    <origin xyz="0.1572 -0.1665 0.0922" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="livox_frame" />
+  </joint>
+
+  
   <!-- link_1 -->
   <link name="link_1">
     <inertial>

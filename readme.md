@@ -34,7 +34,7 @@ pip3 install pyserial   # 下载串口包
 9、cd .. && cd ..  # 回到rm_driver目录
 10、cd livox_ros_driver2
 11、source /opt/ros/humble/setup.sh
-12、./build.sh humble  
+12、./build.sh humble  #(容易卡死，将文件里面的colcon build 改为 colcon build --parallel-workers 2 --cmake-args -DROS_EDITION=${VERSION_ROS2} -DHUMBLE_ROS=${ROS_HUMBLE})
 13、cd 自己的工作空间（如：cd ~/EnginerrUp）
 14、colcon build  # 若出现黄色提示，重新执行一次colcon build
 ```

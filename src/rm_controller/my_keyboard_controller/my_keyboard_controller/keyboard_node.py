@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import UInt16
+from std_msgs.msg import UInt16, String
 import threading
+import json
 from pynput import keyboard
 
 class KeyboardBitmaskNode(Node):
     def __init__(self):
         super().__init__('keyboard_bitmask_node')
         self.publisher_ = self.create_publisher(UInt16, 'keyboard_state', 10)
+        # 新增：用于触发 FoundationPose 重新识别的发布者
+        self.reinit_pub_ = self.create_publisher(String, '/energy/reinit_request', 10)
 
         # 定义按键顺序（共16个，对应bit0~bit15）
         self.key_sequence = [
@@ -32,6 +35,7 @@ class KeyboardBitmaskNode(Node):
         
         self.get_logger().info('键盘位掩码节点已启动（持续发布模式，50Hz）')
         self.get_logger().info('支持的按键: ' + ' '.join(self.key_sequence))
+        self.get_logger().info('按下 z 键触发一次 FoundationPose 识别')
         self.get_logger().info('ESC键退出节点')
     
     def get_key_name(self, key):
@@ -65,6 +69,18 @@ class KeyboardBitmaskNode(Node):
         msg.data = self.state_mask
         self.publisher_.publish(msg)
         self.get_logger().debug(f'发布掩码: 0x{self.state_mask:04X}')
+    
+    def trigger_foundationpose(self):
+        """发送请求触发 FoundationPose 重新识别"""
+        req = {
+            "request_id": "keyboard_z_trigger",
+            "reason": "key_press",
+            "stamp_ns": self.get_clock().now().nanoseconds
+        }
+        msg = String()
+        msg.data = json.dumps(req)
+        self.reinit_pub_.publish(msg)
+        self.get_logger().info('🔍 已发送 FoundationPose 重新识别请求')
     
     def on_press(self, key):
         key_name = self.get_key_name(key)
